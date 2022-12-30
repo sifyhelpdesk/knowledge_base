@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Telecom</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/x-icon" href="../assets/sify_logo.png">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="topnav">
+        <a class="active" href="../">Home</a>
+        <img src="../assets/sify_logo.png" alt="Sify_Technologies_Logo" width="100">
+    </div>
+
+    <div class="topic">
+        <h2>Telecom</h2>
+    </div>
+
+    <!-- End of navigation bar -->
+
+    <!-- Content section -->
+    
+    <button class="accordion">IP Blacklisting</button>
+    <div class="panel">
+        <ul style="list-style-type: none;">
+            <li>If the customer reached us saying that my IP got blacklisted or they are unable to send emails that will be considered as IP Blacklisting.</li>
+            <li>Request customer to provide the IP and circuit ID.</li>
+            <li>Firstly we have to check whether the IP belongs to Sify or not(by using website Instant IP Address) . If not have to convey the same to customer to check with respective service provider.</li>
+            <br>
+            NOTE: Website for checking IP address - <a href="https://whatismyipaddress.com/ip-lookup">https://whatismyipaddress.com/ip-lookup</a>
+            <br><br>
+            <li>If the IP Belongs to Sify then we have to check whether the IP is blacklisted or not.</li>
+            <li>1. If the IP got blacklisting, we have to raise a ticket under IP Blacklisting to proceed further.</li>
+            <li>2. If the IP got blacklisting, we have to check whether the IP have PTR records or not(by using DNS Checker website).</li>
+            <br>
+            NOTE: Website for checking PNR records - https://dnschecker.org/#PTR/223.30.27.10
+            <br><br>
+            <li>3. If IP got blacklisted and not having PTR records, we have to request some details from customer about IP(Template will be available in Email Notes)</li>
+        </ul>
+        <img src="../assets/Telecom/telecom_1.png" alt="Image_1" style="float: none; height: 35%; width: 45% ">
+        <br><br>
+        <ul style="list-style-type: none;">
+            <li>After getting details from the customer, we need to share the details with DNS team to create PTR Records</li>
+        </ul>
+        <br>
+        <img src="../assets/Telecom/telecom_2.png" alt="Image_2" style="float: none; height: 35%; width: 45% ">
+        <br><br>
+        <ul style="list-style-type: none;">
+            <li>After the completion of creating PTR records, we have to share the IP with fort know team for whitelisting.</li>
+        </ul><br>
+        <img src="../assets/Telecom/telecom_3.png" alt="Image_3" style="float: none; height: 35%; width: 45% ">
+        <br>
+        <ul style="list-style-type: none;">
+            <li>4. It will take 24 - 48 hours to whitelisting an IP</li>
+            <li>5. After the IP got whitelisted, we have to convey the same with customer</li>
+        </ul>
+        <br><br>
+        <span>Workflow:</span><br>
+        <ul style="list-style-type: disc;">
+            <li>Request IP and Link ID from Customer</li>
+            <li>Check the IP belong to Sify or not</li>
+            <li>If not, convey the same to customer to check with respective team</li>
+            <li>If IP belongs to Sify, check whether the IP is blacklisted or not</li>
+            <li>If IP got blacklisted, raise a case under IP blacklisting</li>
+            <li>Check whether the IP have PTR records or not</li>
+            <li>If PTR records exists, send the IP for Whitelisting</li>
+            <li>If PTR not exists, send the IP to DNS for creating PTR Records</li>
+            <li>Completion of creating PTR records</li>
+            <li>Send IP to fortknox team for Whitelisting</li>
+            <li>Completion of whitelisting</li>
+            <li>Revert to customer</li>
+        </ul>
+    </div>
+
+    <button class="accordion">Link Implementation and Feasibility</button>
+    <div class="panel">
+        <b>Implementation of New Link:</b>
+        <ul>
+            <li>Sales Team will receive a request for New Link Installation.</li>
+            <li>Sales Head will check the Companies authorization and approve the request to proceed further.</li>
+            <li>After the approval of Sales Head, it will assign to an PM - Project Manager to check the feasibility and PM will take the responsibility to complete the project on time.</li>
+            <li>Internal team will create OSC Opportunity ID to customer to find customer complete details at one point.</li>
+            <li>Customer must agree with company norms and need to sign on the agreement with companies authorized stamp.</li>
+        </ul>
+        <br>
+        <b>FEASIBILITY:</b>
+        <ul style="list-style-type: none;">
+            <li>One of the engineers from Sify will visit the Location to check the availability of our service at Customer Site.</li>
+            IF YES:
+            <li>Sify Team will take charge to proceed further.</li>
+            IF NO:
+            <li>Check with regional team who will be available at nearby location like (Tata, Airtel, BSNL, Bharathi, TCL, etc)</li>
+            <li>After the completion of Feasibility, Project Manager will release a PO – Purchase Order which includes complete cost and infrastructure needed for the New connection at particular location.</li>
+            <li>After receiving PO from customer, a special RDSE – Regional Service Delivery Engineer will take handover for installation of required hardware to customer location.</li>
+            <li>Commercials and Hardware parts are released from nearby stores to customer location.</li>
+            <li>RDSE or Sify Field Team will Install the Hardware parts at Customer Site.</li>
+            <li>Internal Team will generate a unique Link ID and it will be added into IONI and AAKAASH Portals.</li>
+            <li>After completion of On boarding, link will be handed over to Service Operations Team for Maintenance.</li>
+        </ul>
+        <br><br>
+        <span>Workflow:</span><br>
+        <ul style="list-style-type: disc;">
+            <li>Sales Team Head Approval</li>
+            <li>Assign to Project Manager</li>
+            <li>Creating OSC Opportunity ID</li>
+            <li>Agreement with Customer</li>
+            <li>Feasibility Check</li>
+            <li>Releasing Purchase Order</li>
+            <li>Shipping Hardware material to Site</li>
+            <li>Installation of Hardware</li>
+            <li>Link Onboarding</li>
+            <li>Handover to Service Operations</li>
+    </div>
+
+    <button class="accordion">Link Management</button>
+    <div class="panel">
+        <b>Connectivity Issues:</b>
+        <ul style="list-style-type: none ;">
+            <li>Request circuit ID from customer and check the basic details with customer</li>
+            <li>Check the status of the link whether it is in Disconnection or Open or Closed status</li>
+            <li>Check whether there is an active ticket on the reported issue by customer</li>
+            <li>If ticket is available on the reported issue, share the latest update to customer</li>
+            <li>If ticket is not available raise a ticket under reported issue and fill basic details like email ID and LC number</li>
+            <br>
+            <p>Then we have to Perform the FLT(First Level Trouble shooting). Checkpoints to be follow</p>
+            <br>
+            <ul style="list-style-type: none ;">
+                <li>1. Is the Site open now?</li>
+                <li>2. Do you have power at the site?</li>
+                <li>3. Are the devices at site powered on?</li>
+                <li>4. Is site access available to our Field support engineer?</li>
+                <li>5. Please make sure the devices are powered off and powered on</li>
+            </ul>
+            <br>
+            <p>Write a single line note in work notes about the exact reported issue by customer</p>
+            <br>
+            <li>Raise a new ticket under link down or Link flapping or Packet drops (According to the reported issue) and share it with customer</li>
+            <br>
+            <img src="../assets/Telecom/telecom_4.png" alt="Image_4" style="float: none; height: 35%; width: 45% ">
+        </ul>
+        <br><br>
+        <b>Utilization Graph Related:</b>
+        <ul style="list-style-type: none;">
+            <li>Request circuit ID from customer and check and basic details</li>
+            <li>Login into AAKAASH Portal with customer credentials</li>
+            <li>For example :- Username - ADMIN_414376 then the credentials will be Username:- ADMIN_414376 and password:- sify414376</li>
+            <li>Search with circuit ID and Check whether the graph is polling or not</li>
+            <li>If graph is polling download the report based on the customer requirement and share it with customer through PDF Format</li>
+            <li>If graph is not polling raise a ticket under Utilization graph related and assign to concern department for resolution.</li>
+        </ul>
+        <br><br>
+        <b>SelfCare Portal Issue:</b>
+        <ul style="list-style-type: none;">
+            <li>If Customer reaches us by saying that “I’m facing some technical issues in AAKAASH Portal”. Like: unable to login, link IDs not visible, escalation matrix is not showing, unable to log ticket.
+            </li>
+            <li>Request circuit ID from customer and check and basic details</li>
+            <li>Check the status of the link whether it is in Disconnection or Open or Closed status</li>
+            <li>Check whether there is an active ticket on the reported issue by customer</li>
+            <li>If ticket is available on the Self Care Portal issue, share the latest update to customer</li>
+            <li>If not Available, kindly raise a new ticket under Self Care Portal Issue and share with Customer looping concern Team</li>
+        </ul>
+        <br><br>
+        <b>Unable to Open Particular site:</b>
+        <ul style="list-style-type: none;">
+            <li>If customer reached us saying that im unable to open one particular website or getting some error while opening an website</li>
+            <li>Request circuit ID from customer and check the basic details with customer</li>
+            <li>Raise a new ticket under Unable to open particular website and assign to concern team for resolution</li>
+        </ul>
+        <br><br>
+        <b>Configuration Related:</b>
+        <ul style="list-style-type: none;">
+            <li>If customer need to do some changes or configurations at customer end router</li>
+            <li>Request circuit ID from customer and check the basic details with customer</li>
+            <li>Raise a new ticket under Configuration Related and assign to concern team for resolution</li>
+        </ul>
+        <br><br>
+        <b>Reason for outage:</b>
+        <ul style="list-style-type: none;">
+            <li>Request circuit ID from customer and check the basic details with customer</li>
+            <li>Request customer to share the down time along with logs</li>
+            <li>Raise a ticket under Reason for outage by filling the basic details and outage timings in work notes</li>
+            <li>Share the Ticket ID with customer and loop concern Service Operations Team</li>
+        </ul>
+        <br><br>
+        <b>General/Others:</b>
+        <ul style="list-style-type: none;">
+            <li>If customer requested for a general issue like requested for link details, to know router configurations and other general issues will be categorize as General query or Others</li>
+            <li>We need to raise on General Query or Others if customer reaches us by above mentioned general issues</li>
+        </ul>
+        <br><br>
+        <b>New Requirement:</b>
+        <ul style="list-style-type: none;">
+            <li>If customer reaches us by saying he require an Sify engineer for maintenance activity and Link shifting</li>
+            <li>Request circuit ID from customer and check the basic details with customer</li>
+            <li>Raise a new ticket under New Requirement and share it with customer by looping concern team</li>
+        </ul>
+        <br><br>
+        <b>Customer requested for UP & Down time report:</b>
+        <ul style="list-style-type: none;">
+            <li>If customer requested to provide the UP time or Down time report , we need to take circuit ID and check with basic details</li>
+            <li>We have to login into AAKAASH Portal with the customer credentials and click on Availability module > ticket based SLA(Service level availability) and search with link ID to get the report</li>
+            <li>Download the report in PDF format and share it with customer</li>
+        </ul>
+    </div>
+    
+    <button class="accordion">New Subscription</button>
+    <div class="panel">
+        <b>If customer requested for New Services from Sify Network or Sify Data Center:</b>
+        <ul style="list-style-type: none;">
+            <li>1. We need to take basic details from customer
+                <li>Customer name:</li>
+                <li>Contact number:</li>
+                <li>Location:</li>
+                <li>Customer email ID:</li>
+            </li>
+            <li>2. After receiving the basic details from client end, need to forward the details to SALES TEAM</li>
+            <li>3. Kindly find the below structure to forward New subscription details to internal team</li>
+        </ul>
+        <p>To: kavitha.muthu@sifycorp.com</p>
+        <p>CC: gomathi.sitaram@sifycorp.com; julian.dmonte@sifycorp.com; raja.sekharam@sifycorp.com; helpdesk@sifycorp.com</p>
+        <br><br>
+        <span>Workflow:</span><br>
+        <ul>
+            <li>Request the basic details from customer</li>
+            <li>Forward to Sales Team</li>
+        </ul>
+        <br>
+        <b>Below is the step-by-step process to complete the analysis checklist:</b>
+        <ul style="list-style-type: none;">
+            <li>Step 1: Need to take the basic details from Customer</li>
+            <br>
+            <img src="../assets/Telecom/telecom_5.png" alt="Image_5" style="float: none; height: 35%; width: 45% ">
+            <br><br>
+            <li>Step 2: Forward the details to Sales Team</li>
+            <br>
+            <img src="../assets/Telecom/telecom_6.png" alt="Image_6" style="float: none; height: 35%; width: 45% ">
+            <br>
+        </ul>
+    </div>
+
+    <button class="accordion">Sify Link Disconnection</button>
+    <div class="panel">
+        <b>Temporary Disconnection:</b>
+        <ul style="list-style-type: square ;">
+            <li>If customer failed to pay the bills on time, the link will be automatically disconnected</li>
+            <li>Process 1 - Fusion Collection Team Initiate > Service Now TD (Success) > Temp Disconnected</li>
+        </ul>
+        <br><br>
+        <b>Temporary Re-Connection:</b>
+        <ul style="list-style-type: square ;">
+            <li>If customer proceeds to pay the bills after temporary disconnection, the link will be reconnected and it will take 24 hours to reflect after receiving payment</li>
+            <li>Process 1 - Fusion Collection Team Initiate > Service Now TD (Success) > Re-connected</li>
+            <li>Process 2- Fusion Collection Team Initiate > Service Now TD (Fail) > CPE Team > Re-connected</li>
+        </ul>
+        <br><br>
+        <b>Permanent Disconnection:</b>
+        <ul style="list-style-type: square ;">
+            <li>If customer requested for Permanent Disconnection, need to forward the request to sify.creditcontrol@sifycorp.com</li>
+            <li>Process 1 -Oracle (Collection Team Raise Request) > Service Now PD (Success) > Fusion Asset Recovery Team (WSG) > SOT Team > Disconnected</li>
+            <li>Oracle (Collection Team Raise Request) > Service Now PD (Fail) > Fusion CPE Initiate PD > SOT > Commercial Team (Other Lastmile) > Disconnected</li>
+            <li>Process 2 - TD Links (After 60days) > Service Now PD (Success) > Fusion Asset Recovery Team (WSG) > SOT Team > Disconnected</li>
+            <li>TD Links (After 60days) > Service Now PD (Success) > Fusion Asset Recovery Team (WSG) > SOT Team > Disconnected</li>
+        </ul>
+        <br><br>
+        <span>Workflow:</span><br>
+        <ul>
+            <li>Disconnection Request Raised</li>
+            <li>Ticket raised on ASSET Recovery</li>
+            <li>Will recover the assets from customer location</li>
+            <li>Collecting all pending request</li>
+            <li>Permanently Disconnected</li>
+        </ul>
+    </div>
+
+    <!-- End of content section -->
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+    
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+    
+</body>
+</html>

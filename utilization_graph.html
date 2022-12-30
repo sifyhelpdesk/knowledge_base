@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utilization Graph</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/x-icon" href="../assets/sify_logo.png">
+</head>
+
+<body>
+
+    <!-- Navigation bar  --> 
+    <div class="topnav">
+        <a class="active" href="../">Home</a>
+        <img src="../assets/sify_logo.png" alt="Sify_Technologies_Logo" width="100">
+    </div>
+
+    <div class="topic">
+        <h2>Utilization Graph</h2>
+    </div>
+
+    <!-- End of navigation bar --> 
+
+    <!-- Content section -->
+
+    <button class="accordion">Network Health Tab Showing Incorrect Information</button>
+    <div class="panel">
+        <b>Tools:</b>
+        <p>
+            No tool used. Just need to login Aakaash portal Using Default Credentials
+            <br><br>
+            Process :-
+        </p>
+        <ul style="list-style-type: none;">
+            <li>Step 1: We need to login Aakaash portal using Default credentials, if not again we should reset the password and then try to login Aakaash portal. </li>
+            <li>Step 2: After step -1, we need to give left click on Dashboard ( i.e, three small Horizontal Lines ) also should give a left click on "Network Health" module and then take a screenshot of Network Health Module which is shown below.</li>
+            <img src="../assets/Utilization_graph/utilization_graph_1.png" alt="Image_1" style="float: none; height: 45% ; width: 45%;">
+            <li>Step 3: Finally we need to send the screenshot to Infratools team to update correct Information " CPU, Memory, Link- Utilization " in Aakaash portal under " Network Health " Module.</li>
+        </ul>
+        <table>
+            <th>Infratools Team, NCS Support</th>
+            <tr>
+                <td>Infratools.support@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>ncs.support@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>pushparaj.srinivasan@sifycorp.com / 8015047478</td>
+            </tr>
+            <tr>
+                <td>elayaraja.thirumal@sifycorp.com / 9940952498</td>
+            </tr>
+            <tr>
+                <td>satheesh.narayanan@sifycorp.com / 8825567121</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="accordion">All location Links working fine, but Device's / Links status showing down in Aakaash portal</button>
+    <div class="panel">
+        <b>Tools:</b>
+        <p>
+            Service-Now,Putty,Fusion. Need to drop a mail to ASG Team along with traffic logs
+            <br><br>
+            Process :-
+        </p>
+        <ul style="list-style-type: none;">
+            <li>Step 1: Firstly, we need to check the traffic Existence of given link id in Putty Application using Pe details ( Available in service now / Fusion). Below commands can be used to check the traffic Existence on the given link id.
+                <br>Login as : sifyvpnuser Password : securesify
+                <br>telnet Pe Ip &#8594; we should use this command ( Only when the message showing like this "Connection closed by Foreign Host for Port 22" after using this command [ ssh Emp_Id@Pe Ip ]
+                <br>Username : Emp ID  Password :  Need to provide Password related to EMP ID mentioned in the above Username
+                <br>sh run int Pe Interface &#8594; This command is useful to check the running interface on the given link
+                <br>sh int des | i Link id &#8594; we can able to fetch the Live Pe Interface along with status of given link using this command.
+                <br>sh int Pe Interface | i rate &#8594; This command is used to check the traffic Existence on the given link only when the Interface is Active  ( Note : Sometimes we can't able to check the live traffic Existence on the given link using this command then we need to use this command [ sh policy-map int Pe Interface ]  ).
+            </li>
+            <li>Step 2: After Step 1, If given links having traffic then only we need to drop a mail to Gio_Asg Team along with screenshots (of Aakaash portal Device's / Links status ) and Current Traffic Logs. Then they will do required changes in Ioni to reflect the device's / Links status Correctly in Aakaash portal.</li>
+        </ul>
+        <p>
+            Support Team: gio_asg@sifycorp.com
+        </p>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>jaiveer.arvinder@sifycorp.com / 8872736119</td>
+            </tr>
+            <tr>
+                <td>karthik.nagarajan@sifycorp.com / 9176302020</td>
+            </tr>
+            <tr>
+                <td>nivedha.sivakumar@sifycorp.com / 7397417891</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="accordion">Blank Dashboard and  All Device's Status / Links Status showing Wrong ( in Aakaash portal Home Page, Also under Devices (Performance > Reports > All Assets ) Icon ) eventhough devices / Links are working fine.</button>
+    <div class="panel">
+        <b>Tool:</b>
+        <p>Ioni Portal and Aakaash Portal</p>
+        <br>
+        <p>Need to drop a mail to Gio_ASG Team along with Traffic logs of few out of customer given links &#8594; If Devices status / Links status showing wrong ( in Aakaash portal Home Page, Also under Devices (Performance &#8594; Reports &#8594; All Assets ) Icon )</p>
+        <br>
+        <p>Need to drop a mail to Infratools team - &#8594; > If Blank dashboard is showing in Aakaash portal Home Page</p>
+        <br>
+        <p>Process :-</p>
+        <br>
+        <ul style="list-style-type: none;">
+            <li>Step 1: First of all, We need to login Aakaash portal with Default Credentials to check the devices status / Links status</li>
+            <li>Step 2: If we are unable to login with default credentials, then need to change the password using Mounika Credentials and then try to login with new credentials.</li>
+            <li>Step 3: If we see the blank Dashboard in Aakaash portal HomePage after login, then take snapshot of the Aakaash portal Homepage and should drop mail to Infratools team.</li>
+            <li>Step 4: Then Tools team will enable the modules under Dashboard and also customer assets will be mapped in "My Assets Module"</li>
+        </ul>
+        <table>
+            <th>Infratools Team, NCS Support </th>
+            <tr>
+                <td>Infratools.support@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>ncs.support@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>pushparaj.srinivasan@sifycorp.com / 8015047478</td>
+            </tr>
+            <tr>
+                <td>elayaraja.thirumal@sifycorp.com / 9940952498</td>
+            </tr>
+            <tr>
+                <td>satheesh.narayanan@sifycorp.com / 8825567121</td>
+            </tr>
+        </table>
+        <br>
+        <b>Process :- </b> All Device's Status / Links Status showing Wrong ( in Aakaash portal Home Page, Also under Devices (Performance > Reports > All Assets ) Icon ) eventhough devices / Links are working fine.
+        <ul style="list-style-type: none;"> 
+            <li>Step 1: First of all, Randomly we need to take few links out of Customer given links and then check traffic Existence by using the following commands in Putty Application.
+                <br>After Opening Putty Application, we need to give 192.168.1.84 in the "Host Name ( or Ip Address )" coloumn and we should select port 22 also choose Connection Type (SSH). Then click on "Open"
+                <br>Login as : sifyvpnuser Password : securesify
+                <br>telnet Pe Ip &#8594; we should use this command ( Only when the message showing like this "Connection closed by Foreign Host for Port 22" after using this command [ ssh Emp_Id@Pe Ip ]
+                <br>Username : Emp ID  Password :  Need to provide Password related to EMP ID mentioned in the above Username
+                <br>sh run int Pe Interface &#8594; This command is useful to check the running interface on the given link
+                <br>sh int des | i Link id &#8594; we can able to fetch the Live Pe Interface along with status of given link using this command.
+                <br>sh int Pe Interface | i rate &#8594; This command is used to check the traffic Existence on the given link only when the Interface is Active  ( Note : Sometimes we can't able to check the live traffic Existence on the given link using this command then we need to use this command [ sh policy-map int Pe Interface ]  ).
+            </li>
+            <li>Step 2: After Step -1, If traffic Existence for links then only we need to drop a mail to Gio_Asg Team. Then they will do required changes in Ioni to reflect the device's status Correctly in Aakaash portal.</li>        
+        </ul>
+        <br>
+        <b>Support Mail ID: gio_asg@sifycorp.com</b>
+        <br><br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>jaiveer.arvinder@sifycorp.com / 8872736119</td>
+            </tr>
+            <tr>
+                <td>karthik.nagarajan@sifycorp.com / 9176302020</td>
+            </tr>
+            <tr>
+                <td>nivedha.sivakumar@sifycorp.com / 7397417891</td>
+            </tr>
+        </table>
+        <br>
+        <p>Blank Dashboard: Means when the Modules are not visible under Dashboard in Aakaash portal. Modules are highlighted in red colour in the below Screenshot.</p>
+        <br>
+        <img src="../assets/Utilization_graph/utilization_graph_2.png" alt="Image_2" style="float: none; height: 45% ; width: 45%;">
+        <br><br>
+        Devices status / Link Status: Following way is to check the device status in Aakaash portal (Login > Dashboard > Performance > Reports > All Assets )
+        <br><br>
+        How to Use Putty Application: need to follow the commands used in the below Screenshots:
+        <br><br>
+        <img src="../assets/Utilization_graph/utilization_graph_3.png" alt="Image_2" style="float: none; height: 45% ; width: 45%;">
+        <br><br>
+        <img src="../assets/Utilization_graph/utilization_graph_4.png" alt="Image_2" style="float: none; height: 45% ; width: 45%;">
+        <br><br>
+        <img src="../assets/Utilization_graph/utilization_graph_5.png" alt="Image_2" style="float: none; height: 45% ; width: 45%;">
+        <br><br>
+        <img src="../assets/Utilization_graph/utilization_graph_6.png" alt="Image_2" style="float: none; height: 45% ; width: 45%;">
+    </div>
+
+    <button class="accordion">Creating Aakaash portal Access for the Specific Username given by the Customer</button>
+    <div class="panel">
+        <ul style="list-style-type: square;">
+            <li>We need to create Aakaash portal Access for the Specific Username given by the Customer.</li>
+            <li>Process : We need to drop a mail to Infratools team to create Aakaash portal Access for the Specific Username given by the Customer</li>
+        </ul>
+        <br>
+        <table>
+            <th>Infratools Team, NCS Support</th>
+            <tr>
+                <td>Infratools.support@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>ncs.support@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>pushparaj.srinivasan@sifycorp.com / 8015047478</td>
+            </tr>
+            <tr>
+                <td>elayaraja.thirumal@sifycorp.com / 9940952498</td>
+            </tr>
+            <tr>
+                <td>satheesh.narayanan@sifycorp.com / 8825567121</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="accordion">Credentials not Working for Existing Username</button>
+    <div class="panel">
+        <b>Reset / Change the Password using Mounika Credentials ( As of Now )</b>
+        <ul style="list-style-type: none;">
+            <li>Step 1 : Use the URL <a href="https://sifyaakaash.net/#/login">https://sifyaakaash.net/#/login and default credentials to login to Aakaash portal</a></li>
+            <li>Step 2 : If we failed to login Aakaash portal with the above mentioned default Credentials, then we need to use URL: <a href="https://sifyaakaash.net/#/sifylogin">https://sifyaakaash.net/#/sifylogin</a></li> 
+            <li>Step 3 : After login with Credentials using above URL , we need to click on " Update Customer Password " which is present at the Right Side Top. After that a pop-up small window will be shown in the middle of the screen.  </li>
+            <li>Step 4 : Here, We need to provide default username ( As per CustomerCode ) and also we should give 2 times the password to be set. </li>
+            <li>Step 5 : Finally we should click on " Submit " button, then Password will be changed successfully. </li>
+            <li>Step 6 : Now, we can able to login Aakaash portal with new password by using URL mentioned in step-1. </li>
+        </ul>
+        <img src="../assets/Utilization_graph/utilization_graph_7.png" alt="Image_7" style="float: none; height: 45% ; width: 45%;">
+        <br><br>
+        <img src="../assets/Utilization_graph/utilization_graph_8.png" alt="Image_8" style="float: none; height: 45% ; width: 45%;">
+        <br><br>
+        <img src="../assets/Utilization_graph/utilization_graph_9.png" alt="Image_9" style="float: none; height: 45% ; width: 45%;">
+        <br><br>
+        <img src="../assets/Utilization_graph/utilization_graph_10.png" alt="Image_10" style="float: none; height: 45% ; width: 45%;">
+        <br><br>
+        <img src="../assets/Utilization_graph/utilization_graph_11.png" alt="Image_11" style="float: none; height: 45% ; width: 45%;">
+        <br><br>
+        <img src="../assets/Utilization_graph/utilization_graph_12.png" alt="Image_12" style="float: none; height: 45% ; width: 45%;">
+    </div>
+    <button class="accordion">Graph is not polling in Aakkash portal due to Error i.e," Unable to get performance details  / No Data /</button>
+    <div class="panel">
+        <b> Graph is not polling in Aakkash portal due to Error i.e, Unable to get performance details / No Data.</b>
+        <br>
+        <p>
+            Tools: Service-now,PE & Ehealth Audit,Putty,Fusion
+            <br><br>
+            Need to Update Correct Pe Ip and Pe Interface in 'Service now Tool' and 'PE & Ehealth Audit'
+        </p>
+        <p>Process :</p>
+        <ul style="list-style-type: none;">
+            <li>Step 1: Firstly, we need to check the  Device Live  Pe Ip and Pe Interface in Putty Application with Service-now tool Information ( i.e, Pe Ip & Pe Interface ) by using the commands (Which are mentioned in the Image -1,2,3).</li> 
+            <img src="../assets/Utilization_graph/utilization_graph_13.png" alt="Image_13" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_14.png" alt="Image_14" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_15.png" alt="Image_15" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <li>Step 2: If we are unable to trace out the device live Pe Ip & Pe Interface for the given link id after step-1, then we should open Fusion by using the below URL and take the Pe Ip and Pe Interface from fusion. Again we need to check the device Live Pe Ip and Pe Interface (details taken from Fusion )  in Putty Application.
+                <br>
+                <a href="https://fusion.sify.net/">https://fusion.sify.net/</a>
+            </li>
+            <img src="../assets/Utilization_graph/utilization_graph_16.png" alt="Image_16" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_17.png" alt="Image_17" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_18.png" alt="Image_18" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <li>Note 1: We should consider the Interface status "UP" as Active and " Admin_Down "  as Inactive. As per above image, we can confirm that Device Pe Ip and Pe Interface is active. Also at the same time , we need to cross -verify the Customer details - Name, Site, Bandwidth, LastMile-Type, Link id. Whatever the Customer Details are available in Putty should be matched with Customer details in Service-Now.</li>
+            <li>If graph is not polling raise a ticket under Utilization graph related and assign to concern department for resolution.</li>
+            <li>Note 2: If only device pe ip is available in service-now, then we should login and take the Live Pe Ip and Pe Interface from Fusion which is shown in the Image -4.</li>
+            <li>Note 3: If customer is facing an error " Unable to get Performance details " while trying to Monitor the Usage report ( In terms of  Graphical Representation ) in Aakaash portal. This type of scenario will come only when the correct Pe Ip and pe Interface not updated in 'PE & Ehealth Audit' window.</li>
+            <li>Step 3: If we observed that the given link is having Active Interface after step-2, then only we have to go and check in E-health server.</li>
+            <li>Step 4: First of all , we need to login Front End server by using the following E-health Ip. E-health Ip [Front End] -- >> 100.65.235.194 ; Username : helpdesk ; Password : h#lpd#sk</li>
+            <li>Step 5: Then we need to give Pe Ip & Pe Interface as an Inputs in E-health Ip [Front End], and click on "GO" Button</li>
+            <li>Step 6: it will takes few seconds/minutes to reflect the element ids after clicking on "GO" Button.</li>
+            <li>Step 7: Suppose, if 2 or more Element ids are existing on the given Pe Ip & Pe Interface, lets take Older Element Id based on Creation time.</li>
+            <li>Step 8: Need to give right click on Selected Older Element Id with Mouse and then select "At a Glance" option to check the graph polling.</li>
+            <li>Step 9: If "no data" is Available then we should take a snapshot and send it to the Netops Team along with Link id, Pe Ip and Pe Interface else we need to drop a mail to Infratools team along with Link id, Pe Ip,Pe Interface,screenshots (service-now,E-health)</li>
+            <li>Step 10: Once pe details updated in service now by Infratools team then graph will starts to poll in Aakaash portal Automatically.</li>
+            <img src="../assets/Utilization_graph/utilization_graph_19.png" alt="Image_19" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_20.png" alt="Image_20" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_21.png" alt="Image_21" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_22.png" alt="Image_22" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_23.png" alt="Image_23" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <li>Note 4: If  Customer is facing  " No Data " while trying to see the graph for particular link id in Aakaash portal. This type of scenario occur only when the Pe Details Changes in service-now (or) Element id changed in ' PE & Ehealth Audit' window. The permanent solution for this scenario is "Need to change the traffic Element id in 'PE & Ehealth Audit' window " (or) Element need to be rediscover in E-health server.</li>
+            <br>
+            <img src="../assets/Utilization_graph/utilization_graph_24.png" alt="Image_24" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_25.png" alt="Image_25" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <li>Note 5: For Some of the New links, we can also update the Correct pe ip and pe interface in 'PE & Ehealth Audit' window by using "Edit" Option. Once the pe details updated in  " PE & Ehealth Audit " window then graph will starts to poll in Aakaash portal automatically, eventhough pe interface not available in service-now.</li>
+        </ul>
+        <table>
+            <th>Infratools Team, NCS Support</th>
+            <tr>
+                <td>Infratools.support@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>ncs.support@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact No.</th>
+            <tr>
+                <td>pushparaj.srinivasan@sifycorp.com / 8015047478</td>
+            </tr>
+            <tr>
+                <td>elayaraja.thirumal@sifycorp.com / 9940952498</td>
+            </tr>
+            <tr>
+                <td>satheesh.narayanan@sifycorp.com / 8825567121</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Sify-Ipnoc, Netops</th>
+            <tr>
+                <td>netops@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>GNOCNetops@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact No</th>
+            <tr>
+                <td>jayashree.lakshmi@sifycorp.com / 9123599163</td>
+            </tr>
+            <tr>
+                <td>ajay.adhithya@sifycorp.com / 9442188549</td>
+            </tr>
+            <tr>
+                <td>manikandan.arumugam@sifycorp.com / 9047584075</td>
+            </tr>
+            <tr>
+                <td>hariharan.manikandan@sifycorp.com / 9585009481</td>
+            </tr>
+            <tr>
+                <td>sharulatha.asaithambi@sifycorp.com / 7397578070</td>
+            </tr>
+        </table>
+        <br>
+        <b>corporate_provisioning@sifycorp.com</b>
+        <br>
+        <table>
+            <th>Contact No</th>
+            <tr>
+                <td>malathi.suresh@sifycorp.com / 8825905788</td>
+            </tr>
+            <tr>
+                <td>rajeshkumar.ponnusamy@sifycorp.com / 7810053493</td>
+            </tr>
+            <tr>
+                <td>gobinath.raju@sifycorp.com / 9003300801</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="accordion">Graph not Polling in Aakaash portal 1.1</button>
+    <div class="panel">
+        <b>Graph not Polling in Aakaash portal:</b>
+        <br>
+        <p>
+            Tools: Service-Now,Putty, E-health Server, Fusion, Telco PE & E-health Audit Window
+        </p>
+        <p>
+            Device Pe Details changes / Not Updated Live device pe ip and pe interface in 'Telco PE & Ehealth Audit' Window.
+        </p>
+        <b>Process : -</b>
+        <ul style="list-style-type: none;">
+            <li>Step 1: Firstly, we need to do the cross verification whether the Device Live Pe Ip and Pe Interface details of given link are available in Service-now or not.</li>
+            <li>Step 2:
+                <ul style="list-style-type: none;">
+                    <li>Case (1)  If only pe ip is available in service now tool, then we need to use putty application to fetch the correct Pe Interface and its status. After knowing the correct pe interface we should go and check the graph polling in E-health server. If Graph is not polling in E-health (Front End) server, then we need to drop a mail to Netops Team else we need to drop a mail to Infratools Team</li>
+                    <li>Case (2)  If Pe Ip & Pe Interface details are avaialble in service now which are Incorrect (I.e, We can come to know pe details are Incorrect after checking in Putty Application Only ), then we need to take correct pe details from Fusion( Active Directory ). After taking correct pe details from Fusion we should go and check the graph polling in E-health server. If Graph is not polling in E-health (Front End) server, then we need to drop a mail to Netops Team else we need to drop a mail to Infratools Team</li>
+                    <li>Case (3)  If Live Pe Ip & Pe Interface details are not avaialble in service-now, then we need to take correct pe details from Fusion( Active Directory ) and should update in 'Telco PE & Ehealth Audit' Window. so that graph is enabled polling in Aakaash portal Automatically eventhough pe Ip and Pe Interface for the given link is not available in service now.</li>
+                </ul>
+            </li>
+            <li>Step 3: Once the correct Pe Ip & Pe Interface updated in service now by Infratools team, then graph will starts to poll in service now tool and Aakaash portal Automatically.</li>
+            <li>Step 4: I have Explained the procedure in another article for finding the Correct pe details of given link id.</li>
+        </ul>
+    </div>
+
+    <button class="accordion"> Graph not polling in Aakaash portal 1.2 </button>
+    <div class="panel">
+        <b>Need to move the Traffic from duplicate Element Id to the Element id ( on which graph is polling properly ) within the Same E-health Ip Server. (i.e, we should use the " PE & Ehealth Audit " Window to change the Traffic to element ID ( on which graph is polling properly ). Also, final step is to drop a mail to Netops Team to retire the Duplicate Element ID from the same server.</b>
+        <br><br>
+        <p>Tools: Service-Now,Putty,Fusion,E-health server,PE & Ehealth Audit Window</p>
+        <br>
+        <p>Process :-</p>
+        <ul style="list-style-type: none;">
+            <li>Step 1: Need to check Graph polling in service now by clicking on Network Pe Interface. If not polling need to follow step:2</li>
+            <li>Step 2: Need to check the Interface Status in Putty Application using below commands in the following manner.</li>
+            <br>
+            <p>
+                Login as : sifyvpnuser
+                <br>
+                Password : securesify    
+            </p>
+            <br>
+            <p>
+                ssh Emp_Id@Pe Ip &#8594; we can able to login to customer device pe ip remotely using this command<br>
+                sh run int Pe Interface &#8594; This command is useful to check the running interface on the given link<br>
+                sh int des | i Link id &#8594; we can able to check the Interface status of given link using this command<br>
+                sh int Pe Interface | i rate &#8594; This command is used to check the traffic Existence on the given link<br>    
+            </p>
+            <br>
+            <li>Step 3: If we observe the given link is having traffic after step-2, then only we have to go and check in E-health server</li>
+            <li>Step 4: First of all , we need to login Front End server by using the following E-health Ip.</li>
+            <br>
+            <p>E-health Ip [Front End] -- >> 100.65.235.194</p>
+            <br>
+            <li>Step 5: Then we need to give Pe Ip & Pe Interface as an Inputs in E-health Ip [Front End], and click on "Go" Button </li>
+            <li>Step 6: it will takes few seconds/minutes to reflect the element ids after clicking on "Go" Button.</li>
+            <li>Step 7: Need to give right click on Selected Older Element Id's with Mouse and then select "At a Glance" option to check the graph polling.</li>
+            <li>Step 8: After step-7, If 2 element id's reflecting in same E-health FE ( Front End ) server ( i.e, One Element id with "NO DATA" and other element with "Graphical Data").Then we should take a snapshot of Element ID with "NO DATA" and send it to the Netops Team along with Link id, Pe Ip and Pe Interface to retire the Duplicate Element ID(means ElementID with "NO DATA") in E-health server. Also, we need to move the traffic from Duplicate Element id to the Element Id with "Graphical Data" in  PE & Ehealth Audit Window.</li>
+            <li>Step 9: Once we received response from Netops Team, then we need to send a mail to customer by giving RCA as"Duplicate Elements Existed in E-health server" along with Screenshots of Link Utilization Graph ( from Aakaash portal). </li>
+            <img src="../assets/Utilization_graph/utilization_graph_26.png" alt="Image_26" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_27.png" alt="Image_27" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_28.png" alt="Image_28" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_29.png" alt="Image_29" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+        </ul>
+        <p>Note: Above images represents the process of moving the traffic from One Element Id to other Element Id. Once the Element id has been changed in  "PE & Ehealth Audit" Window, then same changes will reflect in Service-now and Aakaash portal.</p>
+        <br>
+        <table>
+            <th>Sify-Ipnoc, Netops </th>
+            <tr>
+                <td>netops@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>GNOCNetops@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>jayashree.lakshmi@sifycorp.com / 9123599163</td>
+            </tr>
+            <tr>
+                <td>ajay.adhithya@sifycorp.com / 9442188549</td>
+            </tr>
+            <tr>
+                <td>manikandan.arumugam@sifycorp.com / 9047584075</td>
+            </tr>
+            <tr>
+                <td>hariharan.manikandan@sifycorp.com / 9585009481</td>
+            </tr>
+            <tr>
+                <td>sharulatha.asaithambi@sifycorp.com / 7397578070</td>
+            </tr>
+        </table>
+    </div>                     
+    <button class="accordion">Graph not polling in Aakaash portal - Element Id need to be discovered in E-health server</button>
+    <div class="panel">
+        <b>Graph not polling in Aakaash portal - Element Id need to be discovered in E-health server</b>
+        <br><br>
+        <p>Tools: Service-Now,Putty,Fusion </p>
+        <br>
+        <p>Process :-</p>
+        <ul style="list-style-type: none;">
+            <li>Step 1: Need to check Graph polling in service now by clicking on Network Pe Interface. If not polling need to follow</li>
+            <li>Step 2: Need to check the Interface Status in Putty Application using below commands in the following manner.</li>
+            <br>
+            <p>
+                Login as : sifyvpnuser
+                <br>
+                Password : securesify    
+            </p>
+            <br>
+            <p>
+                ssh Emp_Id@Pe Ip &#8594; we can able to login to customer device pe ip remotely using this command 
+                sh run int Pe Interface &#8594; This command is useful to check the running interface on the given link 
+                sh int des | i Link id &#8594; we can able to check the Interface status of given link using this command 
+                sh int Pe Interface | i rate &#8594; This command is used to check the traffic Existence on the given link 
+            </p>
+            <br>
+            <li>Step 3: If we observe the given link is having traffic after step-2, then only we have to go and check in E-health server</li>
+            <li>Step 4: First of all, we need to login Front End server by using the following E-health Ip.</li>
+            <br>
+            <p>E-health Ip [Front End] &#8594; 100.65.235.194</p>
+            <br>
+            <li>Step 5: Then we need to give Pe Ip & Pe Interface as an Inputs in E-health Ip [Front End], and click on "Go" Button</li>
+            <li>Step 6: it will takes few seconds/minutes to reflect the element ids after clicking on "Go" Button.</li>
+            <li>Step 7: After step-6, If no element id is reflecting in E-health FE ( Front End ) server (i.e, NO DATA ), then we should take a snapshot and send it to the Netops Team along with Link id, Pe Ip and Pe Interface and Current Traffic Logs.</li>
+            <li>Step 8: Once the element id is discovered by Netops team, we need to check again in 'service now' regarding Graph polling.</li>
+            <li>Step 9: If we observe that graph is polling in service now ( by clicking on " Pe Interface " ), then same will be enabled in Aakaash portal Automatically.</li>
+            <li>Step 10: We have to login to Aakaash portal with customer credentials and then take screenshot of graph polling for the given link id and send it to the customer.</li>
+            <img src="../assets/Utilization_graph/utilization_graph_30.png" alt="Image_30" style="float: none; height: 45% ; width: 45%;">
+        </ul>
+        <table>
+            <th>Sify-Ipnoc, Netops</th>
+            <tr>
+                <td>netops@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>GNOCNetops@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>jayashree.lakshmi@sifycorp.com / 9123599163</td>
+            </tr>
+            <tr>
+                <td>ajay.adhithya@sifycorp.com / 9442188549</td>
+            </tr>
+            <tr>
+                <td>manikandan.arumugam@sifycorp.com / 9047584075</td>
+            </tr>
+            <tr>
+                <td>hariharan.manikandan@sifycorp.com / 9585009481</td>
+            </tr>
+            <tr>
+                <td>sharulatha.asaithambi@sifycorp.com / 7397578070</td>
+            </tr>
+        </table>
+    </div> 
+
+    <button class="accordion">Graph not Polling in Aakaash portal - Element ID need to be Rediscover in E-Health</button>
+    <div class="panel">
+        <p>Tools: Service-Now,Putty, E-health</p>
+        <br>
+        <b>Element ID need to be Rediscover in E-Health</b>
+        <br>
+        <ul style="list-style-type: none;">
+            <li>Step 1 : Need to check Graph polling in service now. If not polling need to follow step-2</li> 
+            <li>Step 2 : Need to check the Interface Status in Putty Application using below commands in the following manner.</li>
+            <p>
+                Login as : sifyvpnuser
+                <br>
+                Password : securesify    
+            </p>
+            <br>
+            <p>
+                ssh Emp_Id@Pe Ip &#8594; we can able to login to customer device pe ip remotely using this command 
+                sh run int Pe Interface &#8594; This command is useful to check the running interface on the given link 
+                sh int des | i Link id &#8594; we can able to check the Interface status of given link using this command 
+                sh int Pe Interface | i rate &#8594; This command is used to check the traffic Existence on the given link 
+            </p>
+            <br>
+            <li>Step 3: If we observe the given link is having traffic after step-2, then only we have to go and check in E-health server</li>
+            <li>Step 4: First of all , we need to login Front End server by using the following E-health Ip.</li>
+            <br>
+            <p>E-health Ip [Front End] -- >> 100.65.235.194</p>
+            <br> 
+            <li>Step 5: Then we need to give Pe Ip & Pe Interface as an Inputs in E-health Ip [Front End], and click on submit Button</li>
+            <li>Step 6: it will takes few seconds/minutes to reflect the element ids after clicking on submit Button.</li>
+            <li>Step 7: Suppose, if 2 Element ids are existing on the given Pe Ip & Pe Interface, lets take Older Element Id based on Creation time.</li>
+            <li>Step 8: Need to give right click on Selected Older Element Id with Mouse and then select "At a Glance" option to check the graph polling.</li>
+            <li>Step 9: If "no data" is Available then we should take a snapshot and send it to the Netops Team along with Link id, Pe Ip and Pe Interface</li>
+            <li>Step 10: Once the element id is rediscovered by Netops team, we need to check again in 'service now' regarding Graph polling.</li>
+            <li>Step 11: If we observe that graph is polling in service now ( by clicking on " Pe Interface " ), then same will be enabled in Aakaash portal Automatically.</li>
+            <li>Step 12: We have to login to Aakaash portal with customer credentials and then take screenshot of graph polling for the given link id and send it to the customer.</li>
+        </ul>
+        <table>
+            <th>Sify-Ipnoc, Netops</th>
+            <tr>
+                <td>netops@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>GNOCNetops@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>jayashree.lakshmi@sifycorp.com / 9123599163</td>
+            </tr>
+            <tr>
+                <td>ajay.adhithya@sifycorp.com / 9442188549</td>
+            </tr>
+            <tr>
+                <td>manikandan.arumugam@sifycorp.com / 9047584075</td>
+            </tr>
+            <tr>
+                <td>hariharan.manikandan@sifycorp.com / 9585009481</td>
+            </tr>
+            <tr>
+                <td>sharulatha.asaithambi@sifycorp.com / 7397578070</td>
+            </tr>
+        </table>
+    </div> 
+
+    <button class="accordion">Need to map All devices/ Links in Aakaash portal under Reports Module if any missed</button>
+    <div class="panel">
+        <p>Tools: Aakaash portal, Ioni Portal ( NMS ), Fusion</p>
+        <br>
+        <p>Links will  be mapped in Aakaash portal by Infratools Team based on Link ( Current ) Status in Fusion</p>
+        <ul style="list-style-type: none;">
+            <li>Step 1: First of all, we need to go and check the link status in Fusion which is shown in the below Image. </li>
+            <img src="../assets/Utilization_graph/utilization_graph_31.png" alt="Image_31" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <img src="../assets/Utilization_graph/utilization_graph_32.png" alt="Image_32" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <li>Step 2: As shown in the above Image-2, we should give the link id in the appropriate column, and then we need to check the Link status by using the trial and error Concept and then click on the ( Underlined ) link id ( Highlighted in Red colour ).  After clicking on Underlined link id then new window will be opened, from here  we can able to see the Recent orders  placed on the link id by the customer (i.e, Upgradation, Shifting the link, Disconnecting etc.,). </li>
+            <li>After Step-2, if we noticed any recent order placed on the given link id (in the New Window )  then we need to consider the link status as per Recent Order only.  </li>
+            <li>Note: - If we noticed that link status of given link id is  " Open / Closed / Temporary Disconnection "  then that link id will be onboarded on Ioni portal ( NMS ) by CPE Team</li>
+            <li>Step 3: Once the given link id is configured in Ioni portal, then we need to drop a mail to Infratools team to map/ Update  the given link id in Aakaash portal under (Performance > Reports > All Assets > Links / Services Icon)  (Performance > Reports > All Assets > Links / Services Icon)    </li>
+            <li>As per Step-3, If the given link id is of Managed Type then it will be mapped in Aakaash portal under Services Icon else ( i.e, If the given link id is of Unmanaged Type ) then it will be mapped in Aakaash portal under Links Icon. </li>
+            <li>
+                Note: As per recent update from CSAT Team, Links will be available/ Mapped on Aakaash portal for all the customers only when the Link Status are in the Following States Only.
+                <br>
+                OPEN, CLOSED, TEMPORARY DISCONNECTION
+            </li>
+            <li>Step 4: As of now Helpdesk don't have access to check the Link is configured in Ioni portal so, if we want to know the link is onboarded on Ioni portal, then we should drop a mail to Gio_ASG Team.</li>
+            <li>Step 5: If Link is not configured in Ioni portal , then again we need to drop a mail to CPE Team else we need to drop a mail to Infratools for mapping the given link id on Aakaash portal.</li>
+            <li>Step 6: Infratools team will map the given link id in Aakaash portal based on Client Name / Client Id in Ioni portal only.</li>
+            <li>Step 7: If the link status of given link id is in "Non-Movable Link / Permanent Disconnection" then that link never be  mapped in Aakaash portal, and also we need to drop a mail to customer to check with your Sify Account Manager /  BRM to change the Link status.</li>
+            <img src="../assets/Utilization_graph/utilization_graph_33.png" alt="Image_33" style="float: none; height: 45% ; width: 45%;">
+        </ul>
+        <b>gio_asg@sifycorp.com</b>
+        <br><br>
+        <table>
+            <th>Infratools Team, NCS Support</th>
+            <tr>
+                <td>Infratools.support@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>ncs.support@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>pushparaj.srinivasan@sifycorp.com / 8015047478</td>
+            </tr>
+            <tr>
+                <td>elayaraja.thirumal@sifycorp.com / 9940952498</td>
+            </tr>
+            <tr>
+                <td>satheesh.narayanan@sifycorp.com / 8825567121</td>
+            </tr>
+            <tr>
+                <td>jaiveer.arvinder@sifycorp.com / 8872736119</td>
+            </tr>
+            <tr>
+                <td>karthik.nagarajan@sifycorp.com / 9176302020</td>
+            </tr>
+            <tr>
+                <td>nivedha.sivakumar@sifycorp.com / 7397417891</td>
+            </tr>
+        </table>        
+    </div>
+
+    <button class="accordion">Old Graph Not Available in Aakaash portal due to Link Status -Temporary / Permanent Disconnection</button>
+    <div class="panel">
+        <p>
+            Tools: Service-Now,E-health, Google Chrome / Mozilla Firefox
+            <br><br>
+            Need to take the reports from any one of Web Browser's (Like Google Chrome / Mozilla Firefox/ Internet Explorer ) with the help of Oldest E- health server Ip
+        </p>
+        <ul style="list-style-type: none;">
+            <li>Step 1: First of all, we need to take Active / Inactive Pe Ip and Pe Interface for the given link id from Service now or Respective Assignment Group ( sot_west or sot_north, sot_south, sot_east ).</li>
+            <li>Step 2: After step-2, then only we have to go and check in E-health server</li>
+            <li>Step 3: First of all , we need to login Front End server by using the following E-health Ip. E-health Ip [Front End] -- >> 100.65.235.194</li>
+            <li>Step 4: Then we need to give Pe Ip & Pe Interface as an Inputs in E-health Ip [Front End], and click on submit Button</li>
+            <li>Step 5: it will takes few seconds/minutes to reflect the element ids after clicking on submit Button.</li>
+            <li>Step 6: Suppose, if 2 Element ids are existing on the given Pe Ip & Pe Interface, lets take E- health Ip with respect to older Element ID based on Creation time. [ * we can able to see the element name  by giving double click on Element Id (In E-health server ) with Mouse pointer.</li>
+            <li>Step 7: Then, we should open Mozilla Firefox and give E-health Ip as a URL in the search Box and then press the Submit Button.</li>
+            <li>Step 8: After step- 7, we have to provide username and password in the next Pop-Up Window (I.e, Username : helpdesk ; Password : h#lpd#sk) and then click on "Okay" button</li>
+            <li>Step 9: Please follow the below way to download the graph report from Mozilla Firefox Run Reports    Trend  &#8594;  Standard   &#8594;  Need to give the Element name in "Filter the element list box" and choose Element Type as "LAN/WAN" and then choose " Bits In & Bits Out " by using ctrl + Mouse Pointer  under select ( 1-10 Variables ).</li>
+            <li>Step 10: Finally, we need to pick the specific range of dates under "Select Time Range" and then click on "Run in New Window". A new Window will be created, From here we can able to downlaod the report click on PDF Icon and send the Usage Report to the customer.</li>
+            <li>Step 11: For your Better Understanding, I am sharing Screenshots.Please find below.</li>
+            <img src="../assets/Utilization_graph/utilization_graph_34.png" alt="Image_34" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_35.png" alt="Image_35" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_36.png" alt="Image_36" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_37.png" alt="Image_37" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_38.png" alt="Image_38" style="float: none; height: 35% ; width: 35%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_39.png" alt="Image_39" style="float: none; height: 45% ; width: 45%;">
+        </ul>
+    </div>
+
+    <button class="accordion">SNMP Walk Issue</button>
+    <div class="panel">
+        <p>
+            Tools: CA Spectrum, E-health,Service-Now, Aakaash
+            <br><br>
+            Need to drop a mail to NESG Team
+        </p>
+        <br>
+        <b>Procedure :</b>
+        <br>
+        <ul style="list-style-type: none;">
+            <li>Step 1: We should follow the process which is mentioned in the Graph 1.1.7(iii) regarding Element Redicover process in E-health server</li>
+            <li>Step 2: After step -1, if we observed "SNMP Walk Error" then we should drop a mail to Nesg Team to fix the SNMP Walk Issue.</li>
+            <img src="../assets/Utilization_graph/utilization_graph_40.png" alt="Image_40" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <li>Image: representing the SNMP Walk Error</li>
+            <li>Support Team: nesg.syseng@sifycorp.com</li>
+        </ul>            
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>sirisha.venkateswarlu@sifycorp.com / 7530093819</td>
+            </tr>
+            <tr>
+                <td>sivaranjini.balaguru@sifycorp.com / 8870834021</td>
+            </tr>
+        </table>
+    </div> 
+
+    <button class="accordion">Unable to download the Availability / SLA / Downtime / Uptime Report</button>
+    <div class="panel">
+        <p>
+            Tools: Aakaash Portal
+            <br><br>
+            Need to drop a mail to Infratools team  when the SLA/ UPTIME/DOWNTIME report is not available or incorrect in Aakaash portal, Also Link status of mentioned link should be in the following status ( Open/ Closed/ Disconnection ).
+        </p>
+        <br>
+        <b>Procedure :</b>
+        <br>
+        <ul style="list-style-type: none;">
+            <li>Step 1: First of all, we need to do the cross-verification with the reported Link  ( regarding SLA/ UPTIME/DOWNTIME report is not available or incorrect ) given by the customer (in Mail/ Call) in Aakaash portal.</li>
+            <li>Step 2: After login to Aakaash portal, we need to check the SLA/ Uptime/ Downtime report by following the below steps.</li>
+            <li>Login &#8594; Dashboard &#8594; Availability &#8594; Ticket Based SLA &#8594; Filter with the mentioned Link id and Month &#8594; Click on the required format (Excel/ PDF) so that we can able to see the Uptime/ SLA/ Downtime details of mentioned link id.</li>
+            <li>Step 3: After step-2 if the Availability/SLA/Uptime report is not available or incorrect for the mentioned link in Aakaash portal, then we need to reach Infratools team.</li>
+            <li>Step 4: After step-2, If we are able to see the availability report in Aakash portal then we need to provide the Assistance for the customer through call / Mail.</li>
+            <img src="../assets/Utilization_graph/utilization_graph_41.png" alt="Image_41" style="float: none; height: 45% ; width: 45%;">
+            <li>Note: Current Month SLA/Uptime/Downtime Report will be generated (in Aakaash portal) and also updated in the 8th of following month.</li>
+        </ul>
+        <b>Support Team:</b>
+        <br><br>
+        <table>
+            <th>Infratools Team, NCS Support</th>
+            <tr>
+                <td>Infratools.support@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>ncs.support@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>pushparaj.srinivasan@sifycorp.com / 8015047478</td>
+            </tr>
+            <tr>
+                <td>elayaraja.thirumal@sifycorp.com / 9940952498</td>
+            </tr>
+            <tr>
+                <td>satheesh.narayanan@sifycorp.com / 8825567121</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="accordion">Unable to see the cases which are raised within 90 days</button>
+    <div class="panel">
+        <b>Unable to see the cases which are raised within 90 days.(under Service Management > Case List / Service Request)</b>
+        <br><br>
+        <p>
+            Tools: Aakaash Portal
+            <br>
+            Need to drop a mail to Infratools team when we are unable to see the Dockets in Aakaash portal, depends upon the following link status ( Open/ Closed/ Disconnection ) of mentioned link
+        </p>
+        <ul style="list-style-type: none;">
+            <li>Step 1 : First of all, we need to do the cross-verification with the reported Case ( which is not visible ) given by the customer (in Mail/ Call) in Aakaash portal.</li>
+            <li>Step 2 : After login to Aakaash portal, we need to check the docket visibility  by following the below steps.  Login &#8594; Dashboard &#8594; Service Management &#8594; Case List &#8594; Filter with the mentioned Link id and also date  &#8594;  By clicking on Case id, we can able to see the case details and History tickets of mentioned link id.</li>
+            <li>Step 3 : After step-2 if we are unable to see the Docket mentioned by customer ( Either in call / Mail ) eventhough if mentioned link is in the following link status ( Open/ Closed/ Temporary Disconnection ), we need to drop a mail to Infratool team to update the Docket in Aakaash portal under Case List.</li>
+            <li>Step 4 : After Step-2, If we are able to see the docket in Aakash portal then we need to provide the Assistance for the customer through call / Mail.</li>
+            <img src="../assets/Utilization_graph/utilization_graph_42.png" alt="Image_42" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <li>Note:
+                <ul style="list-style-type: none;">
+                    <li>1. If any issue is not resolved on Utilization Graph Related / Self Care service portal related instantly then we should drop a mail to Internal team. Also, we need to give the acknowledgement to the customer through mail.</li>
+                    <li>2. If we are working on any graph / Aakaash portal related then we should mention the progressive updates in Additional Comments under (Service-Now &#8594; Case &#8594; Activity ) also we should drop a Acknowledgement mail to customer.</li>
+                    <li>3. Customer is unable to see the cases which are raised before 90 days from Now.</li>
+                </ul>
+            </li>
+        </ul>
+        <table>
+            <th>Infratools Team, NCS Support</th>
+            <tr>
+                <td>Infratools.support@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>ncs.support@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>pushparaj.srinivasan@sifycorp.com / 8015047478</td>
+            </tr>
+            <tr>
+                <td>elayaraja.thirumal@sifycorp.com / 9940952498</td>
+            </tr>
+            <tr>
+                <td>satheesh.narayanan@sifycorp.com / 8825567121</td>
+            </tr>
+        </table>       
+    </div> 
+
+    <button class="accordion">Unable to update Contact details in Akaash portal. (i.e, for Ticket Alerts, Change Management Activity, Billing Related )</button>
+    <div class="panel">
+        <p>
+            Tools: Aakaash portal,service Now, Ioni Portal
+            <br><br>
+            Need to drop a mail to Icu_Support Team
+        </p>
+        <ul style="list-style-type: none;">
+            <li>Step 1: If Customer has not mentioned specifically in the mail regarding the purpose of Changing the contact Number (for Ticket Alerts / CM Notification / Billing Related ), then we need to drop a mail to customer by asking the purpose of changing the contact Number. </li>
+            <li>Step 2: After Step - 1, we need to drop a mail to Icu_Support team to update the given Contact details in Aakaash portal as per customer's requirement. </li>
+        </ul>
+        <b>Support Team: icu_support@sifycorp.com</b>
+        <br><br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>rajasree.durairaj@sifycorp.com / 7708384595</td>
+            </tr>
+        </table>
+    </div> 
+
+    <button class="accordion">Updating All Assets of mentioned customer in Aakaash portal</button>
+    <div class="panel">
+        <p>
+            Tool: Fusion, Ioni
+            <br><br>
+            Links need to be configured in Ioni portal ( NMS )
+        </p>
+        <ul style="list-style-type: none;">
+            <li>Step 1: Firstly, we need to check that Links are reflecting in Fusion by filtering with customer name. Also link should be configured in Fusion.</li>
+            <li>Step 2: In Fusion, If we can able to see the PNMM Part code for the given link  and  that link is not reflecting / Configured on Ioni Portal. Then we should drop a mail to Corporate Provisioning Team (To Onboard the links in Ioni)</li>
+            <br>
+            <li>Note (1) If Customer was taken Router from sify then only that Router Link will be Added in Aakaash portal Under "My Assets and also Performance > Reports > All Assets > Devices " Modules. So that customer can track/Monitor the Router Link Status (UP/DOWN).</li>
+            <li>Note (2) Links which are not having PNMM/PNMR (Code/tagging) in fusion so it will not reflect in ioni and Aakash portal( Under " My Assets and also Performance > Reports > All Assets > Devices " module ).</li>
+            <li>Note (3) Process to Identify the Part Codes with respective customer.</li>
+            <li>Customer is having Managed Links &#8594; then It is representing with the symbol ""PNMM""</li>
+            <li>Customer is having Un-Managed Links &#8594; then It is representing with the symbol ""PNMR"""</li>
+            <br>
+            <li>Step 3 : Only Managed Links have PNMM Part Code  in Fusion, After onboarding the links ( Managed ) on Ioni Portal by CPE Team, then Customer Assets will be reflecting in Aakaash portal Under "My Assets and also Performance > Reports > All Assets > Devices " Modules.</li>
+            <br>
+            <li>Note (4) Whatever the customer took the routers from the sify for monitoring  link's status (UP/DOWN), that Router links only mapped into Aakaash portal Under "My Assets and also Performance > Reports > All Assets > Devices " Modules.</li>
+            <li>Note (5) : If Customer has not taken routers from sify, then that links will be mapped in Aakaash portal (Under Links/ Services icon based on Type of link (Managed / Unmanaged ) ) for monitoring the Real Time Graph reports only. For Example, If we take one customer assets.   i.e, admin_411663 ( INFRASOFT TECH INDIA LIMITIED-CONNECTIVITY )</li>
+            <li>For the above mentioned customer, 14 out of total 33 Links are of Managed  Type, so 14 links have PNMM Part code so only 14 links will be mapped in Aakaash portal under "My Assets / Devices Icon"</li>
+            <li>Kindly find the below screenshots for your better understanding purpose. ( KEY POINT : - Ioni Portal Related &#8594; contact Gio_asg Team ; Aakaash portal Issue with Assets Mapping &#8594; contact Infratools team; Fusion Related &#8594; Contact CPE Team )</li>
+            <img src="../assets/Utilization_graph/utilization_graph_43.png" alt="Image_43" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_44.png" alt="Image_44" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_45.png" alt="Image_45" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_46.png" alt="Image_46" style="float: none; height: 45% ; width: 45%;">
+        </ul>
+        <table>
+            <tr>
+                <td style="background-color: white;">corporate_provisioning@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>gio_asg@sifycorp.com</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>malathi.suresh@sifycorp.com / 8825905788</td>
+            </tr>
+            <tr>
+                <td>rajeshkumar.ponnusamy@sifycorp.com / 7810053493</td>
+            </tr>
+            <tr>
+                <td>gobinath.raju@sifycorp.com / 9003300801</td>
+            </tr>
+            <tr>
+                <td>jaiveer.arvinder@sifycorp.com / 8872736119</td>
+            </tr>
+            <tr>
+                <td>karthik.nagarajan@sifycorp.com / 9176302020</td>
+            </tr>
+            <tr>
+                <td>nivedha.sivakumar@sifycorp.com / 7397417891</td>
+            </tr>
+        </table>
+    </div> 
+
+    <button class="accordion">Upgraded BW details not updated in Aakaash Portal and also graph is not polling accordingly</button>
+    <div class="panel">
+        <p>
+            Tools: Ioni Portal
+            <br>
+            Need to update the Upgraded BW details in Ioni portal, so that graph will poll in Aakaash portal accordingly
+        </p>
+        <br>
+        <b>Process :-</b>
+        <br><br>
+        <ul style="list-style-type: none;">
+            <li>Step 1: First of all, we need to login into Aakaash portal with default credentials (or) Updated Credentials after password reset.</li>
+            <li>Step 2: If we are unable to see the Upgraded BW of given link id in Aakaash portal under "Performance > Reports > All Assets > Links / Services Icon ", then we should go and update the Upgraded BW of given Link id in Ioni Portal. Once the Upgraded BW details has been updated in Ioni portal, same will be reflect in Aakaash portal after 4-5 Hours. Also graph will be polled as per Upgraded BW.</li>
+            <li>
+                Step 3: We need to use the following Url for login to Ioni portal. As of now Mounika credentials [ Not Mentioning here due to security reasons ] using for login to Ioni portal. Also, I have shared the Procedure in terms of Images -1,2,3,4,5,6,7 for updating the New BW details in Ioni portal.
+                <br><br>
+                <a href="http://ioninx.sify.net/">http://ioninx.sify.net/</a>
+            </li>
+            <img src="../assets/Utilization_graph/utilization_graph_47.png" alt="Image_47" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_48.png" alt="Image_48" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_49.png" alt="Image_49" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_50.png" alt="Image_50" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_51.png" alt="Image_51" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_52.png" alt="Image_52" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <img src="../assets/Utilization_graph/utilization_graph_53.png" alt="Image_53" style="float: none; height: 45% ; width: 45%;">
+            <br><br>
+            <li>Step 4: After step-2,3 if upgraded BW details not updated in Aakaash portal and also graph is not polling as per Upgraded BW. Then we should drop a mail to Gio_Asg Team along with screenshots of Existing BW details in Aakaash portal.</li>
+            <li>Note:  We can able to modify the BW details of Managed lInks( Which are onboarded in Ioni portal ) Only.</li>
+        </ul>
+        <b>Support Team: gio_asg@sifycorp.com</b>
+        <br><br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>jaiveer.arvinder@sifycorp.com / 8872736119</td>
+            </tr>
+            <tr>
+                <td>karthik.nagarajan@sifycorp.com / 9176302020</td>
+            </tr>
+            <tr>
+                <td>nivedha.sivakumar@sifycorp.com / 7397417891</td>
+            </tr>
+        </table>
+    </div> 
+
+    <button class="accordion">Versa Analytics portal Issue</button>
+    <div class="panel">
+        <p>
+            Tools: Versa Analytics portal
+            <br>
+            Need to drop a mail to Gio-Asg Team and Network Engineering Team
+        </p>
+        <br>
+        <p>
+            If we received mail / Call from customer on "Versa-Analytics portal" related then simply we need to drop a mail to Gio-Asg Team and Nw Eng Team. They will check and fix the customer reported issue
+        </p>
+        <br>
+        <b>Support Team:</b>
+        <br><br>
+        <table>
+            <tr>
+                <td style="background-color: white;">gio_asg@sifycorp.com (ASG Team)</td>
+            </tr>
+            <tr>
+                <td>nesg@sifycorp.com (Nw Eng Team)</td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <th>Contact Details</th>
+            <tr>
+                <td>jaiveer.arvinder@sifycorp.com / 8872736119</td>
+            </tr>
+            <tr>
+                <td>karthik.nagarajan@sifycorp.com / 9176302020</td>
+            </tr>
+            <tr>
+                <td>nivedha.sivakumar@sifycorp.com / 7397417891</td>
+            </tr>
+            <tr>
+                <td>jayachandran.sengappan@sifycorp.com / 8015751404</td>
+            </tr>
+            <tr>
+                <td>sakthivel.kannan@sifycorp.com / 9944551564</td>
+            </tr>
+            <tr>
+                <td>sivaranjini.balaguru@sifycorp.com / 8870834021</td>
+            </tr>
+        </table>
+    </div>
+
+   <!-- End of content section -->
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+    
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Livwire LMS</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/x-icon" href="../assets/sify_logo.png">
+</head>
+
+<body>
+    
+    <!-- Navigation bar -->
+    <div class="topnav">
+        <a class="active" href="../">Home</a>
+        <img src="../assets/sify_logo.png" alt="Sify_Technologies_Logo" width="100">
+    </div>
+
+    <div class="topic">
+        <h2>Livewire E-Learning Management System</h2>
+    </div>
+
+    <!-- End of navigation bar -->
+
+    <!-- Content section -->
+    <button class="accordion">Add an attribute in enterprise website</button>
+    <div class="panel">
+        <h4>An enterprise POC would request to add attributes such as a Vendor name, Location, Country in the enterprise website</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Navigate to <u>Administration</u> => <u>Attrtibutes list</u></li>
+                <li>Click on <u>Bulk attribute upload</u> and select the respective dropdown from <u>Element</u> and upload a spreadsheet as per the sample file</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/Add_an_attribute_in_enterprise_website_1.png" alt="Image1">
+        <img src="../assets/LMS/Add_an_attribute_in_enterprise_website_2.png" alt="Image2">
+    </div>
+
+    <button class="accordion">Assign special roles for the user</button>
+    <div class="panel">
+        <h4>An Enterprise POC requests Livewire support to assign a special role (Learner, Admin, Trainer, Course Admin) for a user</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Click on <u>User</u> => <u>User list</u>. Search for the respective user and select the user profile</li>
+                <li>Click on <u>Select action</u> => <u>Add Role</u></li>
+                <li>Click on the checkbox of respective role (requested by the enterprise) and click <u>Save</u> button</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/Assign_special_roles_for_the_user_1.png" alt="Image1">
+        <img src="../assets/LMS/Assign_special_roles_for_the_user_2.png" alt="Image2" style="height: 175px;">
+    </div>
+
+    <button class="accordion">Course creation on behalf of enterprise</button>
+    <div class="panel">
+        <h4>An enterprise POC or Sify developer team requests Livewire support to create new course and test it in staging environment</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Collect the necessary documents or course related details from the developer team or the enterprise POC</li>
+                <li>Login to the respective enterprise website with staging credentials for testing purpose</li>
+                <li>From the navigation bar, click on <u>Course</u> => <u>Course list</u> => <u>Create Course</u> and choose the type of course as shown in the below picture and enter the Title provided and click on <u>Save</u> button</li>
+                <li>From the Course List screen, select the respective course. Click on <u>Actions</u> => <u>Edit Course</u> from the bottom of the screen and fill in all the course related details</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/Course_creation_on_behalf_of_enterprise_1.png" alt="Image1">
+    </div>
+
+    <button class="accordion">Course enrolment (bulk)</button>
+    <div class="panel">
+        <h4>An enterprise POC requests to enroll one or more courses for a list of users</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Navigate to <u>Course</u> => <u>Bulk Enrollment</u> => <u>Bulk Enrollment</u> </li>
+                <li>From the next screen, Select Course / Curriculum from the <u>Element</u> dropdown and upload a spreadsheet as per the sample file</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/Course_enrolment_(bulk)_1.png" alt="Image1">
+        <img src="../assets/LMS/Course_enrolment_(bulk)_2.png" alt="Image2">
+    </div>
+
+    <button class="accordion">Course launch issue / error prompt (You can't launch same course again)</button>
+    <div class="panel">
+        <h4>An end user is unable to launch a course / gets an error prompt when launching a course</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Make sure to check with the user that he/she had allowed pop-ups / disabled any pop-up blocker extensions in the browser</li>
+                <li>Guide the user to clear browser cookies, cache memory, and relaunch the course again. Suggest user to try launching the course using a different browser</li>
+                <li>In some case, user might have already launched the course once and could be trying to launch another instance of the same course</li>
+                <li>Advise the user to check for any open window in his/her browser which must be closed to launch the course without any trouble</li>
+            </ul>
+            <br>
+        </p>
+    </div>
+
+    <button class="accordion">Course not visible after logging in for the first time</button>
+    <div class="panel">
+        <h4>An end user is logged in for the first time into his/her enterprise website and don’t happen to see any course enrolled under his/her account</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Collect the details necessary to make sure that the users had logged in to the correct enterprise website</li>
+                <li>Make sure to enroll the necessary courses for the respective user using the course enrollment or bulk enrollment steps</li>
+                <li>Write an email to the requested user confirming that we have enrolled the requested courses under his/her enterprise LMS account and request them to login to check for the same</li>
+            </ul>
+            <br>
+        </p>
+    </div>
+
+    <button class="accordion">Create dummy user and enroll course for testing</button>
+    <div class="panel">
+        <h4>An enterprise POC or Sify developer team requests Livewire support to create dummy users and sometimes enroll courses post creating users. This would be requested for internal use or testing purposes</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br><br>
+            Note: Creating dummy user is very much like creating a new user. However, we have to choose our own words to fill the mandatory fields
+            <br><br>
+            <ul style="list-style-type:circle">
+                USER CREATION:
+                <li>Login to the respective enterprise website with admin credentials <br>
+                    <ul style="list-style-type:square">
+                        <li>Ahli bank: <a href="https://sify.ahlibank.om">https://sify.ahlibank.om</a></li>
+                        <li>IIBF: <a href="https://iibf.sifylivewire.com">https://iibf.sifylivewire.com</a></li>
+                        <li>Indostar: <a href="https://indolearn.sifylivewire.com/localLogin">https://indolearn.sifylivewire.com/localLogin</a></li>
+                        <li>NetApp: <a href="https://netapp.sifylivewire.com">https://netapp.sifylivewire.com</a></li>
+                        <li>My academy: <a href="https://myacademylms.sify.net">https://myacademylms.sify.net</a></li>
+                        <li>Sify Partner: <a href="https://sifypartner.sifylivewire.com">https://sifypartner.sifylivewire.com</a></li></li>
+                    </ul>
+                <li>Hover the mouse over <u>User</u> from navigation bar and navigate to <u>User List</u></li>
+                <li>Click on <u>Create User</u>, fill in the mandatory fields and click <u>Save</u> to create a Dummy/New user</li>
+                <br>
+                COURSE ENROLLMENT:
+                    <ul style="list-style-type:disc">
+                        <li>Navigate to <u>Course</u> => <u>Course List</u> from the navigation bar</li>
+                        <li>Under <u>All Courses</u>, use the <u>Search</u> bar to search respective course(s) and click on them</li>
+                        <li>Click on <u>Actions</u> button from the bottom of the page and select <u>Curriculum or Course Enrollment</u> based on the Enterprise’s User Interface</li>
+                        <li>Click on the course(s) name and check all the check boxes (if available) and then click on <u>Enroll</u></li>
+                        <li>From the next screen, search and select the user(s) and click on <u>Enroll</u> to see if the course(s) successfully enrolls or is enrolled already</li>
+                    </ul>
+            </ul>
+        </p>
+    </div>
+
+    <button class="accordion">Enroll a specific course</button>
+    <div class="panel">
+        <h4>An enterprise POC requests to enroll one or more users in a specific course</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br><br>
+            Note: This is very similar to enrolling the course for a new or dummy user
+            <br><br>
+            <ul>
+                <li>Login to the respective enterprise website with staging credentials for testing purpose</li>
+                <li>Navigate to <u>Course</u> => <u>Course List</u> from the navigation bar</li>
+                <li>Under <u>All Courses</u>, use the <u>Search</u> bar to search respective course(s) and click on them</li>
+                <li>Click on <u>Actions</u> => <u>Curriculum or Course Enrollment</u> based on the Enterprise’s User Interface from the bottom of the page</li>
+                <li>Click on the course(s) name and check all the check boxes (if available) and then click on <u>Enroll</u></li>
+                <li>From the next screen, search and select the user(s) and click on <u>Enroll</u> to see if the course(s) successfully enrolls or is enrolled already</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/Enroll_a_specific_course_1.png" alt="Image1">
+        <img src="../assets/LMS/Enroll_a_specific_course_2.png" alt="Image2">
+    </div>
+
+    <button class="accordion">Escalation Matrix & Support Teams</button>
+    <div class="panel">
+        <h4>LMS escalation matrix to be reviewed on quarterly basis and signed off</h4>
+        <br>
+        <h3>Escalation Matrix</h3>
+        <br>
+        <table>
+            <tr>
+                <th>Level</th>
+                <th>Delay in response</th>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Contact number</th>
+                <th>Email ID</th>    
+            </tr>
+            <tr>
+                <td>Level 1</td>
+                <td>ETR + 1 hours</td>
+                <td>Mr. Dinagar V</td>
+                <td>Project Manager</td>
+                <td>97104 18482</td>
+                <td>venkatesan.dinagar@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>Level 2</td>
+                <td>ETR + 2 hours</td>
+                <td>Mr. Julian Dmonte</td>
+                <td>Operations Manager</td>
+                <td>79046 66508</td>
+                <td>julian.dmonte@sifycorp.com</td>
+            </tr>
+            <tr>
+                <td>Level 3</td>
+                <td>ETR + 3 hours</td>
+                <td>Mr. Raja Uppuluri Sekharam</td>
+                <td>DGM</td>
+                <td>99625 18664</td>
+                <td>raja.sekharam@sifycorp.com</td>
+            </tr>
+        </table>
+
+        <br>
+        <h3>Support Teams</h3>
+        <br>
+        <table>
+            <tr>
+                <th>Backend/Developer Team</th>
+                <th>Assignment Group</th>
+                <th>Service Request Type</th>
+                <th>Contact person</th>
+                <th>Reason</th>
+            </tr>
+            <tr>
+                <td>Portal Support Team</td>
+                <td>PORTAL_SUPPORT</td>
+                <td>SYSOPS Application Configuration</td>
+                <td>Narendiran K <br> kubandiran.narendiran@sifycorp.com</td>
+                <td>To get the file from server, to get the size of content, to execute the give command and get the results, update Certificates</td>
+            </tr>
+            <tr>
+                <td>Portal Support Team</td>
+                <td>PORTAL_SUPPORT</td>
+                <td>SYSOPS-FILE DEPLOYMENT</td>
+                <td>Chandrasekar M D <br> chandrasekar.deenadayalan@sifycorp.com</td>
+                <td>File deployment Request in Production instance or Server</td>
+            </tr>
+            <tr>
+                <td>DBA Team</td>
+                <td>L1 Database</td>
+                <td>Database Backup and Application Job</td>
+                <td>Narendiran K <br> kubandiran.narendiran@sifycorp.com</td>
+                <td>Issues related to database (Customer course details or status not reflecting, bulk data request and so on)</td>
+            </tr>
+            <tr>
+                <td>MITS Network</td>
+                <td>MS Network</td>
+                <td>PUBLIC IP Configuration</td>
+                <td>Narendiran K <br> kubandiran.narendiran@sifycorp.com</td>
+                <td>Port, VPN or Server related issues</td>
+            </tr>
+            <tr>
+                <td>AWS Operation Team</td>
+                <td>AWS OPERATIONS</td>
+                <td>AWS LB configuration</td>
+                <td>Narendiran K <br> kubandiran.narendiran@sifycorp.com</td>
+                <td>To get month wise reports on each domain, Certificate update, Enable or Disable servers</td>
+            </tr>
+            <tr>
+                <td>MITS Network</td>
+                <td>MS Network</td>
+                <td>FIREWALL POLICY ISSUE</td>
+                <td>Narendiran K <br> kubandiran.narendiran@sifycorp.com</td>
+                <td>Port opening in production Server</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="accordion">Extract report for queries related to courses & users</button>
+    <div class="panel">
+        <h4>An enterprise POC is unaware of running a report to extract course information, user information, etc.</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Navigate to <u>Reports</u> => <u>Reports catalog</u>. Avoid clicking on further options and click once again on <u>Reports</u> catalog to get the below list of options</li>
+                <li>Advise enterprise POC on the help they need with the report. Livewire Support technician may also extract and send across reports to the POC if requested</li>
+                <li><u>User Details</u> can be used to find the status of all the users in the system while <u>Training Detailed Report</u> can be used to find the progress of any course of the user(s)</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/Extract_report_for_queries_related_to_courses_&_users_1.png" alt="Image1">
+    </div>
+
+    <button class="accordion">Increase number of attempts for a course</button>
+    <div class="panel">
+        <h4>An end user encounters an error while launching the course, “You have exceeded maximum number of attempts”</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Double check the name of course(s) with the user and get an approval from enterprise POC to increase the maximum number of attempts for the respective course</li>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Click on <u>Course</u> => <u>Course list</u>, select the respective course. Under <u>Actions</u>, click on <u>Course enrolment</u></li>
+                <li>From the next screen, select the check box of the respective course(s) and click on <u>Enrolled List</u></li>
+                <li>Search for the respective user and check if the Remaining Attempts is 0 for that particular course</li>
+                <li>If <u>Remaining Attempts</u> is Zero(0), increase the <u>Total Attempts</u> by editing the <u>Attempts Update</u> and click on <u>Update</u> after adding the attempts</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/Increase_number_of_attempts_for_a_course_1.png" alt="Image1">
+        <img src="../assets/LMS/Increase_number_of_attempts_for_a_course_2.png" alt="Image2">
+        <img src="../assets/LMS/Increase_number_of_attempts_for_a_course_3.png" alt="Image3">
+    </div>
+
+    <button class="accordion">Invalid user credentials</button>
+    <div class="panel">
+        <h4>End user(s) of an enterprise may have paid for a course and would like to get their e-learning credentials or reset the password as they might have forgot the credentials</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Navigate to <u>User</u> => <u>User List</u>. Search for the active user and click on user profile</li>
+                <li>From the <u>Select Action</u> box, click on <u>Reset Password</u></li>
+                <li>Navigate to <u>Workflow</u> => <u>Event notification</u> => <u>Event notification</u> mail list and search for recent activity of the specific user and click on <u>View</u> option from the right side of the activity</li>
+                <li>Write an email to the user with the password that was reset </li>
+            </ul>
+            <br>
+        </p>
+    </div>
+
+    <button class="accordion">Mark a course as completed for the user</button>
+    <div class="panel">
+        <h4>An end user requests Livewire support to change the status (In progress/Completed) for a course. This usually happens when an end user completes the course, however; the status and course completion certificate will not reflect in production environment.</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Get an approval from the respective enterprise POC to proceed with the same</li>
+                <li>
+                    Post confirmation, raise a ticket to DBA support team with the below query,<br><br> 
+                    update ng_enrolment set completion_date='2020-10-17 17:35:46',assess_status='PASS',course_status_key='tco',score='90',attempts='1',parent_status='tco',parent_completion='2020-10-17 17:35:46' where user_id=249 and course_delivery_id=22;<br>
+                    update ng_course_launch_details set grade='90',`status`='tco',`attempt_no`='1' where userid=249 and delivery_id=22;<br>
+                    Host: livewireprodrds.ce824equxvjx.ap-south-1.rds.amazonaws.com<br>
+                    Database: tenant_netapp
+                </li>
+                <li>From the <u>Select Action</u> box, click on <u>Reset Password</u></li>
+                <li>Navigate to <u>Workflow</u> => <u>Event notification</u> => <u>Event notification</u> mail list and search for recent activity of the specific user and click on <u>View</u> option from the right side of the activity</li>
+                <li>Write an email to the user with the password that was reset </li>
+            </ul>
+            <br>
+        </p>
+    </div>
+
+    <button class="accordion">Unable to extract certificate for a course</button>
+    <div class="panel">
+        <h4>An end user is unaware of extracting a certificate from LMS website</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>1. Advise user to login to the enterprise website and navigate to <u>User</u> => <u>My Certificates</u></li>
+                <li>Click on <u>View</u> on the right side of the respective course and the user will be able to view the certificate</li>
+                <li>2. User can click on their profile icon at the top right corner of the enterprise website and select <u>Profile</u></li>
+                <li>Click on <u>Accomplishment</u> => <u>View</u> next to My Certificates</li>
+                <li>3. Click on <u>Details</u> button of the respective course under <u>Completed courses</u> tab from user account</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/Unable_to_extract_certificate_for_a_course_1.png" alt="Image1">
+        <img src="../assets/LMS/Unable_to_extract_certificate_for_a_course_2.png" alt="Image2">
+        <img src="../assets/LMS/Unable_to_extract_certificate_for_a_course_3.png" alt="Image3">
+        <img src="../assets/LMS/Unable_to_extract_certificate_for_a_course_4.png" alt="Image4">
+    </div>
+
+    <button class="accordion">Unable to extract report due to an error</button>
+    <div class="panel">
+        <h4>An enterprise POC encounters an error while trying to run a report</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Navigate to the page where the error is encountered</li>
+                <li>Take a snap of the error and forward it to the development team</li>
+                <li>Raise a ticket as per development team request. Extract the database of the enterprise and let the development team work on it</li>
+            </ul>
+            <br>
+        </p>
+    </div>
+
+    <button class="accordion">Unable to login to Active Directory</button>
+    <div class="panel">
+        <h4>An end user would be unable to login to their respective LMS website</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Indostar enterprise has an Active Directory method using Ramco for their users to login to LMS. At times, users may encounter login issues due to AD</li>
+                <li>Provide users with the direct login link for Indostar <a href="https://indolearn.sifylivewire.com">https://indolearn.sifylivewire.com</a></li>
+                <li>Request users to choose Active Directory method and login using their default password</li>
+                <li>If the issue persists, use the below troubleshooting steps in end user computer</li>
+                <li>Access the link <a href="https://adfsservices.sifylivewire.com/module.php/core/frontpage_welcome.php">https://adfsservices.sifylivewire.com/module.php/core/frontpage_welcome.php</a></li>
+                <li>Click on <u>Authentication</u> => <u>Test configured authentication sources</u> => <u>Ad-indostar</u> => Login with end user credentials => <u>Click to view AuthData</u></li>
+                <li>The user should be able to see the Attributes (their profile details.) If they don’t see such, request users to contact their AD team</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/Unable_to_login_to_Active_Directory_1.png" alt="Image1">
+        <img src="../assets/LMS/Unable_to_login_to_Active_Directory_2.png" alt="Image2">
+        <img src="../assets/LMS/Unable_to_login_to_Active_Directory_3.png" alt="Image3">
+        <img src="../assets/LMS/Unable_to_login_to_Active_Directory_4.png" alt="Image4">
+    </div>
+
+    <button class="accordion">Unenroll a course for the user</button>
+    <div class="panel">
+        <h4>An enterprise POC requests Livewire support to unenroll course(s) for user(s)</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Navigate to <u>Course</u> => <u>Course List</u> from the navigation bar</li>
+                <li>Under <u>All Courses</u>, use the <u>Search bar</u> to search respective course(s) and click on them</li>
+                <li>Click on <u>Actions</u> => <u>Curriculum or Course Enrollment</u> based on the Enterprise’s User Interface from the bottom of the page</li>
+                <li>Click on the course(s) name and check all the check boxes (if available) and then click on <u>Enroll</u></li>
+                <li>From the next screen, search and select the user(s) and click on <u>Unenroll</u> to see if the course(s) successfully unenrolls or is not enrolled</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/Unenroll_a_course_for_the_user_1.png" alt="Image1">
+        <img src="../assets/LMS/Unenroll_a_course_for_the_user_2.png" alt="Image2">
+    </div>
+
+    <button class="accordion">Update completion date for a course</button>
+    <div class="panel">
+        <h4>An end user requests Livewire support to change the status (In progress/Completed) or Completion date for a course assigned to one or more user(s.)</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Get an approval from the respective enterprise POC to proceed with the same</li>
+                <li>
+                    Post confirmation, raise a ticket to DBA support team with the below query,<br><br>
+                    UPDATE `ng_enrolment` SET `completed_by`='2021-11-27' WHERE  course_id=25 AND user_id=5276;<br>
+                    Host: livewire-production-rds.ce824equxvjx.ap-south-1.rds.amazonaws.com<br>
+                    Database: tenant_iibf <br><br>
+                    Note: The above query and Host is unique for every other user and enterprise. Always confirm the query with development team
+                </li>
+                <li>After the query is executed in production server, inform the end user with the resolution</li>
+            </ul>
+            <br>
+        </p>
+    </div>
+
+    <button class="accordion">Update user profile details</button>
+    <div class="panel">
+        <h4>End user(s) / enterprise POCs request Livewire support to edit their profile details such as username, phone number, managers, etc., as they might be unable to edit the same from their end</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Navigate to <u>User</u> => <u>User List</u>. Search the requested active user and click on <u>View</u> button followed by <u>Edit</u> button from the user profile</li>
+                <li>Edit the necessary fields and click <u>Save</u></li>
+            </ul>
+            <br>
+        </p>
+    </div>
+
+    <button class="accordion">User creation and course enrollment</button>
+    <div class="panel">
+        <h4>An enterprise requests Livewire support to create users and sometimes enroll courses post creating users</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul style="list-style-type:circle">
+                <br>
+                USER CREATION:
+                <li>Login to the respective enterprise website with admin credentials<br>
+                    <ul style="list-style-type:square">
+                        <li>Ahli bank: <a href="https://sify.ahlibank.om">https://sify.ahlibank.om</a></li>
+                        <li>IIBF: <a href="https://iibf.sifylivewire.com">https://iibf.sifylivewire.com</a></li>
+                        <li>Indostar: <a href="https://indolearn.sifylivewire.com/localLogin">https://indolearn.sifylivewire.com/localLogin</a></li>
+                        <li>NetApp: <a href="https://netapp.sifylivewire.com">https://netapp.sifylivewire.com</a></li>
+                        <li>My academy: <a href="https://myacademylms.sify.net">https://myacademylms.sify.net</a></li>
+                        <li>Sify Partner: <a href="https://sifypartner.sifylivewire.com">https://sifypartner.sifylivewire.com</a></li></li>
+                    </ul>
+                <li>Hover the mouse over <u>User</u> from navigation bar and navigate to <u>User List</u></li>
+                <li>Search the given user(s) and if the user(s) doesn’t exist in Active state, search with all possible state of existence. Proceed with course enrollment if the user exists on the website</li>
+                <li>Click on <u>Create User</u>, fill in the mandatory fields and click <u>Save</u> to create a Dummy/New user</li>
+                <br>
+                COURSE ENROLLMENT:
+                    <ul style="list-style-type:disc">
+                        <li>Navigate to <u>Course</u> => <u>Course List</u> from the navigation bar</li>
+                        <li>Under <u>All Courses</u>, use the <u>Search</u> bar to search respective course(s) and click on them</li>
+                        <li>Click on <u>Actions</u> button from the bottom of the page and select <u>Curriculum or Course Enrollment</u> based on the Enterprise’s User Interface</li>
+                        <li>Click on the course(s) name and check all the check boxes (if available) and then click on <u>Enroll</u></li>
+                        <li>From the next screen, search and select the user(s) and click on <u>Enroll</u> to see if the course(s) successfully enrolls or is enrolled already</li>
+                    </ul>
+            </ul><br>
+        </p>
+    </div>
+
+    <button class="accordion">User deactivation</button>
+    <div class="panel">
+        <h4>An enterprise POC sends a list of users to Livewire support to deactivate their profile</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Check the status of given list of users from <u>User</u> => <u>User List</u> => <u>Search box</u></li>
+                <li>After confirming the last working day with the given list, deactivate the respective user(s) using the below step</li>
+                <li>Click on the respective user profile, click on <u>Select action</u> => <u>Inactive</u></li>
+                <li>If there is an error encountered, check with the Development team. The given user(s) might be a manager i.e. he/she might have some users assigned under him/her</li>
+                <li>In this case, we must change the manager of the assigned users and deactivate the given user(s)</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/User_deactivation_1.png" alt="Image1">
+    </div>
+
+    <button class="accordion">User needs credentials for unsupported course</button>
+    <div class="panel">
+        <h4>End user(s) of an enterprise would like to get their e-learning credentials for unsupported courses</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul style="list-style-type:circle">
+                <li>Check whether the user requests E-learning credential for the course we support or not</li>
+                <li>If a user requests credential for unsupported courses, advise user to contact respective enterprise support team or POC from the enterprise for further assistance</li>
+            </ul>
+            Note: We only support the below courses for the enterprise IIBF:
+            <ul style="list-style-type:disc">
+                <li>International banking operations</li>
+                <li>International corporate finance</li>
+                <li>International banking legal & regulatory aspects</li>
+                <li>Certified credit professional</li>
+                <li>Certificate examination in prevention of cybercrimes and fraud management</li>
+                <li>Certificate examination in IT security</li>
+                <li>MSME finance for bankers</li>
+            </ul>
+            <br>
+        </p>
+    </div>
+
+    <button class="accordion">User needs credentials</button>
+    <div class="panel" id="unique_val">
+        <h4>End user(s) of an enterprise may have paid for a course and would like to get their e-learning credentials or reset the password as they might have forgot the credentials</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br><br>
+            <p>While creating a user in an enterprise, support executive would have defined a default credential. Support executive may forward that credential to the requested user or follow the below steps:</p>
+            <br>
+            <ul>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Check whether the user is enrolled with the respective courses using the default credentials. If the default credentials were not working, follow the steps below to reset the password</li>
+                <br>
+                Note: If the respective course is not enrolled in any case, kindly enroll for the given user
+                <br><br>
+                <li>Navigate to <u>User</u> => <u>User List</u>. Search for the active user and click on user profile</li>
+                <li>From the <u>Select Action</u> box, click on <u>Reset Password</u></li>
+                <li>Navigate to <u>Workflow</u> => <u>Event notification</u> => <u>Event notification mail list</u> and search for recent activity of the specific user and click on <u>View</u> option from the right side of the activity</li>
+                <li>Write an email to the user with the password that was reset</li>
+            </ul>
+        </p>
+    </div>
+
+    <button class="accordion">User reactivation</button>
+    <div class="panel">
+        <h4>An enterprise POC sends a list of users to Livewire support to reactivate their profile</h4>
+        <br>
+        <p>
+            <span>Workflow:</span><br>
+            <ul>
+                <li>Login to the respective enterprise website with admin credentials</li>
+                <li>Check the status of given list of users in the enterprise website</li>
+                <li>Click on <u>User</u> => <u>User list</u> => Search and select the respective user profile</li>
+                <li>Click on <u>Select action</u> => <u>Active</u></li>
+                <li>Inform the enterprise on the same through an email</li>
+            </ul>
+            <br>
+        </p>
+        <img src="../assets/LMS/User_reactivation_1.png" alt="Image1">
+    </div>
+
+    <!-- End of content section -->
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+    
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+    
+    </body>
+    </html>
+    
