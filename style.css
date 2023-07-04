@@ -34,7 +34,7 @@
     .tis-content { margin-left: 10px; font-family: 'Times New Roman', Times, serif ;}
     .tis-content h4 { color: darkgreen; font-size:x-large; }
     .tis-content p { font-size:larger; font-weight: bold; }
-    .complete-RMA img { float: none;}
+    .complete-RMA img { float: none; width: fit-content; height: fit-content;}
     li { font-size: 18px; }
     .end-note-safescrypt h2 { margin-left: 15px;}
 
@@ -44,5 +44,10 @@
     th { border: 1px solid #000; padding: 8px;}
     tr:first-child { background-color: #bcd60c; }
     /* End of table section */
+
+    /* Footer */
+    footer {text-align: center; padding: 20px; background-color: #333; color: #bcd60c; }
+    .footer-end { float: right; padding-right: 20%;}
+    .prev-ver { float:left; padding-left: 100px; color: #bcd60c;}
 
 /* End of content section */
