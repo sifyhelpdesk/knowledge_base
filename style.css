@@ -34,7 +34,7 @@
     .tis-content { margin-left: 10px; font-family: 'Times New Roman', Times, serif ;}
     .tis-content h4 { color: darkgreen; font-size:x-large; }
     .tis-content p { font-size:larger; font-weight: bold; }
-    .complete-RMA img { float: none; width: fit-content; height: fit-content;}
+    .complete-RMA img { float: none;}
     li { font-size: 18px; }
     .end-note-safescrypt h2 { margin-left: 15px;}
 
