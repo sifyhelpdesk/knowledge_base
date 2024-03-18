@@ -36,54 +36,81 @@
     
     <button class="accordion">IP Blacklisting</button>
     <div class="panel">
-        <ul style="list-style-type: none;">
-            <li>If the customer reached us saying that my IP got blacklisted or they are unable to send emails that will be considered as IP Blacklisting.</li>
-            <li>Request customer to provide the IP and circuit ID.</li>
-            <li>Firstly we have to check whether the IP belongs to Sify or not(by using website Instant IP Address) . If not have to convey the same to customer to check with respective service provider.</li>
-            <br>
-            NOTE: Website for checking IP address - <a href="https://whatismyipaddress.com/ip-lookup">https://whatismyipaddress.com/ip-lookup</a>
-            <br><br>
-            <li>If the IP Belongs to Sify then we have to check whether the IP is blacklisted or not.</li>
-            <li>1. If the IP got blacklisting, we have to raise a ticket under IP Blacklisting to proceed further.</li>
-            <li>2. If the IP got blacklisting, we have to check whether the IP have PTR records or not(by using DNS Checker website).</li>
-            <br>
-            NOTE: Website for checking PNR records - https://dnschecker.org/#PTR/223.30.27.10
-            <br><br>
-            <li>3. If IP got blacklisted and not having PTR records, we have to request some details from customer about IP(Template will be available in Email Notes)</li>
-        </ul>
-        <img src="./assets/Telecom/telecom_1.png" alt="Image_1" style="float: none; height: 35%; width: 45% ">
-        <br><br>
-        <ul style="list-style-type: none;">
-            <li>After getting details from the customer, we need to share the details with DNS team to create PTR Records</li>
-        </ul>
+        <p>When customer says, i am unable to send emails, unable to reach particular sites, or my IP have been blacklisted please do it in whitelist!</p>
         <br>
-        <img src="./assets/Telecom/telecom_2.png" alt="Image_2" style="float: none; height: 35%; width: 45% ">
-        <br><br>
-        <ul style="list-style-type: none;">
-            <li>After the completion of creating PTR records, we have to share the IP with fort know team for whitelisting.</li>
-        </ul><br>
-        <img src="./assets/Telecom/telecom_3.png" alt="Image_3" style="float: none; height: 35%; width: 45% ">
+        <h5>"Instant IP address lookup" link - <a href="https://whatismyipaddress.com/ip-lookup">https://whatismyipaddress.com/ip-lookup</a></h5><br>
+        <p>Take IP address from the customer and go to "Instant IP address lookup" - website</p><br>
+        <img src="./assets/Telecom/telecom_14.png" alt="Image_14" style="float: none; height: 70%; width: 65%;"><br><br>
+        <p>Take the IP and paste it in the search box</p><br>
+        <img src="./assets/Telecom/telecom_15.png" alt="Image_15" style="float: none; height: 70%; width: 65%;"><br><br>
+        <p>Check ISP: (Internet service provider) - belongs to Sify or not</p><br>
+        <img src="./assets/Telecom/telecom_16.png" alt="Image_16" style="float: none; height: 70%; width: 65%;"><br><br>
+        <p>If IP belongs to : Sify limited, check whether IP got blacklisted or not</p><br>
+        <b>To check whether IP is blacklisted</b>
         <br>
-        <ul style="list-style-type: none;">
-            <li>4. It will take 24 - 48 hours to whitelisting an IP</li>
-            <li>5. After the IP got whitelisted, we have to convey the same with customer</li>
-        </ul>
-        <br><br>
-        <span>Workflow:</span><br>
-        <ul style="list-style-type: disc;">
-            <li>Request IP and Link ID from Customer</li>
-            <li>Check the IP belong to Sify or not</li>
-            <li>If not, convey the same to customer to check with respective team</li>
-            <li>If IP belongs to Sify, check whether the IP is blacklisted or not</li>
-            <li>If IP got blacklisted, raise a case under IP blacklisting</li>
-            <li>Check whether the IP have PTR records or not</li>
-            <li>If PTR records exists, send the IP for Whitelisting</li>
-            <li>If PTR not exists, send the IP to DNS for creating PTR Records</li>
-            <li>Completion of creating PTR records</li>
-            <li>Send IP to fortknox team for Whitelisting</li>
-            <li>Completion of whitelisting</li>
-            <li>Revert to customer</li>
-        </ul>
+        <p>MX Tool Box: <a href="https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a202.144.127.104&run=toolpage">https://mxtoolbox.com/SuperTool.aspx?action=blacklist%3a202.144.127.104&run=toolpage</a></p><br>
+        <img src="./assets/Telecom/telecom_17.png" alt="Image_17" style="float: none; height: 70%; width: 65%;"><br><br>
+        <p>Kindly paste the IP in the blacklist check</p><br>
+        <img src="./assets/Telecom/telecom_18.png" alt="Image_18" style="float: none; height: 70%; width: 65%;"><br><br>
+        <p>click on blacklist check option</p><br>
+        <p>If the IP is blacklisted it will show us in "LISTED" and create a CS ticket in ServiceNow portal</p><br>
+        <img src="./assets/Telecom/telecom_19.png" alt="Image_19" style="float: none; height: 70%; width: 65%;"><br><br>
+        <p>If IP is not blacklisted, it will show us in "OK"</p><br>
+        <img src="./assets/Telecom/telecom_20.png" alt="Image_20" style="float: none; height: 70%; width: 65%;"><br><br>
+        <p>If IP is blacklisted, proceed to check with PTR records</p><br>
+        <p>To check PTR Records: DNS Check propagation Tool: <a href="https://dnschecker.org/#PTR/223.30.27.10">https://dnschecker.org/#PTR/223.30.27.10</a></p><br>
+        <p>Go to DNS tool and paste IP in the search box and select PTR in the dropdown and click "SEARCH" option</p><br>
+        <img src="./assets/Telecom/telecom_21.png" alt="Image_21" style="float: none; height: 70%; width: 65%;"><br><br>
+        <p>If NO PTR records are not found it will be in Cross symbol "x"</p><br>
+        <img src="./assets/Telecom/telecom_22.png" alt="Image_22" style="float: none; height: 70%; width: 65%;"><br><br>
+        <p>1. If PTR records are found, it will be in all green ticks. Kindly find below screenshot for reference</p><br>
+        <img src="./assets/Telecom/telecom_23.png" alt="Image_23" style="float: none; height: 70%; width: 65%;"><br><br>
+        <b>If PTR records are not found for the mentioned IP, kindly proceed with below steps:</b><br>
+        <p>Raise the CS ticket in the service now portal and follow the below template and mail to customer</p><br>
+        <p>Dear Customer, <br>
+            Thank you for contacting Sify.<br>        
+            Sify Trouble Ticket ID  "CS*******"<br>
+            Regarding the black listing of your IP, we need the below details in order to proceed for delisting.<br>
+            1. Please share us since how long you are using this IP?<br>
+            2. Please share the impact to your organization due to the blacklisting this IP:<br>
+            3. Kindly share the bounce back email if any, while sending emails to particular/all domains.<br>
+            4. To which device the mentioned IP is currently assigned to?<br>
+            5. There is no valid PTR records for the given IP , kindly share the Host name to create the PTR records.<br>
+        </p><br>
+        <p>After getting those details from the customer kindly forward all these details to "corporate_provisioning@sifycorp.com" and "dnsadmin@sifycorp.com" and "Service Desk" , kindly find below screenshot of template</p><br>
+        <p>If PTR records are found for the mentioned IP, we need to loop this both teams "corporate_provisioning@sifycorp.com " and "MSS FORTKNOX" mss.fortknox@sifycorp.com"</p><br>
+        <img src="./assets/Telecom/telecom_24.png" alt="Image_24" style="float: none; height: 70%; width: 65%;"><br><br>
+        <b>Use below template to forward team:</b><br><br>
+        <p>Dear Fortknox team,<br>
+            Kindly whitelist the below ip: 223.30.83.162<br>
+            Dear CP team,<br>
+            Kindly confirm us the below mentioned ip is belongs to which customer.<br><br>
+            Regards,
+            YOUR NAME
+        </p>
+        <p>Once the IP is whitelisted "hence we can close the ticket by updating to the customer"</p><br>
+        <p>Note: if there is any spam/ severe attack on activity/ - we can't help in such cases. Kindly follow this template with screenshot after getting confirmation from the internal team mail</p><br><br>
+        <p>Dear Customer,<br>
+            Our sincere apologies for the inconvenience caused due to the reported issue.<br>
+            The following IP is blacklisted in Uceprotectl3 RBL<br>
+            The below IP is blacklisted under UCPROTECTTL3 which can't be whitelisted by manual request.<br>
+            IP Addresses that are on blacklist are removed after some days from the RBL . This is an automatic process from RBL. For this type of blacklist, we cannot raise a request form our side in order to get it whitelisted.<br>
+            Requesting you to kindly clean the IP environment. So the IP will be automatically whitelisted when the harmful/malicious private ip's has been removed to get the faster resolution and it also help us to whitelist the IP with an immediate effect.<br>
+            We are parking this case under resolved status, kindly check and revert us to proceed further.<br>
+        </p><br><br>
+        <b>Kindly find the resolved template for IP whitelisting</b><br>
+        <p>Good Evening,<br>
+            Dear Kudan/Kalpesh,<br>
+            Our sincere apologies for the inconvenience caused due to the reported issue.<br>            
+            Below mentioned IP has been whitelisted.<br>
+            Kindly find the below screenshot.<br>
+            119.226.11.96<br>
+            we are parking this case under the resolve state. Please check and revert us back if there is any issue within 24 hours<br>
+            Thank you for your cooperation and support.<br>
+            Regards<br>
+            YOUR NAME
+        </p>
+
         <table class="ver-his" >
             <th colspan="6" class="ver-summ">Version Summary</th>
             <tr class="bold">
@@ -93,6 +120,14 @@
                 <td>Current Version</td>
                 <td>Current Version Published On</td>
                 <td>Maiden Version Published On</td>
+            </tr>
+            <tr>
+                <td>Jyothi Sri Kavya & Kanumuri Priyanka</td>
+                <td>Julian Shawn Dmonte - Deputy Manager</td>
+                <td>Raja Uppuluri Sekharam - Deputy General Manager</td>
+                <td>2.0</td>
+                <td>19/02/2022</td>
+                <td>18/12/2022</td>
             </tr>
             <tr>
                 <td>Surya Korlapati</td>
@@ -429,7 +464,7 @@
                 <td>Maiden Version Published On</td>
             </tr>
             <tr>
-                <td></td>
+                <td>Jyothi Sri Kavya & Kanumuri Priyanka</td>
                 <td>Julian Shawn Dmonte - Deputy Manager</td>
                 <td>Raja Uppuluri Sekharam - Deputy General Manager</td>
                 <td>1.0</td>
@@ -469,7 +504,7 @@
                 <td>Maiden Version Published On</td>
             </tr>
             <tr>
-                <td></td>
+                <td>Jyothi Sri Kavya & Kanumuri Priyanka</td>
                 <td>Julian Shawn Dmonte - Deputy Manager</td>
                 <td>Raja Uppuluri Sekharam - Deputy General Manager</td>
                 <td>1.0</td>
@@ -510,7 +545,7 @@
                 <td>Maiden Version Published On</td>
             </tr>
             <tr>
-                <td></td>
+                <td>Jyothi Sri Kavya & Kanumuri Priyanka</td>
                 <td>Julian Shawn Dmonte - Deputy Manager</td>
                 <td>Raja Uppuluri Sekharam - Deputy General Manager</td>
                 <td>1.0</td>
