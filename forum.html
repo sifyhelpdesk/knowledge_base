@@ -34,7 +34,7 @@
 
     <!-- Content section -->
     
-    <button class="accordion">Forum ITC - Day close reopen</button>
+    <!-- <button class="accordion">Forum ITC - Day close reopen</button>
     <div class="panel">
         <b><u>Short description</u></b>
         <br>
@@ -154,7 +154,149 @@
             <img src="./assets/Forum/forum_8.png" alt="Image_8" style="float: none; height: 45% ; width: 45%;">
             <li>Step 3: Then call the WD and confirm with the WD post getting the confirmation update the screenshot in the ServiceNow Portal and revert for the closure confirmation.</li>
         </ul>
+    </div> -->
+
+    <button class="accordion">Forum ITC - Day close reopen</button>
+    <div class="panel">
+        <p><b>Introduction :</b>
+            The Dayclose reopen request related cases are raised when the WDs has done dayclose for future date due to which WD will not be able to do any transaction for the current date. Sometimes the WDs would raise dayclose reopen request for amending or doing the back dated transactions. For reopening the dayclose we need the ITC Branch and ITC SMIS approval to reopen the dayclose. Without the branch and SMIS approval we should not proceed with the dayclose reopen request.
+        </p>
+        <br>
+        <p><b>Dayclose Reopen :</b>
+             In the tool go to the Day Close Reopen tab and select the date that the WD wants to reopen and click 
+            Reopen Day Close and give yes to reopen the dayclose.
+        </p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_01.png" alt="ForumV2_01" style="float: none; height: 45% ; width: 45%;">
+        <br><br>
+        <p>Now the Day is opened for the selected date.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_02.png" alt="ForumV2_02" style="float: none; height: 45% ; width: 45%;">
+        <ul>
+            <li style="list-style-type: none;"><b>Validations :</b></li>
+            <li>Post Date is not allowed</li>
+            <li>Post Invoiced Date is not allowed</li>
+            <li>Post Dayclosed Date is not allowed</li>
+        </ul>
+        <table class="ver-his" >
+            <th colspan ="6" class="ver-summ">Version Summary</th>
+            <tr class="bold">
+                <td>Author</td>
+                <td>Reviewer</td>
+                <td>Approver</td>
+                <td>Current Version</td>
+                <td>Current Version Published On</td>
+                <td>Maiden Version Published On</td>
+            </tr>
+            <tr>
+                <td>Ramesh T</td>
+                <td>Vimal Kumar</td>
+                <td>Julian Shawn Dmonte - Deputy Manager</td>
+                <td>2.0</td>
+                <td>02/02/2024</td>
+                <td>02/12/2022</td>
+            </tr>
+            <tr>
+                <td>Keerthana S</td>
+                <td>Vimal Kumar</td>
+                <td>Julian Shawn Dmonte - Deputy Manager</td>
+                <td>1.0</td>
+                <td>02/12/2022</td>
+                <td>02/12/2022</td>
+            </tr>
+        </table>
     </div>
+
+    <button class="accordion">DB size reduce, DB Reindexing, and DB Shrinking</button>
+    <div class="panel">
+        <p><b>Introduction :</b>
+            Our application runs with the help of SQL. In SQL we have two edition that we are using, they are SQL express edition and SQL standard edition. SQL standard edition supports DB size more than 10GB whereas SQL express edition supports DB size 10GB only. Most of the ITC distributors use SQL express edition, so when the DB size nears 10GB the Forum application will not work properly and issues like Forum Server and Client login issues.
+        </p>
+        <br>
+        <p>In some cases we will be doing this DB shrinking and reindexing process when the forum performance is poor.</p>
+        <br>
+        <p><b>DB Size reduce :</b>
+            In the tool there is Database size reduce tab, in that click on the reduce database size button and the database size reducing process will be initiated, during this process the unwanted datas of the received table will be deleted which helps in freeing up some space for DB reindexing and DB shrinking processs.
+        </p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_03.png" alt="ForumV2_03" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p><b>Database Reindexing :</b>
+            After Database size reduce is completed we should proceed with the Database reindexing. In the DB reindexing the datas in the table get refreshed and rearranged freeing up some space. Now click on the Database Reindex button and the database reindexing will be initiated.
+        </p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_04.png" alt="ForumV2_04" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p><b>Database Shrinking :</b>
+            After the DB reindexing the DB shrinking is done to shrink the database and reduce its size. Now got the Database shrink tab and click on the Database Shrink button and the Database shrinking will be initiated and post completion of the database shrinking the size of the database will be reduced.
+        </p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_05.png" alt="ForumV2_05" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <table class="ver-his" >
+            <th colspan ="6" class="ver-summ">Version Summary</th>
+            <tr class="bold">
+                <td>Author</td>
+                <td>Reviewer</td>
+                <td>Approver</td>
+                <td>Current Version</td>
+                <td>Current Version Published On</td>
+                <td>Maiden Version Published On</td>
+            </tr>
+            <tr>
+                <td>Ramesh T</td>
+                <td>Vimal Kumar</td>
+                <td>Julian Shawn Dmonte - Deputy Manager</td>
+                <td>1.0</td>
+                <td>02/02/2024</td>
+                <td>02/02/2024</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="accordion">Scheme products refresh</button>
+    <div class="panel">
+        <p><b>Introduction :</b>
+            In the Scheme Products Refresh tab we will be refreshing the scheme products table, when the scheme is showing in the invoice window but is not applying in the invoices. So we have to close the forum and click on the Scheme Products button in the  Scheme Products Refresh tab and give yes to refresh the scheme products table.
+        </p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_06.png" alt="ForumV2_06" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Now the scheme products table is refreshed successfully. Now open the forum and check whether the schemes are applying.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_07.png" alt="ForumV2_07" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <table class="ver-his" >
+            <th colspan ="6" class="ver-summ">Version Summary</th>
+            <tr class="bold">
+                <td>Author</td>
+                <td>Reviewer</td>
+                <td>Approver</td>
+                <td>Current Version</td>
+                <td>Current Version Published On</td>
+                <td>Maiden Version Published On</td>
+            </tr>
+            <tr>
+                <td>Ramesh T</td>
+                <td>Vimal Kumar</td>
+                <td>Julian Shawn Dmonte - Deputy Manager</td>
+                <td>2.0</td>
+                <td>02/02/2024</td>
+                <td>02/12/2022</td>
+            </tr>
+            <tr>
+                <td>Keerthana S</td>
+                <td>Vimal Kumar</td>
+                <td>Julian Shawn Dmonte - Deputy Manager</td>
+                <td>1.0</td>
+                <td>02/12/2022</td>
+                <td>02/12/2022</td>
+            </tr>
+        </table>
+    </div>
+
+
+
 
     <button class="accordion">Forum NXT - Change the credit days in distributor portal</button>
     <div class="panel">
@@ -966,6 +1108,13 @@
                 <li>LDF Database size - <u>KB/MB/GB</u></li>
                 <li>MDF Database size - <u>KB/MB/GB</u></li>
                 <li>View details : <u>v_sd_outletflag_prod/v_sd_outletflag_proddtl</u></li>
+                <li>MERP Support tool should delete:</li>
+                <li>Relevant screenshots should be updated in the case:</li>
+                <li>Case history should be checked:</li>
+                <li>Control ID:</li>
+                <li>Password:</li>
+                
+
                 <br>
                 <b>Note: Underlined fields are to be filled with appropriate data after analysis and should be posted in ServiceNow.</b>
                 <br><br>
@@ -1198,10 +1347,15 @@
                 <li>Recent back status: Health/Partial Health/ is not available</li>
                 <li>LDF Database size:  KB/MB/GB</li>
                 <li>MDF Database size : KB/MB/GB</li>
-                <li>Anti-virus  and Window Firewall: On/Off</li> 
-                <li>Temp files  :  Yes/No</li>
-                <li>Consistency Error Count : Errors</li>
-                <li>SQL Version :  Select @@Version</li>
+                <li>Anti-virus and Window Firewall: On/Off</li> 
+                <li>Temp files : Yes/No</li>
+                <li>Consistency Error Count : </li>
+                <li>SQL Version : Select @@Version</li>
+                <li>MERP Support tool should delete : Yes/No</li>
+                <li>Relevant screenshots should be update in the case : Yes /No</li>
+                <li>Case history should be checked: </li>
+                <li>Control ID: </li>
+                <li>Password: </li>
             </ul>
             <p>
                 Note: Above fields are to be filled with appropriate data after analysis and should be posted in ServiceNow.
@@ -1209,108 +1363,201 @@
             <br>
             <b>Below are the step-by-step process to complete the analysis checklist:</b>
             <br><br>
-            <b>How to check Database mode?</b>
-                <ul style="list-style-type: none;">
-                    <li>Step 1: Open the SQL server management studio (SSMS) in Wd's system</li>
-                    <img src="./assets/Forum/forum_123.png" alt="Image_123" style="float: none; height: 45% ; width: 45%;">
-                    <li>Step 2: Click on the Drop down icon and check whether Minerva is in Normal mode/Corrupted/Suspect /single user /recovery mode</li>
-                    <img src="./assets/Forum/forum_124.png" alt="Image_124" style="float: none; height: 45% ; width: 45%;">
-                    <li>Step 3: Click on the Drop down icon and select the latest Minerva (eg: Minerva 2022)</li>
-                    <img src="./assets/Forum/forum_125.png" alt="Image_125" style="float: none; height: 45% ; width: 45%;">
-                    <li>Step 4: Execute the Query (DBCC CHECKDB)</li>
-                    <img src="./assets/Forum/forum_126.png" alt="Image_126" style="float: none; height: 45% ; width: 45%;">
-                </ul>
-            <b>How to check the Recent back status?</b>
-            <ul style="list-style-type: none;">
-                <li>Step 1: Go the Forum MicroERP file location</li>
-                <li>Step 2: Select &#8594; BACKUP FOLDER</li>
-                <li>Step 3: Search for the recent backup</li>
-                <li>Step 4: Then go to the SQL Management studio &#8594; NEW DATABASE</li>
-                    <ul style="list-style-type: none;">
-                        <li>1. Click on DATABASE &#8594; "Add a new name as (TESTDB)"</li>
-                        <img src="./assets/Forum/forum_127.png" alt="Image_127" style="float: none; height: 45% ; width: 45%;">
-                        <br>
-                        <img src="./assets/Forum/forum_128.png" alt="Image_128" style="float: none; height: 45% ; width: 45%;">
-                        <li>2. Then Right Click on TestDB</li>
-                        <li>3. Click on &#8594; TASK &#8594; RESTORE &#8594; DATABASES</li>
-                        <img src="./assets/Forum/forum_129.png" alt="Image_129" style="float: none; height: 45% ; width: 45%;">
-                        <li>4. Restoring mini tab will be opened</li>
-                        <li>5. In that select "Device"</li>
-                        <li>6. Go to that Forum MicroERP recent Back up file location</li>
-                        <li>7. Select that particular Backup (For Eg- Forum_DMS782_2022.bak) and click Okay</li>
-                        <li>8. Select the overwrite OPTION</li>
-                        <li>9. And Click on Restore "Okay"</li>
-                        <li>10. That particular Backup will restore in the "TESTDB" Database.</li>
-                        <img src="./assets/Forum/forum_130.png" alt="Image_130" style="float: none; height: 45% ; width: 45%;">
-                        <li>11. Open new query, click on the Drop down icon and select the "TEST DB" </li>
-                        <li>12. Execute the Query (DBCC CHECKDB)</li>
-                        <li>13. If the Query was executed successfully, then the recent DB is in Good status.</li>
-                        <img src="./assets/Forum/forum_131.png" alt="Image_131" style="float: none; height: 45% ; width: 45%;">
-                    </ul>
+            <p><b>How to check Database mode?</b></p>
+            <br>
+            <p>
+                <b>Database Health Checkup: </b> While performing the database you should close forum in Server and all the other nodes. If the the forum is not closed we will get the below mentioned popup. So kindly ensure whether all the nodes are closed before performing the database health checkup.
+            </p>
+            <br>
+            <img src="./assets/Forum/Forum V2/ForumV2_08.png" alt="ForumV2_08" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <p>Once the nodes are closed the application will allow to perform the database health checkup and ask for the yes or no popup to perform the database health checkup.</p>
+            <br>
+            <img src="./assets/Forum/Forum V2/ForumV2_09.png" alt="ForumV2_09" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <p>After that the database health checkup will be get initiated.</p>
+            <br>
+            <img src="./assets/Forum/Forum V2/ForumV2_10.png" alt="ForumV2_10" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <p>If the database is good we will get the below mentioned popup.</p>
+            <br>
+            <img src="./assets/Forum/Forum V2/ForumV2_11.png" alt="ForumV2_11" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <p>If the database is not good the below mentioned popup will appear stating that the database is corrupted, in that case we have to proceed with the DB Correction. Which we will be seeing in upcoming articles</p>
+            <br>
+            <img src="./assets/Forum/Forum V2/ForumV2_12.png" alt="ForumV2_12" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <p><b>FSU Sequence Check :</b> After Database health checkup close the tab and open the FSU sequence check tab and click on the Check FSU Sequence. If there is no FSU listed the FSUs are in sequence.</p>
+            <br>
+            <img src="./assets/Forum/Forum V2/ForumV2_13.png" alt="ForumV2_13" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <p>If the FSUs are not in sequence the FSU list will be listed, from which the FSU sequence is missed. We will be seeing about the FSU sequence reset in the upcoming articles.</p>
+            <br>
+            <img src="./assets/Forum/Forum V2/ForumV2_14.png" alt="ForumV2_14" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <p>Checking YEP status : The YEP( Year End Process) status is used to confirm whether the close period is completed or not in the previous operating year databases. The status of the databases are listed below:
+                <li>Status ‘2’ = YEP completed properly</li>
+                <li>Status ‘1’ = YEP completed partially or incorrectly    Incompleted</li>
+                <li>Status ‘0’ = Indicates Current operating year or live database</li>
+                If the status of the previous year database is ‘0’ or ‘1’ it should be updated as ‘2’. In the tool with help of YEP status tab we can check the YEP status.
+                <br><br>
+                In the YEP status tab, click on the Check FYCP Status button it will show the FYCP Status of all the available databases, if the FYCP status of the databases are proper no need to update the status.
+                <br><br>
+                If the FYCP status is not proper we have to update the status correct FYCP status.
+            </p>
+            <br>
+            <img src="./assets/Forum/Forum V2/ForumV2_15.png" alt="ForumV2_15" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <p>Now click on the Update Fycp Status button and the FYCP Status of the databases will be updated correctly.</p>
+            <br>
+            <img src="./assets/Forum/Forum V2/ForumV2_16.png" alt="ForumV2_16" style="float: none; height: 45% ; width: 45%;">
+            <br>
+            <p>
+                <b>How to check the Recent back status?</b>
+                <li>Step 1 : Go the Forum MicroERP file location</li>
+                <li>Step 2 : Select  "Backup Folder"</li>
+                <li>Step 3 : Search for the recent backup</li>
+                <li>Step 4 : Then go to the SQL Management studio</li>
+            </p>
+            <li style="list-style-type: none;">1. Click on Database &#8594; New Database &#8594; "Add a new name as (eg:TESTDB)" </li>
+            <li><img src="./assets/Forum/Forum V2/ForumV2_17.png" alt="ForumV2_17" style="float: none; height: 45% ; width: 45%;"></li>
+            <li><img src="./assets/Forum/Forum V2/ForumV2_18.png" alt="ForumV2_18" style="float: none; height: 45% ; width: 45%;"></li>
+            <li style="list-style-type: none;">2. Then Right Click on TestDB</li>
+            <li style="list-style-type: none;">3. Click on Task &#8594; Restore &#8594; Databases</li>
+            <li><img src="./assets/Forum/Forum V2/ForumV2_19.png" alt="ForumV2_19" style="float: none; height: 45% ; width: 45%;"></li>
+            <li>4. Restoring mini tab will be opened</li>
+            <li>5. In that select "Device"</li>
+            <li>6. Go to that Forum MicroERP recent Back up file location</li>
+            <li>7. Select that particular Backup (For Eg- Forum_DMS782_2022.bak) and click Okay. The restore path's location must be verified.</li>
+            <li>8. Select the overwrite OPTION</li>
+            <li>9. And Click on Restore "Okay"</li>
+            <li>10. That particular Backup will restore in the "TESTDB" Database.</li>
+            <li><img src="./assets/Forum/Forum V2/ForumV2_20.png" alt="ForumV2_20" style="float: none; height: 45% ; width: 45%;"></li>
+            <li>11. Open new query, click on the Drop down icon and select the "TEST DB"</li>
+            <li>12. Execute the Query (DBCC CHECKDB)</li>
+            <li>13. If the Query was executed successfully, then the recent DB is in Good status</li>
+            <li><img src="./assets/Forum/Forum V2/ForumV2_21.png" alt="ForumV2_21" style="float: none; height: 45% ; width: 45%;"></li>
+            <br>
+            <p>
                 <b>How to check the LDF Database size?</b>
-                <ul style="list-style-type: none;">
-                    <li>Step 1: Go the Forum MicroERP file location</li>
-                    <li>Step 2: we can right click on the Minerva LDF 2021--- select the "Properties"---and find the LDF Size.</li>
-                    <img src="./assets/Forum/forum_132.png" alt="Image_132" style="float: none; height: 45% ; width: 45%;">
-                </ul>
+                <li>Step 1 : Go the Forum MicroERP file location</li>
+                <li>Step 2 : we can right click on the Minerva LDF 2021--- select the "Properties"---and find the LDF Size</li>
+            </p>
+            <li><img src="./assets/Forum/Forum V2/ForumV2_22.png" alt="ForumV2_22" style="float: none; height: 45% ; width: 45%;"></li>
+            <br>
+            <p>
                 <b>How to check the MDF Database size?</b>
-                <ul style="list-style-type: none;">
-                    <li>Step 1: Go the Forum MicroERP file location</li>
-                    <li>Step 2: we can right click on the Minerva MDF 2021--- select the "Properties"---and get the LDF Size.</li>
-                    <img src="./assets/Forum/forum_133.png" alt="Image_133" style="float: none; height: 45% ; width: 45%;">
-                </ul>
+                <li>Step 1 : Go the Forum MicroERP file location</li>
+                <li>Step 2 : we can right click on the Minerva MDF 2021--- select the "Properties"---and get the LDF Size</li>
+            </p>
+            <li><img src="./assets/Forum/Forum V2/ForumV2_23.png" alt="ForumV2_23" style="float: none; height: 45% ; width: 45%;"></li>
+            <br>
+            <p>
                 <b>How to find the status Anti-virus and Window Firewall?</b>
-                <ul style="list-style-type: none;">
-                    <li>Step 1: Go to Windows security-- click on the "FireWall and network settings" and check whether it is turned on/off.</li>
-                    <img src="./assets/Forum/forum_134.png" alt="Image_134" style="float: none; height: 45% ; width: 45%;">
-                    <li>Step 2: Check any third party anti-virus is installed or not (eg : Quick heal , Avast , MacAfee ) and disable it.</li>
-                </ul>
+                <li>Step 1 : Go to Windows security-- click on the "FireWall and network settings" and check whether it is turned on/off</li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_24.png" alt="ForumV2_24" style="float: none; height: 45% ; width: 45%;"></li>
+                <li>Step 2 : Check any third party anti-virus is installed or not (eg : Quick heal , Avast , MacAfee ) and disable it</li>
+            </p>
+            <br>
+            <p>
                 <b>How to clear the Temp files?</b>
-                <ul style="list-style-type: none;">
-                    <li>Step  1: Click on Windows and search for "RUN"</li>
-                    <img src="./assets/Forum/forum_135.png" alt="Image_135" style="float: none; height: 45% ; width: 45%;">
-                    <li>Step  2: Click on "RUN" and type %temp% and the find the temp files</li>
-                    <img src="./assets/Forum/forum_136.png" alt="Image_136" style="float: none; height: 45% ; width: 45%;">
-                    <li>Step  3: Then click "CTRL+A" for selecting all the files, right click and delete all the Temp files in the Temp files</li>
-                </ul>
+                <li>Step 1 : Click on Windows and search for "RUN"</li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_25.png" alt="ForumV2_25" style="float: none; height: 45% ; width: 45%;"></li>
+                <li>Step 2 : Click on "RUN" and type %temp% and the find the temp files</li>    
+                <li><img src="./assets/Forum/Forum V2/ForumV2_26.png" alt="ForumV2_26" style="float: none; height: 45% ; width: 45%;"></li>
+                <li>Step 3 : Then click "CTRL+A" for selecting all the files, right click and delete all the Temp files in the Temp files</li>
+            </p>
+            <br>
+            <p>
                 <b>How to find the Consistency Error Count after executing the DBCC query?</b>
-                <ul style="list-style-type: none;">
-                    <li>Step 1: Click on the Drop down icon and select the latest Minerva (Minerva 2022)</li>
-                    <li>Step 2: Execute the Query (DBCC CHECKDB)</li>
-                    <li>Step 3: DBCC CHECKDB command in the SQL server checks the logical and physical consistency error count.</li>
-                </ul>
+                <li>Step 1 : Click on the Drop down icon and select the latest Minerva (Minerva 2022)</li>
+                <li>Step 2 : Execute the Query (DBCC CHECKDB)</li>
+                <li>Step 3 : DBCC CHECKDB command in the SQL server checks the logical and physical consistency error count.</li>
+            </p>
+            <br>
+            <p>
                 <b>How to find the SQL Version in WD system?</b>
-                <br><br>
-                <p>
-                    In the SQL Management Studio execute the query "Select @@version" and find the SQL version.
-                </p>
-                <br>
+                <li>Step 1 : In the SQL Management Studio execute the query "Select @@version" and find the SQL version.</li>
+            </p>
+            <br>
+            <p>
                 <b>RESOLUTION PROCEDURE:</b>
-                <ul style="list-style-type: none;">
-                    <li>Step 1: After completing the Checklist Analysis. Need to share the fetched required information with our Development team for the further analysis.</li>
-                    <li>Step 2: Development team will work on the DB correction process.</li>
-                    <li>Step 3: Once DB correction is completed, our development team will share corrected database path with us. "D:\Minerva_DMS782_2022_CorrectedDB_280112022.bak"</li>
-                    <li>Step 4: Then we need to proceed with the restoration process of corrected database.</li>
-                    <li>Step 5: Before restoring we need to inform the WD to close the forum applications and end task of forum application in task manager</li>
-                    <li>Step 6: Then we have to go to the Forum MicroERP file location---- click on "RestoreBackupkup.exe" and select the corrected Db "D:\Minerva_DMS782_2022_CorrectedDB_280112022.bak".</li>
-                    <li>Step 7: Select the "Restore" option</li>
-                    <li>Step 8: After Restoration process  completed, login the Forum MicroERP Application, then FSU will get download and starts installing.</li>
-                    <li>Step 9: After the FSU installation is successfully completed, The Forum MicroERP Application will be Logged in Successfully.</li>
-                    <li>Step 10: Once the Forum got logged in take a screenshot and attach in the respective incident ticket and call the WD to inform that the forum was logged in and confirm with the WD post getting the confirmation Update the screenshot and revert for the closure confirmation.</li>
-                </ul>
-                <b>Exceptional Scenario :</b>
-                <br><br>
-                <b>If we Could not able to recover (correct ) the Database</b>
                 <br>
+                <b>Correction with the help of Recent backup :</b> After identifying the recent backup with the good condition copy the backup to 
+                another location and rename the good backup which is going to be used for the correction process as <b>“Minerva_backup.bak”</b>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_27.png" alt="ForumV2_27" style="float: none; height: 45% ; width: 45%;"></li>
+                <li>In some scenarios the DB will be in the suspect mode in that case we have to change it to emergency mode , single user mode and multiuser mode, with the help of the tool.</li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_28.png" alt="ForumV2_28" style="float: none; height: 45% ; width: 45%;"></li>
+                <li>In the tool click on the emergency mode and after that click on the multiuser mode to make the data base in to the temporarily accessible mode.</li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_29.png" alt="ForumV2_29" style="float: none; height: 45% ; width: 45%;"></li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_30.png" alt="ForumV2_30" style="float: none; height: 45% ; width: 45%;"></li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_31.png" alt="ForumV2_31" style="float: none; height: 45% ; width: 45%;"></li>
+                <li>Now after changing the Database mode click on the create fresh DB with backup database and click on the Restore Backup D button and the backup DB will be restored successfully.</li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_32.png" alt="ForumV2_32" style="float: none; height: 45% ; width: 45%;"></li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_33.png" alt="ForumV2_33" style="float: none; height: 45% ; width: 45%;"></li>
+                <li><b>DB correction with the FSU installation :</b> If the recent Backup is not good the DB Correction can be done with the help of FSUs installation in the tool click on the Using fresh DB creation with the FSU installation and click on the check the FSU availability,if the FSU are available click on the create FreshDB button and the DB creation will begin.</li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_34.png" alt="ForumV2_34" style="float: none; height: 45% ; width: 45%;"></li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_35.png" alt="ForumV2_35" style="float: none; height: 45% ; width: 45%;"></li>
+                <li>Missing tables to find the missing tables, if the tables are not available click on the create missing tables option. After that click on the Check missing column count, if the columns are not available click on the create missing columns.</li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_36.png" alt="ForumV2_36" style="float: none; height: 45% ; width: 45%;"></li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_37.png" alt="ForumV2_37" style="float: none; height: 45% ; width: 45%;"></li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_38.png" alt="ForumV2_38" style="float: none; height: 45% ; width: 45%;"></li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_39.png" alt="ForumV2_39" style="float: none; height: 45% ; width: 45%;"></li>
+                <li>After the FreshDB creation click on the Data transfer tab and click the Proceed Data transfer to Fresh DB option, the datas from the corrupted DB will be transferred to the created Fresh DB.</li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_40.png" alt="ForumV2_40" style="float: none; height: 45% ; width: 45%;"></li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_41.png" alt="ForumV2_41" style="float: none; height: 45% ; width: 45%;"></li>
+                <li>After the data transfer click on the Check for record Counts option to find the record count mismatch in the corrected database.</li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_42.png" alt="ForumV2_42" style="float: none; height: 45% ; width: 45%;"></li>
+                <li>If the record mismatch is there the name of the table and the mismatched count will be displayed below.</li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_43.png" alt="ForumV2_43" style="float: none; height: 45% ; width: 45%;"></li>                
+                <li>If the Count mismatch is there we have to assign the case to the devolopment team for data transfer.</li>
+                <li>If there is no record count mismatch click on the Backup Corrected DB to take the backup of the corrected database and the backup will be created in the Forum installation path.</li>
+                <li><img src="./assets/Forum/Forum V2/ForumV2_44.png" alt="ForumV2_44" style="float: none; height: 45% ; width: 45%;"></li>
+                <li>Step 4 : Then we need to proceed with the restoration process of corrected database.</li>
+                <li>Step 5 : Before restoring we need to inform the WD to close the forum applications and end task of forum application in task manager</li>
+                <li>Step 6 : Then we have to go to the Forum MicroERP file location---- click on <b>"RestoreBackup.exe"</b> and select the corrected Db ""D:\Minerva_DMS782_2022_CorrectedDB_280112022.bak".</li>
+                <li>Step 7 : Select the <b>"Restore" option</b></li>
+                <li>Step 8 : After Restoration process  completed, login the Forum MicroERP Application, then FSU will get download and starts installing.</li>
+                <li>Step 9 : After the FSU installation is successfully completed, The Forum MicroERP Application will be Logged in Successfully.</li>
+                <li>Step 10 : Once the Forum got logged in take a screenshot and attach in the respective incident ticket and call the WD to inform that the forum was logged in and confirm with the WD post getting the confirmation Update the screenshot and revert for the closure confirmation.</li>
                 <p>
-                    Need to have a discussion with the development team and update in the case that our development team  
+                    <b>Exceptional Scenario :</b>
                     <br>
-                    could not able to recover all the important tables, then we have to check any recent backup available at WD 
-                    <br>
-                    With good status and intimate the TCS team to check with branch to restore it.
+                    <b>If we Could not able to recover (correct ) the Database,</b> need to have a discussion with the development team and update in the case that our development team 
+                    could not able to recover all the important tables, then we have to check  any recent backup available at WD
+                     With good status and intimate the TCS team to check with branch to restore it.
                 </p>
-            </ul>
+            </p>
+            <table class="ver-his" >
+                <th colspan ="6" class="ver-summ">Version Summary</th>
+                <tr class="bold">
+                    <td>Author</td>
+                    <td>Reviewer</td>
+                    <td>Approver</td>
+                    <td>Current Version</td>
+                    <td>Current Version Published On</td>
+                    <td>Maiden Version Published On</td>
+                </tr>
+                <tr>
+                    <td>Ramesh T</td>
+                    <td>Vimal Kumar</td>
+                    <td>Julian Shawn Dmonte - Deputy Manager</td>
+                    <td>2.0</td>
+                    <td>02/02/2024</td>
+                    <td>02/12/2022</td>
+                </tr>
+                <tr>
+                    <td>Keerthana S</td>
+                    <td>Vimal Kumar</td>
+                    <td>Julian Shawn Dmonte - Deputy Manager</td>
+                    <td>1.0</td>
+                    <td>02/12/2022</td>
+                    <td>02/12/2022</td>
+                </tr>
+            </table>    
     </div>
+
+
 
     <button class="accordion">Peformance issue</button>
     <div class="panel">
