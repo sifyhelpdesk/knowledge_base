@@ -1113,10 +1113,8 @@
                 <li>Case history should be checked:</li>
                 <li>Control ID:</li>
                 <li>Password:</li>
-                
-
                 <br>
-                <b>Note: Underlined fields are to be filled with appropriate data after analysis and should be posted in ServiceNow.</b>
+                <b>Note: Highlighted fields are to be filled with appropriate data after analysis and should be posted in ServiceNow.</b>
                 <br><br>
                 <b>Below are the step-by-step process to complete the analysis checklist:</b>
                 <br><br>
@@ -1147,27 +1145,59 @@
                     <li>Step 2: Check any third party anti-virus is installed or not (eg : Quick heal , Avast , MacAfee ) and disable it.</li>
                 </ul>
                 <b>How to check Database mode?</b>
-                <ul style="list-style-type: none;">
-                    <li>Step 1: Open the SQL server management studio (SSMS) in Wd's system</li>
-                    <img src="./assets/Forum/forum_103.png" alt="Image_103" style="float: none; height: 45% ; width: 45%;">
-                    <li>Step 2: Click on the Drop down icon and check whether Minerva is in Normal mode/Corrupted/Suspect /single user /recovery mode</li>
-                    <img src="./assets/Forum/forum_104.png" alt="Image_104" style="float: none; height: 45% ; width: 45%;">
-                    <li>Step 3: Click on the Drop down icon and select the latest Minerva (eg: Minerva 2022)</li>
-                    <img src="./assets/Forum/forum_105.png" alt="Image_105" style="float: none; height: 45% ; width: 45%;">
-                    <li>Step 4: Execute the Query (DBCC CHECKDB)</li>
-                    <img src="./assets/Forum/forum_106.png" alt="Image_106" style="float: none; height: 45% ; width: 45%;">
-                </ul>
-                <b>How to Check FSU sequence - in sequence/not in sequence?</b>
-                <ul style="list-style-type: none;">
-                    <li>Step 1: Go to the SQL server management studio (SSMS) in WD's system &#8594; Click on New query  &#8594; Execute the FSU Sequence query.</li>
-                    <img src="./assets/Forum/forum_107.png" alt="Image_107" style="float: none; height: 45% ; width: 45%;">
-                    <li>Step 2: If the FSU's are in correct Sequence, then the query will be executed successfully without showing any FSUID.</li>
-                    <img src="./assets/Forum/forum_108.png" alt="Image_108" style="float: none; height: 45% ; width: 45%;">
-                    <li>
-                        Step 3 à Now open new query and check the given View using select query  
-                        <br>
-                        E.g. select * from (the given View)
-                    </li>
+                <br><br>
+                <p>
+                    <b>Database Health Checkup: </b> While performing the database you should close forum in Server and all the other nodes. If the the forum is not closed we will get the below mentioned popup. So kindly ensure whether all the nodes are closed before performing the database health checkup.
+                </p>
+                <br>
+                <img src="./assets/Forum/Forum V2/ForumV2_08.png" alt="ForumV2_08" style="float: none; height: 45% ; width: 45%;">
+                <br>
+                <p>Once the nodes are closed the application will allow to perform the database health checkup and ask for the yes or no popup to perform the database health checkup.</p>
+                <br>
+                <img src="./assets/Forum/Forum V2/ForumV2_09.png" alt="ForumV2_09" style="float: none; height: 45% ; width: 45%;">
+                <br>
+                <p>After that the database health checkup will be get initiated.</p>
+                <br>
+                <img src="./assets/Forum/Forum V2/ForumV2_10.png" alt="ForumV2_10" style="float: none; height: 45% ; width: 45%;">
+                <br>
+                <p>If the database is good we will get the below mentioned popup.</p>
+                <br>
+                <img src="./assets/Forum/Forum V2/ForumV2_11.png" alt="ForumV2_11" style="float: none; height: 45% ; width: 45%;">
+                <br>
+                <p>If the database is not good the below mentioned popup will appear stating that the database is corrupted, in that case we have to proceed with the DB Correction. Which we will be seeing in upcoming articles</p>
+                <br>
+                <img src="./assets/Forum/Forum V2/ForumV2_12.png" alt="ForumV2_12" style="float: none; height: 45% ; width: 45%;">
+                <br>
+                <p><b>FSU Sequence Check :</b> After Database health checkup close the tab and open the FSU sequence check tab and click on the Check FSU Sequence. If there is no FSU listed the FSUs are in sequence.</p>
+                <br>
+                <img src="./assets/Forum/Forum V2/ForumV2_13.png" alt="ForumV2_13" style="float: none; height: 45% ; width: 45%;">
+                <br>
+                <p>If the FSUs are not in sequence the FSU list will be listed, from which the FSU sequence is missed. We will be seeing about the FSU sequence reset in the upcoming articles.</p>
+                <br>
+                <img src="./assets/Forum/Forum V2/ForumV2_14.png" alt="ForumV2_14" style="float: none; height: 45% ; width: 45%;">
+                <br>
+                <p>Checking YEP status : The YEP( Year End Process) status is used to confirm whether the close period is completed or not in the previous operating year databases. The status of the databases are listed below:
+                    <li>Status ‘2’ = YEP completed properly</li>
+                    <li>Status ‘1’ = YEP completed partially or incorrectly    Incompleted</li>
+                    <li>Status ‘0’ = Indicates Current operating year or live database</li>
+                    If the status of the previous year database is ‘0’ or ‘1’ it should be updated as ‘2’. In the tool with help of YEP status tab we can check the YEP status.
+                    <br><br>
+                    In the YEP status tab, click on the Check FYCP Status button it will show the FYCP Status of all the available databases, if the FYCP status of the databases are proper no need to update the status.
+                    <br><br>
+                    If the FYCP status is not proper we have to update the status correct FYCP status.
+                </p>
+                <br>
+                <img src="./assets/Forum/Forum V2/ForumV2_15.png" alt="ForumV2_15" style="float: none; height: 45% ; width: 45%;">
+                <br>
+                <p>Now click on the Update Fycp Status button and the FYCP Status of the databases will be updated correctly.</p>
+                <br>
+                <img src="./assets/Forum/Forum V2/ForumV2_16.png" alt="ForumV2_16" style="float: none; height: 45% ; width: 45%;">
+                <br>
+                <li>
+                    Step 3 &#8594; Now open new query and check the given View using select query  
+                    <br>
+                    E.g. select * from (the given View)
+                </li>
                     <img src="./assets/Forum/forum_109.png" alt="Image_109" style="float: none; height: 45% ; width: 45%;">
                     <br>
                     <li>Step 4: If the mentioned view does not show any data, execute the refresh query given, with the confirmation from the Development Team. Before execution of the query take the backup of the current Database from the SQL.</li>
@@ -1192,6 +1222,276 @@
                 <br>
                 <img src="./assets/Forum/forum_114.png" alt="Image_114" style="float: none; height: 45% ; width: 45%;">
             </ul>
+    </div>
+
+    <button class="accordion">Database Correction Process</button>
+    <div class="panel">
+        <p>
+            <b>Introduction :</b>While doing the first level of analysis if the database is corrupted we will be assigning the case to the development team for DB Correction. But with the help of this tool the DB correction is done in our support end itself.
+            Below are the step by step processs for the DB correction.            
+        </p>
+        <br>
+        <p>
+            <b>Correction with the help of Recent backup :</b>After identifying the recent backup with the good condition copy the backup to another location and rename the good backup which is going to be used for the correction process as <b>“Minerva_backup.bak”</b>.
+        </p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_62.png" alt="ForumV2_62" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <p>In some scenarios the DB will be in the suspect mode in that case we have to change it to emergency mode and multiuser mode, with the help of the tool.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_63.png" alt="ForumV2_63" style="float: none; height: 45% ; width: 45%;">       
+        <p>In the tool click on the emergency mode and after that click on the multiuser mode to make the data base in to the temporarily accessible mode.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_64.png" alt="ForumV2_64" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_65.png" alt="ForumV2_65" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_66.png" alt="ForumV2_66" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <p>Now after changing the Database mode click on the create fresh DB with backup database and click on the Restore Backup D button and the backup DB will be restored successfully.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_67.png" alt="ForumV2_67" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_68.png" alt="ForumV2_68" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_68.png" alt="ForumV2_68" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <p><b>DB correction with the FSU installation :</b>If the recent Backup is not good the DB Correction can be done with the help of FSUs installation in the tool click on the Using fresh DB creation with the FSU installation and click on the check the FSU availability, if the FSU are available click on the create FreshDB button and the DB creation will begin.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_69.png" alt="ForumV2_69" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_70.png" alt="ForumV2_70" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <p>Now click on the Check Missing tables to find the missing tables, if the tables are not available click on the create missing tables option. After that click on the Check missing column count, if the columns are not available click on the create missing columns.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_71.png" alt="ForumV2_71" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_72.png" alt="ForumV2_72" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_73.png" alt="ForumV2_73" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_74.png" alt="ForumV2_74" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <p>After the FreshDB creation click on the Data transfer tab and click the Proceed Data transfer to Fresh DB option, the datas from the corrupted DB will be transferred to the created Fresh DB.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_75.png" alt="ForumV2_75" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_76.png" alt="ForumV2_76" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <p>If the table datas are not transferred, the list of tables will be listed in the view box as below.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_77.png" alt="ForumV2_77" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <p>Now Enter that table name in the transfer data box and give transfer data and the data will be transferred, now enter table name in the record to check the count mismatch.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_78.png" alt="ForumV2_78" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <p>After the data transfer click on the Check for record Counts option to find the record count mismatch in the corrected database.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_79.png" alt="ForumV2_79" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <p>If the record mismatch is there the name of the table and the mismatched count will be displayed below.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_80.png" alt="ForumV2_80" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <p>If the Count mismatch is there we have to assign the case to the devolopment team for data transfer.</p>
+        <br>
+        <p>If there is no record count mismatch click on the Backup Corrected DB to take the backup of the corrected database and the backup will be created in the Forum installation path.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_81.png" alt="ForumV2_81" style="float: none; height: 45% ; width: 45%;">       
+        <br>
+        <p>And after that restore the corrected backup via restore backup exe.</p>
+    </div>  
+
+    <button class="accordion">RFA Resubmit</button>
+    <div class="panel">
+        <p>
+            <b>Introduction :</b>In this issue WD has submitted his spend RFA but it is not reflected in Astra portal, so we have to resubmit the RFA activity codes which are given from the ITC EDI Team for the mentioned month.
+        </p>
+        <br>
+        <p>In the tool open the RFA resubmit tab, select the start date and end date as the month in which the activity codes belongs to. Now enter the activity codes in the activity codes window with a comma between each activity codes if the activity codes are more than one.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_54.png" alt="ForumV2_54" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Now Click on the Validate activity codes to check whether the given activity codes are valid activity codes. If it is valid it shows valid, If not valid it shows invalid.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_55.png" alt="ForumV2_55" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Now click on the Reopen spend RFA and the valid activity codes will be ready for resubmission in the spend window in the pending state.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_56.png" alt="ForumV2_56" style="float: none; height: 45% ; width: 45%;">
+    </div>
+
+    <button class="accordion">Forum STD Support Tool</button>
+    <div class="panel">
+        <p>
+            <b>Introduction :</b>In order to reduce the time taken for resolution of the issues in Forum ITC, our development team has developed a tool for various repeated scenarios which can be resolved in our end without the dependency of the development team. The tool is developed with 14 tabs which are mentioned below.
+        </p>
+        <br>
+        <ul style="list-style-type: none;">
+            <li>1.   FSU Sequence Check</li>             
+            <li>2.   FSU Availability</li>
+            <li>3.   FSU Sequence Reset</li>
+            <li>4.   FSU Patch Installer</li>
+            <li>5.   Day Close Reopen</li>
+            <li>6.   Spend RFA Resubmit</li>
+            <li>7.   YEP Status</li>
+            <li>8.   Line Feed Checking</li>
+            <li>9.   Scheme Products Refresh</li>
+            <li>10. Database Health Checkup</li>
+            <li>11. Database Size Reduce</li>
+            <li>12. Database Reindex</li>
+            <li>13. Database Shrink</li>
+            <li>14. Database Correction</li>
+        </ul>
+        <br>
+        <b>Instructions to use the tool : </b>
+        <br>
+        <ul style="list-style-type: none;">
+            <li>1.	Once you taken the control, copy and paste the tool in the forum installation path.</li>
+            <li>2.	The tool will work only in the forum installation path.</li>                
+            <li>3.	Before opening the tool kindly ensure whether the forum is closed in the server and client nodes, because the tool will not work if the Forum is open.</li>
+            <li>4.	You cannot switch the tabs without closing the current tab in the tool, so close the current tab before navigating to the next. </li>
+            <li>5.	Once the analysis is completed / issue is resolved / assigning the case to development team / disconnecting the control, the tool must be deleted from the WD system.</li>
+            <li>6.	Backup of Forum database must be taken before using the Support Tool.</li>
+        </ul>
+        <br>
+        <b>Tool Login Credential :</b>
+        <br>
+        <p>
+            Username : support
+            <br>
+            Password : P@ssw0rd
+        </p>
+    </div>
+
+    <button class="accordion">Line Feed Removing</button>
+    <div class="panel">
+        <p>
+            <b>Introduction :</b>The Line Feed Removing tab is used when we get issue regarding the unnecessary gaps in the reports related to transactions and reports having customer billing and shipping address.
+        </p>        
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_57.png" alt="ForumV2_57" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>In the tool after entering in to the Line Feed Removing tab click on the Checking in Customer Master button it will fetch the number of customer detail having gaps.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_57.png" alt="ForumV2_57" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Now click on the Removing in the customer master button to remove the gaps. Now the gaps are removed in Customer Master table.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_58.png" alt="ForumV2_58" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Now Click on the Checking in Invoice Abstract button to check the count in the Invoice Abstract table.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_59.png" alt="ForumV2_59" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Now click on the Removing in Invoice Abstarct button to remove the gaps in the Invoice abstract table.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_60.png" alt="ForumV2_60" style="float: none; height: 45% ; width: 45%;">
+    </div>
+
+
+
+    <button class="accordion">First Level Analysis - DBCC, FSU sequence check, YEP status check</button>
+    <div class="panel">
+        <p>
+            <b>Introduction :</b>Previously we were doing the first level analysis in database like database health check up and FSU sequence check in the SQL with the queries. But now we can do those checkups with the help of Tool.
+        </p>
+        <p>
+            <b>Database Health Checkup: </b> While performing the database you should close forum in Server and all the other nodes. If the the forum is not closed we will get the below mentioned popup. So kindly ensure whether all the nodes are closed before performing the database health checkup.
+        </p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_08.png" alt="ForumV2_08" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Once the nodes are closed the application will allow to perform the database health checkup and ask for the yes or no popup to perform the database health checkup.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_09.png" alt="ForumV2_09" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>After that the database health checkup will be get initiated.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_10.png" alt="ForumV2_10" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>If the database is good we will get the below mentioned popup.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_11.png" alt="ForumV2_11" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>If the database is not good the below mentioned popup will appear stating that the database is corrupted, in that case we have to proceed with the DB Correction. Which we will be seeing in upcoming articles</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_12.png" alt="ForumV2_12" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p><b>FSU Sequence Check :</b> After Database health checkup close the tab and open the FSU sequence check tab and click on the Check FSU Sequence. If there is no FSU listed the FSUs are in sequence.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_13.png" alt="ForumV2_13" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>If the FSUs are not in sequence the FSU list will be listed, from which the FSU sequence is missed. We will be seeing about the FSU sequence reset in the upcoming articles.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_14.png" alt="ForumV2_14" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Checking YEP status : The YEP( Year End Process) status is used to confirm whether the close period is completed or not in the previous operating year databases. The status of the databases are listed below:
+            <li>Status ‘2’ = YEP completed properly</li>
+            <li>Status ‘1’ = YEP completed partially or incorrectly    Incompleted</li>
+            <li>Status ‘0’ = Indicates Current operating year or live database</li>
+            If the status of the previous year database is ‘0’ or ‘1’ it should be updated as ‘2’. In the tool with help of YEP status tab we can check the YEP status.
+            <br><br>
+            In the YEP status tab, click on the Check FYCP Status button it will show the FYCP Status of all the available databases, if the FYCP status of the databases are proper no need to update the status.
+            <br><br>
+            If the FYCP status is not proper we have to update the status correct FYCP status.
+        </p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_15.png" alt="ForumV2_15" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Now click on the Update Fycp Status button and the FYCP Status of the databases will be updated correctly.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_16.png" alt="ForumV2_16" style="float: none; height: 45% ; width: 45%;">
+    </div>
+
+    <button class="accordion">FSU Patch Installer</button>
+    <div class="panel">
+        <p>
+        <b>Introduction :</b> When WD wants to login in to the previous operating year to take printout of the Invoices, reports and do other activities, at that time forum will not get logged in and the recovery manager will open. In that case we will be checking the YEP Status and update the status and install the FSU Patch in the previous year databases available.
+        </p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_45.png" alt="ForumV2_45" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Need to check current year Database FSU sequence , if no sequence, then detach all the old year's DB and reset the FSU sequence for the current year's database and install FSU and login forum. After login forum, attach the all the old year DB and run the patch installer.</p>
+        <br>
+        <p>Now close the forum and open the tool in that go to the FSU Patch Installer tab and select the database in which the WD wants to login, and click Check FSU List to validate the FSU availablity.</p>
+        <img src="./assets/Forum/Forum V2/ForumV2_46.png" alt="ForumV2_46" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Now click on the Proceed to Run Patch.dat button to install the FSU patch in the selected database. Now the patches will get installed.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_47.png" alt="ForumV2_47" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Once the Patches are installed in the selected database now login in to the selected operating year.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_48.png" alt="ForumV2_48" style="float: none; height: 45% ; width: 45%;">
+    </div>
+
+    <button class="accordion">FSU Sequence Reset</button>
+    <div class="panel">
+        <p>
+            <b>Introduction :</b> If the FSU are not in sequence we have to reset the sequence. For that first we have to check the availability of FSU using FSU Availability tab. In that first select the database in which the FSU is not in sequence and  click on the Check FSU list button and it will list the available FSUs. If the FSUs are not available it will be highlighted in red colour and click on Save FSU and a MissingFSUList notepad will be saved in the file location. So we have to copy the missing FSU files in the Forum update download folder in the forum installation path.
+        </p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_49.png" alt="ForumV2_49" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>
+            <li style="list-style-type: none;">FSU reset will be in 2 ways:</li>
+            <li>a. Force reset if FSU is already in sequence</li>
+            <li>b. The FSU sequence may is out and will reset from that FSU sequence from the FSU shown in screen.</li>
+            <li style="list-style-type: none;">Once the missing FSUs are pasted in the installation path you will get a popup that all the FSUs are available in the application path. We can proceed with the FSU Sequence reset.</li>
+        </p>
+        <img src="./assets/Forum/Forum V2/ForumV2_50.png" alt="ForumV2_50" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>Now go to the FSU Sequence Reset tab and click on the FSU Sequence Check button and after that click on FSU sequence reset button and give yes to reset the sequence. Now open the forum the FSUs will get installled.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_51.png" alt="ForumV2_51" style="float: none; height: 45% ; width: 45%;">
+        <br><br>
+        <img src="./assets/Forum/Forum V2/ForumV2_52.png" alt="ForumV2_52" style="float: none; height: 45% ; width: 45%;">
+        <br>
+        <p>After the FSU installation don’t open the forum, open the tool and go to the FSU Sequence Reset tab and click on the Reports to Upload Update button to update the reports upload date in Forum, and the reports to upload date will be updated correctly. Now open the Forum.</p>
+        <br>
+        <img src="./assets/Forum/Forum V2/ForumV2_53.png" alt="ForumV2_53" style="float: none; height: 45% ; width: 45%;">
     </div>
 
     <button class="accordion">Incorrect Day Close date updated Forum - ITC</button>
