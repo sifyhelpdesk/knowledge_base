@@ -142,51 +142,61 @@
         <br><br>
         <b>Workflow:</b>
         <br>
-        <li style="list-style-type: circle;">Create a case in the servicenow portal and provide the case ID to the customer.</li>
-        <li style="list-style-type: circle;">Contact the distributor to get additional information and request for clarification if needed.</li>
+        <li style="list-style-type: circle;">Create a case in the servicenow portal and provide the case ID to the
+            customer.</li>
+        <li style="list-style-type: circle;">Contact the distributor to get additional information and request for
+            clarification if needed.</li>
         <br><br>
         <b>Issue 1: Blank Branch and Region in Portal Report</b>
         <br><br>
         <b>1. Login to the Distributor Portal:</b> Use the provided ID and Password to access the system or use test
         credentials.
         <br><br>
-        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_01.jpg" alt="Image_01" style="float: none; height: 50% ; width: 75%;">
+        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_01.jpg" alt="Image_01"
+            style="float: none; height: 50% ; width: 75%;">
         <br><br>
         <b>2. Navigate to Report:</b>
         <li style="list-style-type: circle;">Go to <b>Reports</b> → <b>Sales</b></li>
         <li style="list-style-type: circle;">Select <b>Daily Sales Report</b></li>
-        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_02.png" alt="Image_02" style="float: none; height: 50% ; width: 75%;">
+        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_02.png" alt="Image_02"
+            style="float: none; height: 50% ; width: 75%;">
         <br><br>
         <b>3. Generate the Report:</b>
         <li style="list-style-type: circle;">Choose the desired date range and generate the report.</li>
-        <li style="list-style-type: circle;">Review the report output to check if branch and region data are still blank.</li>
+        <li style="list-style-type: circle;">Review the report output to check if branch and region data are still
+            blank.</li>
         <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_03.jpg" alt="Image_03" style="float: none; height: 50%; width: 75%;">
         <br><br>
         <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_04.png" alt="Image_04" style="float: none; height: 50%; width: 75%;">
         <br><br>
         <b>Escalate to Development Team</b>
         <li style="list-style-type: circle;">If the issue replicates, assign the case to the development team</li>
-        <li style="list-style-type: circle;">Once the development team resolves the issue, recheck and update the customer with screenshots</li>
+        <li style="list-style-type: circle;">Once the development team resolves the issue, recheck and update the
+            customer with screenshots</li>
         <br>
         <b>Issue 2: Branch and Region showing blank in SQL Query</b>
-        <li style="list-style-type: none;">If the daily sales report’s branch and region columns are blank when generated via a query, here are specific steps to analyze and resolve:</li>
+        <li style="list-style-type: none;">If the daily sales report’s branch and region columns are blank when
+            generated via a query, here are specific steps to analyze and resolve:</li>
         <br>
         <b>Steps to Troubleshoot SQL Query Issue:</b>
-        <li>Share the exact SQL query used for generating the report with the technical team.</li>        
+        <li>Share the exact SQL query used for generating the report with the technical team.</li>
         <br>
         To ensure that the daily sales report reflects accurate data, please confirm the following:
         <br><br>
         <b>Additional Checks:</b>
         <br><br>
         <b>1. Geography:</b>
-        <li style="list-style-type: none;">Ensure that each distributor’s geographic data (e.g., country, state, city) is accurate and updated in the
-        system.</li>
+        <li style="list-style-type: none;">Ensure that each distributor’s geographic data (e.g., country, state, city)
+            is accurate and updated in the
+            system.</li>
         <b>2. Organizational Hierarchy:</b>
-        <li style="list-style-type: none;">Verify that the distributor is correctly aligned within the organizational hierarchy, including any relevant
-        divisions, departments, or business units.</li>
+        <li style="list-style-type: none;">Verify that the distributor is correctly aligned within the organizational
+            hierarchy, including any relevant
+            divisions, departments, or business units.</li>
         <b>3. Branch and Region:</b>
-        <li style="list-style-type: none;">Confirm that branch and region details for the distributor are current and correctly mapped to ensure
-        visibility in the daily sales report.</li>
+        <li style="list-style-type: none;">Confirm that branch and region details for the distributor are current and
+            correctly mapped to ensure
+            visibility in the daily sales report.</li>
         <table class="ver-his">
             <th colspan="7" class="ver-summ">Version Summary</th>
             <tr class="bold">
@@ -212,8 +222,130 @@
 
     <button class="accordion">Collection Issue</button>
     <div class="panel">
-        
-
+        <b>OBJECTIVE:</b>
+        <li style="list-style-type: none;">This document provides a workflow for handling collection issues in the DMS.</li>
+        <br>
+        <b>COLLECTION:</b>
+        <li style="list-style-type: none;">In a billing application, collections refer to the process of tracking and managing payments received from
+            customers for goods or services rendered. The collection concept ensures that all payments are recorded,
+            outstanding amounts are monitored, and customers are followed up for any overdue invoices.
+        </li>
+        <br>
+        <b>COLLECTION REPORT:</b>
+        <li style="list-style-type: none;">A Collection Report provides detailed information on the payments collected from customers over a specific
+            period. It shows amounts paid against invoices and helps businesses track received payments from customers.
+        </li>
+        <b>OUTSTANDING REPORT:</b>
+        <li style="list-style-type: none;">An Outstanding Report lists the invoices that are still due from customers. It shows unpaid amounts and aging of
+            these invoices, which helps businesses track overdue payments.
+        </li>
+        <br>
+        <b>ISSUE DETAILS:</b>
+        <br>
+        <b><u>1. Collection Issue:</u></b> The error <b>"Salesman cannot be none"</b> in DMS while entering collection details
+        <br><br>
+        <b>Issue Short Description :</b> Collection: Salesman cannot be none
+        <br>
+        <b>Service Type :</b> IR
+        <br>
+        <b>Priority :</b> Low
+        <br>
+        <b>Problem Code :</b> Collection & Salesman Wise Collection Issues</b>
+        <br><br>
+        <b>INPUTS:</b>
+        <br>
+        <b> 1. Distributor Information
+            <br>
+            2. Salesman details (Salesman code & Salesman Name)
+            <br>
+            3. Retailer/Customer Information (Customer code/Name)
+            <br>
+            4. Error screenshot (if any)
+        </b>
+        <br><br>
+        <b>Workflow:</b>
+        <li style="list-style-type: circle;">Create a case in the servicenow portal and provide the case ID to the customer</li>
+        <li style="list-style-type: circle;">Contact the distributor to get additional information and request for clarification if needed</li>
+        Analyse the issue using the following steps:
+        <br><br>
+        <b>1. Login to the Distributor Portal:</b> Use the provided ID and Password to access the system or use test
+        credentials.
+        <br><br>
+        <b>2. Salesforce Check:</b>
+        <li>Navigate to <b>Salesforce</b> → Select the <b>Salesman</b></li>
+        <li>Ensure that the mentioned <b>Beat</b> is mapped to the <b>Salesman</b></li>
+        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_05.png" alt="Image_05" style="float: none; height: 50%; width: 75%;">
+        <br>
+        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_06.png" alt="Image_06" style="float: none; height: 50%; width: 75%;">
+        <br>
+        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_07.png" alt="Image_07" style="float: none; height: 50%; width: 75%;">
+        <br><br>
+        <b>3. Check customer mapping:</b>
+        <li>Navigate to Masters → Secondary Customers</li>
+        <li>Search for the specific customer</li>
+        <li>Verify that the correct Beat is mapped to the customer</li>
+        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_08.png" alt="Image_08" style="float: none; height: 50%; width: 75%;">
+        <br>
+        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_09.png" alt="Image_09" style="float: none; height: 50%; width: 75%;">
+        <br>
+        <b>4.If the Beat is not mapped correctly:</b>
+        <li>Contact the Zonal Team to request mapping corrections</li>
+        <li>Send a reply to the customer with screenshots of the mapping</li>
+        <br>
+        <b>5.If the Zonal Team asks for mapping on our end:</b>
+        <li>Request IT approval and assign the case to the Development Team</li>
+        <li>Once the mapping is completed by the Dev Team, check, and share the updates with the customer along with screenshots</li>
+        <br><br>
+        <b><u>2. Collection Issue:</u></b> Collection amount has been collected by the salesman, but it is not showing in the report
+        <br><br>
+        <b>Issue Short Description :</b> Collection: Not updated correctly
+        <br>
+        <b>Service Type :</b> IR
+        <br>
+        <b>Priority :</b> High
+        <br>
+        <b>Problem Code :</b> Collection data not synced with Fnxt Web for a user
+        <br><br>
+        <b>
+            INPUTS:
+            <br>
+            1. Distributor Information
+            <br>
+            2. Collection code details
+            <br>
+            3. Customer/ Retailer information
+            <br>
+            4. Error screenshot (if any)
+        </b>
+        <br><br>
+        <b>Workflow:</b>
+        <li>Create a case in the servicenow portal and provide the case ID to the customer</li>
+        <li>Contact the distributor to get additional information and request clarification if needed</li>
+        <br>
+        Analyse the issue using the following steps:
+        <br>
+        <b>1. Login to the Distributor Portal:</b> Use the ID and Password to log in either FsupportMD or Fuspport.
+        <br>
+        <b>2. Navigate to Financials:</b>
+        <li>Go to <b>Financials</b> → <b>Collections</b></li>
+        <li>Search for the relevant <b>collection code</b> or <b>transaction number</b> to confirm that the collection entry was created and saved correctly</li>
+        <b>3.Verify the collection status:</b>
+        <li>Confirm that the collection status is marked as "Created”</li>
+        <li>Go to Reports → Customer-wise Outstanding Report</li>
+        <li>Search for the Customer and select the start and end dates for the report</li>
+        <li>Generate the report and cross check if the collection appears</li>
+        <br>
+        <b>4. Generate Customer Wise Collection Report:</b>
+        <li>In DMS, navigate to Reports → Customer Wise Collection Report</li>
+        <li>Select the appropriate start date and end date to ensure the period includes the collection date</li>
+        <li>Select the relevant customer from the dropdown or search for the customer</li>
+        <li>Click Generate to create the report</li>
+        <br>
+        <b><u>3. Review Collection in the Report:</u></b>
+        <li>Once the report is generated, verify if the collection amount for the selected customer is listed correctly</li>
+        <li>If the collection is not listed, check the invoice numbers, collection dates, and amounts to ensure accuracy</li>
+        <li>If the invoice number is not present, escalate the case to the Development Team</li>
+        <li>Validate the corrections and provide the necessary screenshots to the customer</li>
         <table class="ver-his">
             <th colspan="7" class="ver-summ">Version Summary</th>
             <tr class="bold">
@@ -226,7 +358,7 @@
                 <td>Maiden Version Published On</td>
             </tr>
             <tr>
-                <td></td>
+                <td>Nageena Sultana K</td>
                 <td>Nisha Bhatt</td>
                 <td>Julian Shawn Dmonte</td>
                 <td>Karthick Krishna Kumar, Subramanian, Kannan</td>
