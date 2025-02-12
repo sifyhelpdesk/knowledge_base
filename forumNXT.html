@@ -1351,7 +1351,40 @@
 
     <button class="accordion">Stock Update Request</button>
     <div class="panel">
-
+    <b>OBJECTIVE:</b><br>
+    This document provides a workflow for stock update in the DMS.<br><br>
+    <b>Issue Short Description	:</b> Stock Update<br>
+    <b>Service Type			: </b>SR<br>
+    <b>Priority			: </b>Low<br>
+    <b>Problem Code		:</b> Others<br>
+    <b>INPUTS:</b><br>
+    To update stock in DMS, we need to get the stock details in a structured format. Below is the format that needs to be followed.<br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_91.jpg" alt="Image_91" style="float: none; height: 50%; width: 75%;"><br><br>
+        <br><br>
+        <b>Workflow:</b><br>
+        <li style="list-style-type: circle;">Create a case in the servicenow portal and provide the case ID to the customer.</li>
+        <li style="list-style-type: circle;">Contact the distributor to get additional information and request for clarification if needed.</li>
+    <br>
+    <b>Stock Update Analysis and Validation Process</b><br>
+    <b>1. Login to the Distributor Portal: </b>Use the provided ID and Password to access the system or use test credentials.<br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_92.png" alt="Image_92" style="float: none; height: 50%; width: 75%;"><br><br>
+        <b>2. Navigate to Reports</b><br>
+        <li style="list-style-type: circle;">Go to <b>Reports → Inventory → Current Stock Report.</b></li><br>
+        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_93.jpg" alt="Image_93" style="float: none; height: 50%; width: 75%;"><br><br>
+        <b>3. Generate and Download the Stock Report</b><br>
+        a. Generate the <b> Current Stock Report </b>for the specified <b>CD </b>(Channel Distributor).<br>
+        b. Download the report and review it to check the current stock levels.<br>
+        c. <b>Verification:</b> Compare the generated stock report with the expected stock values.<br>
+        d. If the report is empty or does not match the provided stock data:
+    <center>Action: Assign the ticket to the Development Team </center><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_94.png" alt="Image_94" style="float: none; height: 50%; width: 75%;"><br><br>
+    <b>Post Update:</b><br>
+    <b>1. Recheck the Stock:</b><br>
+    <li style="list-style-type: circle;">Go to <b>Reports → Inventory → Current Stock Report.</b></li>
+    <li style="list-style-type: circle;">Generate and download the current stock report again for the same <b>CD.</b></li><br>
+    <b>2. Validation:</b><br>
+    <li style="list-style-type: circle;">Compare the new report with the expected stock levels to ensure that the stock update was successful and inform to customer.</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_95.png" alt="Image_95" style="float: none; height: 50%; width: 75%;"><br><br>
 
         <table class="ver-his">
             <th colspan="7" class="ver-summ">Version Summary</th>
@@ -1365,7 +1398,7 @@
                 <td>Maiden Version Published On</td>
             </tr>
             <tr>
-                <td></td>
+                <td>Mohammed Kashif S</td>
                 <td>Nisha Bhatt</td>
                 <td>Julian Shawn Dmonte</td>
                 <td>Karthick Krishna Kumar, Subramanian, Kannan</td>
