@@ -939,42 +939,6 @@
     <b>2.Notify Customer and Update Tracker:</b><br>
     <li style="list-style-type: circle;">Send an email to the customer with the updated details and attach the screenshot.</li>
     <li style="list-style-type: circle;">Update the Quick Support Tool Tracker with the completion details for this request.</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
         <table class="ver-his">
             <th colspan="7" class="ver-summ">Version Summary</th>
             <tr class="bold">
@@ -1027,8 +991,123 @@
 
     <button class="accordion">Scheme not Apply</button>
     <div class="panel">
-
-
+    <b>OBJECTIVE:</b><br>
+    This document provides a structured workflow for resolving the issue when <b>a scheme is not applying correctly</b> in a sales invoice for a user:<br><br>
+    <b>ISSUE DETAILS: </b><br><br>
+    <b>Issue Short Description for ref	: </b>Scheme not applying correctly<br>
+    <b>Service Type				:  </b>IR <br>
+    <b>Priority				: </b>Critical <br>
+    <b>Service Req Type			:  </b> Schemes Not Applying in Sales Invoice for a user<br>
+    <br>
+    <b>INPUTS:</b><br>
+    1. Request the customer to explain the issue via call or remote session if needed.<br>
+    2. Error screenshot (if any).<br>
+    3. Distributor Information.<br>
+    4. Scheme details.<br>
+    5. Product details (if the issue is related to a specific product).<br>
+    6. Customer name (if specific to a customer).<br><br>
+    <b>Workflow:</b><br>
+    <li style="list-style-type: circle;">Create a case in the ServiceNow portal and provide the case ID to the customer.</li>
+    <li style="list-style-type: circle;">Reach out to the customer to gather more information about the issue, if required.</li>
+    <li style="list-style-type: circle;">Need to analyze the issue based on the following steps:</li>
+    <span style="margin-left: 5%; color: black; font-weight: normal; "> &#9632; <b>Log in to the DMS Portal </b>using the <b> Distributor Credentials</b>provided by the customer.</span><br>
+    <span style="margin-left: 5%; color: black; font-weight: normal; "> &#9632; If the Distributor Credentials are not available, use the <b>Corporate Portal </b>with<b> User ID/Password: </b>FsupportMD or Fsupport.</span><br>
+    <br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_69.png" alt="Image_69" style="float: none; height: 50%; width: 75%;"><br><br>
+    <b>1. Navigate to the Scheme Master</b><br>
+    Go to Target & Promotions --> Scheme master and search for the scheme.<br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_70.jpg" alt="Image_70" style="float: none; height: 50%; width: 75%;"><br><br>
+    <b>Checklist for Scheme Validation:</b><br><br>
+    <li style="list-style-type: circle;"><b>Check Scheme Mapping</b></li>
+    <li style="list-style-type: disc;">Search using the scheme code.</li>
+    <li style="list-style-type: disc;">Ensure the scheme is mapped to the distributor. If it appears, it is mapped.</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_71.jpg" alt="Image_71" style="float: none; height: 50%; width: 75%;"><br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_72.png" alt="Image_72" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: circle;"><b>Verify Scheme Status:</b></li>
+    <li style="list-style-type: disc;">Confirm that the scheme is <b>"Approved".</b></li>
+    <li style="list-style-type: disc;">Check the <b> effective from/to dates</b> and <b>revoke date.</b></li>
+    <li style="list-style-type: disc;">Ensure the scheme is <b>Active.</b></li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_73.jpg" alt="Image_73" style="float: none; height: 50%; width: 75%;"><br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_74.png" alt="Image_74" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: circle;"><b>Validate Product Mapping </b>(if issue is product-specific):</li>
+    <li style="list-style-type: circle;">Go to <b>Scheme Product Parameter Selection</b> and verify that the product is mapped to the scheme.</li>
+    <li style="list-style-type: circle;">If issue is for any specific product, check whether the product is mapped in the scheme. Scheme product parameter selection --> View the product details of respective scheme.</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_75.png" alt="Image_75" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: disc;">If above all criteria met-->go to scheme slab in order to get the scheme slab information</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_76.png" alt="Image_76" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: disc;">Review Scheme Slab:</li>
+    <li style="list-style-type: disc;">Examine the scheme to understand the criteria.</li>
+    <li style="list-style-type: disc;">For Eg: Based on the above slab--> the distributor has to bill the minimum qty of 10 for the defined products to apply the scheme.</li><br>
+    <li style="list-style-type: disc;"><b>Check Benefit Type:</b></li>
+    <li style="list-style-type: disc;">If the benefit type is “Amount”, it is a discount-based scheme.</li>
+    <li style="list-style-type: disc;">If it is “product”, it is a product-based scheme</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_77.png" alt="Image_77" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: disc;">Click on the scheme slab ID in order to get the free product details.</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_78.png" alt="Image_78" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: disc;">Free product details will be defined the Multiple free product selection column</li>
+    <li style="list-style-type: circle;"><b>Free Product Stock Check:</b></li>
+    1. Go to <b>Reports → Inventory → Current Stock Batch Wise Report.</b><br>
+    2. <b>Generate and download the report.</b><br>
+    3. Check the <b>free quantity stock</b> for the specified free product.<br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_79.png" alt="Image_79" style="float: none; height: 50%; width: 75%;"><br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_80.jpg" alt="Image_80" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: disc;">Click on generate and download--> Download the report</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_81.jpg" alt="Image_81" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: disc;">Open the report--> check the free qty stock for the mentioned free product</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_82.png" alt="Image_82" style="float: none; height: 50%; width: 75%;"><br><br>
+   <b> 1. Create New Sales Order</b>
+    Check all the above-mentioned points if it is met--> Go to sales invoice--> Create new sales invoice/sales order<br>
+    <b>Note:</b> In Adani we don’t have the feasibility to create direct manual invoice<br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_83.jpg" alt="Image_83" style="float: none; height: 50%; width: 75%;"><br><br>
+    <b>2. Create new sales order in DMS to check the scheme application</b><br<br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_84.png" alt="Image_84" style="float: none; height: 50%; width: 75%;"><br><br>
+    <b>3. Select the customer’s name and the product defined in the scheme.</b><br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_85.png" alt="Image_85" style="float: none; height: 50%; width: 75%;"><br><br>
+    <b>4. Enter the quantity required defined based on the scheme slab and click on apply scheme button.</b><br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_86.png" alt="Image_86" style="float: none; height: 50%; width: 75%;"><br><br>
+    <b>5. Check whether scheme is applying or not. If the scheme applies successfully, take a screenshot and provide the detailed analysis to the customer. </b><br><br>
+    <b>Additional Checks:</b><br><br>
+    <b>Channel Mapping:</b><br>
+    <li style="list-style-type: disc;">If the issue is specific to a customer, verify the <b>channel mapping in Masters.</b></li>
+    <li style="list-style-type: disc;">Ensure the channel is mapped to the scheme. If not, send a detailed analysis to the customer.</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_87.png" alt="Image_87" style="float: none; height: 50%; width: 75%;"><br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_88.png" alt="Image_88" style="float: none; height: 50%; width: 75%;"><br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_89.png" alt="Image_89" style="float: none; height: 50%; width: 75%;"><br><br>
+    <b>Scheme Type:</b><br>
+    <li style="list-style-type: disc;">If, despite satisfying all requirements, the scheme is still not applying, make sure it is a combination or normal scheme.</li>
+    According to the normal scheme, the specified product will be covered by the scheme.
+    Combination schemes describe how two products are combined. In this case, the customer must bill for both products; only the plan will be applicable.<br>
+    <li style="list-style-type: disc;">Also check the Apply once status --> If it is updated as “Yes” states that the scheme will apply only once in the specified duration.</li>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_90.jpg" alt="Image_90" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: disc;">lso, we have a option of apply scheme based on the user selection criteria. Check the option is enabled in scheme. If it is enabled, please check based on the below steps.</li><br>
+    <b>Steps to Apply a Scheme Based on User Selection:</b><br><br>
+    <b>1. Verify Scheme Configuration:</b><br>
+    <li style="list-style-type: circle;">Ensure that the scheme is set up to apply on user selection. Some schemes are configured to apply automatically based on predefined criteria (like quantity or product), while others require the user to manually apply the scheme during the sales process.</li>
+    <br>
+    <b>2. Create Sales Invoice/Order:</b><br>
+    <li style="list-style-type: circle;">Log in to <b>DMS</b> with the user credentials.</li>
+    <li style="list-style-type: circle;">Go to <b>Sales → Sales Invoice</b> or <b>Sales Order.</b></li>
+    <li style="list-style-type: circle;">Search for the <b>relevant product</b> or <b>customer</b> for which the scheme should be applied.</li>
+    <br>
+    <b>3. Select the Scheme Manually:</b><br>
+    <li style="list-style-type: circle;">During the invoice/order creation, there will be an option to <b>manually apply the scheme.</b></li>
+    <li style="list-style-type: circle;">After selecting the product, look for an <b>"Apply Scheme"</b> or <b>"Select Scheme"</b> button.</li>
+    <li style="list-style-type: circle;">Choose the appropriate scheme from the list of available schemes.</li><br>
+    <b>4. Ensure Correct Quantity/Criteria:</b>
+    <li style="list-style-type: circle;">Check that the required criteria (e.g., minimum purchase quantity, specific product) are met for the scheme to be eligible.</li>
+    <li style="list-style-type: circle;">Enter the correct <b>quantity</b> or product selection, which is necessary for the scheme to apply.</li>
+    <br>
+    <b>5. Check for Scheme Discounts or Free Products:</b><br>
+    <li style="list-style-type: circle;">If the scheme is applied, verify if the discount (if applicable) or free products are reflected in the invoice or order.</li>
+        <br>
+    <b>6. Save and Confirm:</b><br>
+    <li style="list-style-type: circle;">Save the order or invoice after confirming that the scheme has been applied.</li>
+    <li style="list-style-type: circle;"><b>Take a screenshot</b> for reference and share it with the customer if needed.</li>
+    <br>
+    <b>Escalate to Development Team</b><br>
+    <li style="list-style-type: disc;">If all requirements are met and the scheme is still not applying, <b>assign the case to the development team.</b></li>
+    <li style="list-style-type: disc;">Once the development team resolves the issue, recheck the scheme application and update the customer with screenshots.</li>
+        
         <table class="ver-his">
             <th colspan="7" class="ver-summ">Version Summary</th>
             <tr class="bold">
@@ -1041,7 +1120,7 @@
                 <td>Maiden Version Published On</td>
             </tr>
             <tr>
-                <td></td>
+                <td>Pavithra M</td>
                 <td>Nisha Bhatt</td>
                 <td>Julian Shawn Dmonte</td>
                 <td>Karthick Krishna Kumar, Subramanian, Kannan</td>
