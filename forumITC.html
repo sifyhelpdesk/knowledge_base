@@ -33,6 +33,208 @@
     <!-- End of navigation bar -->
 
     <!-- Content section -->
+
+    
+    <button class="accordion">SQL Installation</button>
+    <div class="panel">
+        <b><u>Purpose of document :-</u></b><br>
+        <br>
+        The purpose of a document "SQL new installation" is to provide clear, step-by-step guidance for installing a new instance of SQL Server on a system.<br>
+        <br>
+        <b><u>Pre-Installation System Checks for SQL Server :-</u></b><br><br>
+        Before installing SQL Server, it is essential to perform a series of pre-installation checks to ensure the system meets all requirements and to prevent installation failures or post-installation issues. These checks include both manual verifications.<br><br>
+        <li style="list-style-type: none;">Step 1 : Go to the Control Panel, and then Navigate to Clock and Region.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_1.png" alt="Img_1" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 2 : Change the country Format as English(United States).</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_2.png" alt="Img_2" style="float: none; height: 15% ; width: 35%;"><br><br>
+        <li style="list-style-type: none;">Step 3 : And then go to <b>Additional settings,</b> Navigate to <b>Date</b> Tab, Change the <b>Short Date & Long Date</b> Format as <b>dd/mm/yyyy,</b> and click on <b>Apply</b> and <b>ok.</b></li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_3.png" alt="Img_3" style="float: none; height: 15% ; width: 35%;"><br><br>
+        <li style="list-style-type: none;">Step 4 : Go back to control Panel, <b>"Programs and Features".</b></li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_4.png" alt="Img_4" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 5 : After opening <b>"Programs and Features,"</b> click on <b>"Turn Windows features on or off"</b> in the top left corner.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_5.png" alt="Img_5" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 6 : After selecting "Turn Windows features on or off," <b>“Check”</b> all the .NET features.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_6.png" alt="Img_6" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 7 : After enabling the .NET feature, Click <b>OK.</b></li><br>
+        <li style="list-style-type: none;">Step 8 : Click “Let Windows Update to download the files for you” .</li>
+        <img src="./assets/Forum/ITC 29APR2025/Img_7.png" alt="Img_7" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 9 : Once you click "Let Windows Update download the files for you," the necessary files will be downloaded.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_8.png" alt="Img_8" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 10 : After the required files are downloaded, Windows features will apply the changes.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_9.png" alt="Img_9" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 11 : Once Windows has completed the requested changes, click the <b>"Close"</b> button.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_10.png" alt="Img_10" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 12 : Go Back to control panel and then go to System and Security.</li>
+        <img src="./assets/Forum/ITC 29APR2025/Img_11.png" alt="Img_11" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 13 : Go to change Security and Maintenance setting, and then disable all security messages & Maintenance messages.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_12.png" alt="Img_12" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_13.png" alt="Img_13" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 14 : And click on “OK”.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_14.png" alt="Img_14" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 15 : Go to Change User Account Control settings, and then move the cursor down to 'Never Notify.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_15.png" alt="Img_15" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_16.png" alt="Img_16" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_17.png" alt="Img_17" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_18.png" alt="Img_18" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 16 : Find the SQL Setup files in the Customer System, Open the SQL Setup Application in Run as administrator, and then select New SQL Server stand-alone installation or add features to an existing installation.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_19.png" alt="Img_19" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_20.png" alt="Img_20" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 17 : Enable I accept the license terms ---> Click Next.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_21.png" alt="Img_21" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_22.png" alt="Img_22" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 18 : Enable Use Microsoft Updates to check for Updates(recommended) ---> Click Next.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_23.png" alt="Img_23" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 19 :  Install Rules window will open ---> Click Next.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_24.png" alt="Img_24" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 20 : Feature selection window will open, Disable R, Python Feature and then select the proper root directory ---> Click Next.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_25.png" alt="Img_25" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_26.png" alt="Img_26" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>NOTE :</b> If a customer already has another version of SQL Server installed on their system, you should proceed with installing a named instance rather than a default instance.<br><br>
+        <li style="list-style-type: none;">Step 21 : Installation configuration window will open, change it to <b>Default Instance,</b> and then change the <b>Instance ID</b> as <b>MSSQLSERVER ---> Click Next.</b></li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_27.png" alt="Img_27" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_28.png" alt="Img_28" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 22 : Server configuration window will open, <b>Enable Grant perform volume Maintenance Task privilege to SQL Server Database Engine Service ---> Click Next.</b></li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_29.png" alt="Img_29" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_30.png" alt="Img_30" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 23 :  The Database Engine Configuration window will open. Select Mixed Mode, and then enter <b>“athena”</b> in both the Password and Confirm Password fields. Click next to continue.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_31.png" alt="Img_31" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_32.png" alt="Img_32" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 24 :  The Installation Progress window will open and display progress for a while. After completion, click Next to proceed.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_33.png" alt="Img_33" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 25 : The Complete window will open, displaying "Install Successful." Click Close to finish.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_34.png" alt="Img_34" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>After completing these steps, the SQL installation process will be finished.</b><br><br>
+        <li style="list-style-type: none;">Step 26 : Once the SQL installation is complete, click <b>Search</b> or click <b>Start</b> and type "Services" in the search bar. Open the <b>Services</b> application.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_35.png" alt="Img_35" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 27 : In the Services window, locate the <b>SQL Server (MSSQLSERVER)</b> service. Right-click it and select <b>Properties.</b> Navigate to the <b>Log On</b> tab, then select <b>Local System account</b> and Click ok to finish.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_36.png" alt="Img_36" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_37.png" alt="Img_37" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 28 : Restart the SQL Services.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_38.png" alt="Img_38" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 29 : Locate the SQL Server Agent service and change its Startup Type to Automatic.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_39.png" alt="Img_39" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 30 : Locate the SQL Server Browser service and change its Startup Type to Automatic.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_40.png" alt="Img_40" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 31 : Verify the installation of Microsoft SQL Server Management Studio (SSMS). Locate and run the SSMS-Setup-ENU installer to begin the installation process.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_41.png" alt="Img_41" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 32 : Click on 'Install,' and it will load the packages. Once completed, the setup installation will be finished.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_42.png" alt="Img_42" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_43.png" alt="Img_43" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_44.png" alt="Img_44" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 33 : Once SQL Setup installation was completed, Open Microsoft SQL Server Management Studio 17.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_45.png" alt="Img_45" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>After this, the SQL installation is complete, and we can proceed with the Forum installation.</b><br>
+
+        <table class="ver-his">
+            <th colspan="7" class="ver-summ">Version Summary</th>
+            <tr class="bold">
+                <td>Author</td>
+                <td>Reviewer</td>
+                <td>Approver 1</td>
+                <td>Approver 2</td>
+                <td>Current Version</td>
+                <td>Current Version Published On</td>
+                <td>Maiden Version Published On</td>
+            </tr>
+            <tr>
+                <td>Mohammed Taj.M</td>
+                <td>Nisha</td>
+                <td>Julian Shawn Dmonte</td>
+                <td>Raja Uppuluri Sekharam</td>
+                <td>1.0</td>
+                <td>29/04/2025</td>
+                <td>29/04/2025</td>
+            </tr>
+        </table>
+    </div>
+
+    <button class="accordion">Forum Installation</button>
+    <div class="panel">
+        <b><u>Forum Micro ERP Installation Steps :-</u></b><br>
+        <br>
+        Please follow the steps outlined below for the Forum Micro ERP installation.<br><br>
+        <b><u>Pre-Installation System Checks for SQL Server :-</u></b><br><br>
+        <ul style="list-style-type: none;">
+            <li>1. The company needs to be unregistered.</li><br>
+            <li>2. Collect the Company code(Forum Code)  and CD Key details.</li><br>
+            <li>3. Verify and confirm the latest database location and database name.</li><br>
+            <li>4. The forum installation path already exists. Rename the existing folder.</li><br>
+        </ul>
+        <li style="list-style-type: none;">Step 1 : Find the Forum Setup files in the Customer System, and then open Forum Setup Application.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_46.png" alt="Img_46" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 2 : Click the ForumSetup.exe file in the setup folder to start the installation.
+            Welcome to the <b>Forum Installation Wizard,</b> window will appear, followed by a <b>'Checking pre-configurations... Completed'</b> message like .NET 2.0 & 3.5 ---> <b>Click 'Continue.</b></li><br>
+            <b>NOTE :</b> Here the <b>.NET 2.0 & 3.5 Frameworks</b> to be installed ,as it is mentioned in <b>SQL installation steps.</b><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_47.png" alt="Img_47" style="float: none; height: 15% ; width: 35%;"><br><br>
+        <li style="list-style-type: none;">Step 3 : After clicking 'Continue,' select <b>'NEW'</b> for the Micro-ERP Installation Type and choose <b>'Server'</b> for the Machine Details. Enter the <b>appropriate License ID</b> Here we can change the <b>File directory</b> as which drive is having space.</li><br>
+        <b>NOTE :</b> It is the <b>New Installation & Re-installation steps only,</b> Here we have Upgrade, ADD-ON in Installation Type and We have client in Machine Details this will have different steps.<br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_48.png" alt="Img_48" style="float: none; height: 15% ; width: 35%;"><br><br>
+        <li style="list-style-type: none;">Step 4 :  After entering the details, click either 'Manual' or 'Automatic' to proceed.</b></li><br>
+        <b>NOTE :</b> If we click 'Automatic', all the setup steps will be completed automatically.<br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_49.png" alt="Img_49" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 5 : After clicking 'Manual' or 'Automatic', the installation process window will appear.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_50.png" alt="Img_50" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 6 : Click on 'Install Forum Client' to begin the Forum Client installation process.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_51.png" alt="Img_51" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 7 : To manually install the Forum Message Client, run Notepad as Administrator and open the hosts file.</b></li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_52.png" alt="Img_52" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_53.png" alt="Img_53" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 8 : Comment out the IP address of sifyforumcentral.com by adding '#' and a space at the beginning of the line.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_54.png" alt="Img_54" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 9 : Once you click "Let Windows Update download the files for you," the necessary files will be downloaded.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_55.png" alt="Img_55" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_56.png" alt="Img_56" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 10 : Save the changes to the file and close it.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_57.png" alt="Img_57" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 11 : After installing the Forum Client, click on <b>'Client Registration’.</b></li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_58.png" alt="Img_58" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 12 :  After client registration, click on 'Install Forum Micro ERP'. Once the Forum Micro ERP is successfully installed, a message will be displayed.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_59.png" alt="Img_59" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_60.png" alt="Img_60" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 13 : Once the Forum Micro ERP installation is complete, Login to the forum micro ERP and load the company information. Then, restore the latest backup using the Restore Backup application in the Forum file location.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_61.png" alt="Img_61" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 14 : After opening the Restore Backup .exe, select the company name, enter the password, and then click 'OK.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_62.png" alt="Img_62" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 15 : Choose the path of the latest backup and restore it.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_63.png" alt="Img_63" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_64.png" alt="Img_64" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_65.png" alt="Img_56" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 16 : Once the backup is restored, check the FSU availability in the MERP Tool. If the FSU is not available, go to the previous installation path, copy the contents of the ForumUpdateDownload folder, and check the FSU availability again. If any FSUs are still missing, collect the missing FSUs to your local drive and paste them. After that, reset the FSU and install all the FSUs.</li><br>
+        <li style="list-style-type: none;">Step 17 : After <b>Installing FSU’s,</b> Open the <b>Forum Micro ERP Application.</b> <b>Click the dropdown for Company Name,Operating Year and User Name, then provide Password ---> Click Login.</b></li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_66.png" alt="Img_66" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 18 : After clicking 'Login,' it will prompt you for the Sales Portal IP. Provide the Sales Portal IP as <b>cisedi.itc.in ---> Click Ok.</b></li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_67.png" alt="Img_67" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 19 :  After clicking ‘Ok’, The Welcome Window will appear ---> Click Ok.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_68.png" alt="Img_68" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">Step 20 : After Clicking Ok, The Company registered successfully Window will appear ---> Click Ok.</li><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_69.png" alt="Img_69" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>NOTE :</b> Once the company is successfully registered, the Forum will install the FSUs. After the FSUs are installed, the Forum will log in successfully for the current year.<br><br>
+        <img src="./assets/Forum/ITC 29APR2025/Img_70.png" alt="Img_70" style="float: none; height: 45% ; width: 45%;"><br><br>
+        
+        <table class="ver-his">
+            <th colspan="7" class="ver-summ">Version Summary</th>
+            <tr class="bold">
+                <td>Author</td>
+                <td>Reviewer</td>
+                <td>Approver 1</td>
+                <td>Approver 2</td>
+                <td>Current Version</td>
+                <td>Current Version Published On</td>
+                <td>Maiden Version Published On</td>
+            </tr>
+            <tr>
+                <td>Mohammed Taj.M</td>
+                <td>Nisha</td>
+                <td>Julian Shawn Dmonte</td>
+                <td>Raja Uppuluri Sekharam</td>
+                <td>1.0</td>
+                <td>29/04/2025</td>
+                <td>29/04/2025</td>
+            </tr>
+        </table>
+    </div>
+
+
     
     <button class="accordion">Customer Deactivation Request</button>
     <div class="panel">
@@ -3114,6 +3316,113 @@
             </tr>
         </table>
     </div>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- End of content section -->
 
