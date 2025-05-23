@@ -1547,7 +1547,73 @@
     <b>2.Notify Customer and Update Tracker:</b><br>
     <li style="list-style-type: circle;">Send an email to the customer with the updated details and attach the screenshot.</li>
     <li style="list-style-type: circle;">Update the Quick Support Tool Tracker with the completion details for this request.</li>
-        <table class="ver-his">
+    <br><br>
+    <b>Request :</b> Processing the complimentary invoices in ZFRG batch especially for DBPL.<br><br>
+    <li style="list-style-type: circle;"><b>Service Type : </b>IR</li>
+    <li style="list-style-type: circle;"><b>Priority : </b>Medium</li>
+    <li style="list-style-type: circle;"><b>Problem Code : </b>Stock not getting updated in Purchase Invoice for a user</li>
+    <li style="list-style-type: circle;"><b>Inputs Required : </b>
+    <ul>
+        <li style="list-style-type: circle;">Distributor Code</li>
+        <li style="list-style-type: circle;">Invoice Details</li>
+        
+    </ul>
+    </li><br>
+    <b><u>Workflow :</u></b><br><br>
+    <b><u>Important Notes : </u></b><br><br>
+    <ul style="list-style-type: square;">
+        <b>Duplicate Invoices : </b>Ensure invoice numbers are not repeated to avoid duplicates.<br><br>
+        <b>Invoice Limit : </b>If there are more than 10 invoices, process 10 invoices per batch.<br><br>
+        <b>Focused Task : </b>Avoid performing other activities while processing the invoice request.<br><br>
+        <b>Resolution Email : </b>Ensure that resolution email includes detailed information of invoices processed in the ZFRG batch.<br><br>
+        <b>Case Tracker Update : </b>Update the case details in the Quick Support Tool Tracker.<br><br>
+        <b>Slowness or Issues : </b>If you encounter any slowness or technical issues, coordinate with the development team to resolve them.<br><br>
+    </ul>
+    Create a case in the ServiceNow portal and provide the case ID to the customer.<br><br>
+    <b>1. DMS Portal Validation :</b><br><br>
+    <li style="list-style-type: square;">Log in to the DMS portal</li>
+    <li style="list-style-type: square;">Navigate to Integration → Receive Purchase Invoice.</li>
+    <li style="list-style-type: square;">Verify whether all invoices are visible in the RPI menu.</li>
+    <br>
+    <b>2. Processing Steps (if invoices are visible in the RPI menu) :</b><br><br>
+    <li style="list-style-type: none;"><b>Step 1 : </b>Log in to the corporate portal (FSupport).</li>
+    <li style="list-style-type: none;"><b>Step 2 :</b>Go to Admin → Settings → Quick Support.</li>
+    <br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_241.png" alt="Image_241" style="float: none; height: 50%; width: 75%;"><br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_242.png" alt="Image_242" style="float: none; height: 50%; width: 75%;"><br><br>
+    <br>
+    <li style="list-style-type: none;"><b>Step 3 : </b>Locate the RPI to PI ZFRG batch process in Quick Support.</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_243.png" alt="Image_243" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: none;"><b>Step 4 : </b>Enter the invoice numbers (separated by commas) and submit them.</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_244.png" alt="Image_244" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: none;"><b>Step 5 : </b>Confirm and validate the data, then click "OK".</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_245.png" alt="Image_245" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: none;"><b>Step 6 : </b>All invoices will be processed in the ZFRG batch.</li><br>
+    <b>Note : </b>If an invoice is already converted to PI, a validation message stating "Already converted" will be displayed.<br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_246.png" alt="Image_246" style="float: none; height: 50%; width: 75%;"><br><br>
+    <b>3. Post-Processing Validation :</b><br><br>
+    <ul style="list-style-type: square;">
+        Log in to the Fsupport MD portal.
+        Select the respective distributor and download the current stock batch-wise report.<br>
+        Navigate to Purchase Management → Online Purchase Invoice.<br>
+    </ul>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_247.png" alt="Image_247" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: square;">Open the relevant invoice and</li>
+    <ul style="list-style-type: disc;">
+        Note down the product name and quantity.<br>
+        Verify that the invoice amount for the respective product is "zero."
+    </ul>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_248.png" alt="Image_248" style="float: none; height: 50%; width: 75%;"><br><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_249.png" alt="Image_249" style="float: none; height: 50%; width: 75%;"><br><br>
+    <li style="list-style-type: square;">Go to Reports and validate the product details (batch and quantity) whether it has been added to saleable qty.</li>
+    <li style="list-style-type: square;">Send an email to the customer, attaching the invoice details and current stock report.</li><br>
+    <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_250.png" alt="Image_250" style="float: none; height: 50%; width: 75%;"><br><br>
+    <b>4. If invoices are NOT visible / Already Converted in the RPI menu :</b><br><br>
+    <li style="list-style-type: disc;">Note down the invoice numbers.</li>
+    <li style="list-style-type: disc;">Respond to the client with detailed information in the resolution email.</li>
+    
+    
+    <table class="ver-his">
             <th colspan="7" class="ver-summ">Version Summary</th>
             <tr class="bold">
                 <td>Author</td>
@@ -1557,6 +1623,15 @@
                 <td>Current Version</td>
                 <td>Current Version Published On</td>
                 <td>Maiden Version Published On</td>
+            </tr>
+            <tr>
+                <td>Pavithra M</td>
+                <td>Nisha Bhatt</td>
+                <td>Julian Shawn Dmonte</td>
+                <td>Karthick Krishna Kumar, Subramanian, Kannan</td>
+                <td>2.2</td>
+                <td>22/11/2024</td>
+                <td>22/11/2024</td>
             </tr>
             <tr>
                 <td>Surekha</td>
@@ -1647,21 +1722,31 @@
         <li style="list-style-type: disc;">Invoice Number: Enter the respective invoice number</li>
         <li style="list-style-type: disc;">Invoice Date: Enter the respective invoice Date</li>
         <li style="list-style-type: disc;">Invoice level discount: Overall discount applicable to the entire invoice</li>
-        <li style="list-style-type: disc;">Depot code</li>
+        <li style="list-style-type: disc;">Depot code (DPT1)</li>
         <li style="list-style-type: disc;">SKU code: Fill in the SKU code for each item as listed</li>
         <li style="list-style-type: disc;">TUOM: Units by default</li>
         <li style="list-style-type: disc;">Reference description: Manual Import by default</li>
         <li style="list-style-type: disc;">Invoice discount: It refers to the SKU wise discount amount</li>
-        <li style="list-style-type: disc;">PTS, PTR, MRP and ECP- Price Per unit</li>
-        <li style="list-style-type: disc;">GST Percentage & Amount- Based on the Percentage and amount mentioned in the invoice</li>
+        <li style="list-style-type: disc;">PTS - Price Per unit</li>
+        <li style="list-style-type: disc;">PTR, MRP - Download  the base price data from corporate portal and update the same to import.</li>
         <br>
-        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_63.jpg" alt="Image_63" style="float: none; height: 50%; width: 75%;"><br>
+        Kindly find the Steps to download the base price data from the CP portal :<br><br>
+        <li style="list-style-type: none;">Step 1 : Log in to the Fsupport CP portal.</li>
+        <li style="list-style-type: none;">Step 2 : Masters ---> Master import</li>
+        <li style="list-style-type: none;">Step 3 : Base Price ---> Click on download.</li>
+        <li style="list-style-type: none;">Step 4 : Fill the latest updated PTR and MRP values.</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_228.png" alt="Image_228" style="float: none; height: 45% ; width: 55%;"><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_229.png" alt="Image_229" style="float: none; height: 45% ; width: 55%;"><br>
+            <br>
+        <li style="list-style-type: disc;">Finally update the GST Percentage & Amount- Based on the Percentage and amount mentioned in the invoice</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_230.png" alt="Image_230" style="float: none; height: 45% ; width: 55%;"><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_231.png" alt="Image_231" style="float: none; height: 45% ; width: 55%;"><br>
         <br>
         <b>Note:</b> Ensure that the RPI file is saved in <b>CSV format</b> before uploading it to the system.<br>
         <br>
         There is a set of default values for fields like <b>Vendors, Depot Code, TUOM (Total Units of Measure),</b> and <b>Reference Description</b> that apply to all distributors. Refer to the document while filling out the RPI import template file.<br>
         <br>
-        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_64.png" alt="Image_64" style="float: none; height: 50%; width: 75%;"><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_232.png" alt="Image_232" style="float: none; height: 45% ; width: 55%;"><br>
         <br>
         If we encounter an error during upload, such as <b>"SKU is not mapped to the distributor,"</b> follow these steps to resolve it by mapping the SKU to the respective distributor in distributor cluster.<br>
         <br>
@@ -1670,22 +1755,56 @@
         <b>2.Navigate to Customer > Distributor Cluster</b><br>
         <li style="list-style-type: circle;">Go to the<b>Customer</b> section and select <b>Distributor Cluster.</b><br>
         <br>
-        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_65.png" alt="Image_65" style="float: none; height: 50%; width: 75%;"><br>
-        <br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_233.png" alt="Image_233" style="float: none; height: 45% ; width: 55%;"><br>
+            <br>
         <b>3.Select All Distributors</b><br>
         <li style="list-style-type: circle;">In the Distributor Cluster,choose <b>All Distributors</b> to see a list of all distributors in the system.<br>
         <li style="list-style-type: circle;">Validate the respective distributor is mapped or not. If not map the distributor.</li>
         <li style="list-style-type: circle;">Once mapped, save the changes and approve.</li><br>
+        
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_234.png" alt="Image_234" style="float: none; height: 45% ; width: 55%;"><br>
         <br>
-        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_66.png" alt="Image_66" style="float: none; height: 50%; width: 75%;"><br>
-        <br>
-        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_67.png" alt="Image_67" style="float: none; height: 50%; width: 75%;"><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_235.png" alt="Image_235" style="float: none; height: 45% ; width: 55%;"><br>
         <br>
         <b>4.Re-import the File in the Distributor Portal</b><br>
         <li style="list-style-type: circle;">Return to the distributor portal.</li>
         <li style="list-style-type: circle;">Re-import the RPI file under <b>Masters → Master Import → RPI.</b><br>
         <br>
-        <img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_68.png" alt="Image_68" style="float: none; height: 50%; width: 75%;"><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_236.png" alt="Image_236" style="float: none; height: 45% ; width: 55%;"><br>
+        <br>
+        When ever the RPI import request is raised by HO, Confirm with them if 2% product level discount should be applied. <br><br>
+        If there is no 2% product level discount follow the ABOVE procedure to import the RPI.<br><br>
+        If the 2%product level discount to be applied, then follow the BELOW mentioned procedure to import RPI.<br><br>
+        <li style="list-style-type: disc;">If the percentage discount is not been applied in the given RPI, then confirm with the customer if there is any percentage discount to be applied in the RPI.</li>
+        <li style="list-style-type: disc;">Get the percentage details from the customer to get applied in the RPI and then import in DMS to get the exact amount.</li>
+        <li style="list-style-type: disc;">Follow the below mentioned steps to apply the product level percentage discount in the RPI :</li>
+        <ul>
+            <li style="list-style-type: none;">Step 1 : Remove the invoice level discount given in the RPI for all the products.</li>
+        </ul>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_237.png" alt="Image_237" style="float: none; height: 45% ; width: 55%;"><br>
+        
+        <ul>
+            <li style="list-style-type: none;">Step 2 : Fill the Invoice discount type column using “Percentage”.</li>
+        </ul>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_238.png" alt="Image_238" style="float: none; height: 45% ; width: 55%;"><br>
+        
+        <ul>
+            <li style="list-style-type: none;">Step 3 : Fill the number of percentage to be applied at product level in invoice discount column.</li>
+        </ul>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_239.png" alt="Image_239" style="float: none; height: 45% ; width: 55%;"><br>
+            
+        <ul>
+            <li style="list-style-type: none;">Step 4 : Save the file in CSV format to import in DMS.</li>
+            <li style="list-style-type: disc;">Before importing the RPI file in the distributor portal check once in the test distributor portal.</li>
+            <li style="list-style-type: disc;">Test Distributor ID & Pass - DEMO1.</li>
+            <li style="list-style-type: disc;">To import in Demo distributor portal, change the Distributor code as DEMO1and also change the invoice number.</li>
+            <li style="list-style-type: none;"><b>(Note : This is only to check if we have given the inputs correctly)</b></li>
+        </ul>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_240.png" alt="Image_240" style="float: none; height: 45% ; width: 45%;"><br>
+        <br>
+        Note : If the file is imported correctly without any price mismatch in the DEMO distributor, then correct the actual distributor code and invoice number in the RPI import file and import the same file in the appropriate distributor portal.<br><br>
+        After importing the RPI in actual distributor portal, Check once if it is correctly imported.<br>
+
 
         <table class="ver-his">
             <th colspan="7" class="ver-summ">Version Summary</th>
@@ -1697,6 +1816,15 @@
                 <td>Current Version</td>
                 <td>Current Version Published On</td>
                 <td>Maiden Version Published On</td>
+            </tr>
+            <tr>
+                <td>Mohammed Kashif</td>
+                <td>Doppa Alekya</td>
+                <td>Julian Shawn Dmonte</td>
+                <td>Kannan</td>
+                <td>2.2</td>
+                <td>20/05/2024</td>
+                <td>22/11/2024</td>
             </tr>
             <tr>
                 <td>Pavithra M</td>
