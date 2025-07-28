@@ -34,6 +34,293 @@
 
     <!-- Content section -->
 
+ 
+    <button class="accordion">FORUM TALLY</button>
+    <div class="panel">
+        <b>INTRODUCTION </b><br><br>
+        The <b>Forum Tally Add-on Patch</b> has been introduced distributors to generate invoices directly in Tally, avoiding duplicate billing activities across multiple software systems. As a result, the process is faster, more seamless, and automated, ensuring greater accuracy and reducing manual effort.<br><br>
+        To enable billing in <b>Tally,</b> it is essential to first synchronize the following key components. Only after completing this synchronization will distributors be able to generate invoices in <b>Tally.</b><br><br>
+        This application is compatible with <b>Tally Version 3.1 and above</b> and requires the following data to be synced:<br><br>
+        <ul style="list-style-type: none;">
+            <li><b>1. Products with Tax Information</b></li>
+            <li><b>2. Vendors with Associated Depot Details</b></li>
+            <li><b>3. Retailers</b></li>
+            <li><b>4. Purchase Invoices</b></li>
+        </ul><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_258.png" alt="Image_258" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Tally Add-On Patch Deployment & Company Setup Workflow</b><br><br>
+        To enable <b>ForumNXT-Tally Integration,</b> follow these steps:<br><br>
+        <b>Step 1 : Deploy the Tally Add-On Patch</b><br><br>
+        <ul style="list-style-type: none;">
+            <li>1. Navigate to the <b>Tally application installation path.</b></li>
+            <li>2. Right click and click on open file location.</li>
+            <li>3. Copy and paste the <b>ForumNXT_Tally_Integration</b> zipped file into this location.</li>
+            <li>4. Extract the zipped file to access the required folders and configuration files.</li>
+            <li>5. Inside the extracted folder :</li><br>
+            <ul style="list-style-type: disc;">
+                <li>The <b>Log</b> folder contains daily log files.</li>
+                <li>The <b>TCP</b> folder contains the <b>Tally Add-on patch</b> (ForumNXT_Tally_Integration.tcp).</li><br>
+            </ul>
+        </ul>
+        <b>Step 2 : Load the Add-On Patch in Tally</b><br><br>
+        <ul style="list-style-type: none;">
+            <li>1. Open <b>Tally</b> and navigate to the <b>Help Menu (F1).</b></li>
+            <li>2. Go to <b>TDLs & AddOns and Enter.</b></li>
+            <li>3. Navigate to Manage Local TDLs and click on it.</li>
+        </ul><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_259.png" alt="Image_259" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_260.png" alt="Image_260" style="float: none; height: 45% ; width: 45%;"><br><br>
+            <ul style="list-style-type: none;">
+                4. Load the patch file in the appropriate location; the add-on is now integrated with <b>Tally.</b>
+            </ul><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_261.png" alt="Image_261" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_262.png" alt="Image_262" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 3 : Create a Company in Tally</b><br><br>
+        <ul style="list-style-type: none;">
+            1. Press Alt + F3 and select “Create” to initiate company creation.
+        </ul>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_263.png" alt="Image_263" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">2. Enter the Company Name and other required details.</li><br>
+        <b>Note :</b> It is must to fill the following details<br><br>
+        <ul style="list-style-type: disc;">
+            <li>State</li>
+            <li>Company Name</li>
+            <li>Financial year beginning from and Books beginning from</li>
+        </ul><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_264.png" alt="Image_264" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <ul style="list-style-type: disc;">
+            <li>Click <b>“Accept”</b> to save the company setup.</li>
+            <li>When the <b>Features and Add-On</b> screen appears, enable <b>"ForumNXT DMS Synchronization"</b> by setting it to <b>"Yes".</b></li>
+            <li>The company is now created with the <b>Tally patch enabled.</b></li>
+        </ul><br>
+        <b>Step 4 : Register the Company in ForumNXT Integration</b><br><br>
+        After setting up the company, proceed with the registration process in <b>ForumNXT Integration</b> by entering the required details.<br><br>
+        <li style="list-style-type: disc;">Navigate to and select "ForumNXT Integration." From there, proceed to and select "End User License Agreement.</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_265.png" alt="Image_265" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_266.png" alt="Image_266" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: disc;">Review the <b>End User License Agreement,</b> then accept the terms to proceed with the integration process.</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_267.png" alt="Image_267" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 5 : Process to Create New Distributor in Tally</b><br><br>
+        <li style="list-style-type: disc;">Access the ForumNXT Integration module within the Tally software.</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_268.png" alt="Image_268" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: disc;">Within the ForumNXT Integration module, find and select the "Distributor Details" option.</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_269.png" alt="Image_269" style="float: none; height: 45% ; width: 45%;"><br><br>
+        In the designated fields, accurately enter all the required distributor details as provided by Corporate Admin. This may include information such as distributor name, Distributor code, Activate key, Version, URL and Domain Name.<br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_270.png" alt="Image_270" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Registration and Synchronization Process : </b><br><br>
+        <li style="list-style-type: disc;"><b>Validate</b> all the details and click on <b>Register.</b></li><br>
+        <b>Note :</b> DMS Flavor: Unknown, Distributor Type: Unknown, Forum NXT Registration Status: Yet to Register.<br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_271.png" alt="Image_271" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: disc;">After completing the registration, navigate to <b>Forum NXT Integration → Distributor Details</b> to verify that the <b>Distributor CD Key</b> has been successfully registered.</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_272.png" alt="Image_272" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: disc;">Once the registration is complete, go to Forum NXT Integration → Distributor Details, where the "Sync Config" option will be available. Click on "Sync Config" to proceed.</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_273.png" alt="Image_273" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_274.png" alt="Image_274" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: disc;">After syncing, you can check the <b>Registration and Sync Status.</b></li><br>
+        <b>Note :</b> DMS Flavor: Hybrid, Distributor Type: Tally, Forum NXT Registration Status: Registered.<br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_275.png" alt="Image_275" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_276.png" alt="Image_276" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Brief Explanation of Tally-Related Topics </b><br><br>
+        <li style="list-style-type: none;">1. Corporate Settings</li><br><br>
+        The <b>Corporate Settings</b> module provides distributors with a comprehensive view of company-specific configurations set at the corporate level.<br><br>
+        <ul style="list-style-type: disc;">
+            <li><b>General Settings :</b> Displays essential details such as the distributor code, distributor type, application version, and the domain name associated with the registered company.</li><br>
+            <li><b>Auto Sync Settings :</b> It highlights both corporate-level and user-level auto sync configurations, including the frequency and timing of automatic data synchronization between Tally and ForumNXT.</li><br>
+            <li><b>Sync Permitted Settings :</b> It allows distributors to view the list of modules and fields they are permitted to access. For any restricted or denied modules, the distributor must seek approval from the corporate team to enable synchronization for those specific modules.</li><br>
+        </ul>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_277.png" alt="Image_277" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>2. ForumNXT Restriction</b><br><br>
+        This module helps distributor to view the General, Master, and Voucher-related restrictions that are applicable to their registered company.<br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_278.png" alt="Image_278" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>3. Manual Sync</b><br><br>
+       <b> Manual Synchronization</b> enables users to manually initiate the data exchange process between <b>Tally</b> and <b>ForumNXT DMS</b> as and when required. This functionality is particularly useful for distributors who need to ensure that the latest data is reflected across both platforms.<br><br>
+       Using the <b>Manual Sync</b> option, distributors can :<br><br>
+       <ul style="list-style-type: circle;">
+        <li><b>Download master data</b> such as product details with tax, vendor details Depots and retailer information from the DMS to their local Tally system.</li>
+        <li><b>Upload transaction data</b> including sales invoices, receipts, credit notes, and other relevant transactional records from Tally to the DMS.</li>
+       </ul><br><br>
+       This two-way sync process <b>uploading and downloading of data</b> ensures consistency and accuracy between systems.<br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_279.png" alt="Image_279" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>4. Auto Sync Settings</b><br><br>
+        The <b>Auto Sync</b> feature enables seamless and automatic data synchronization between <b>Tally</b> and <b>ForumNXT</b> at predefined intervals. This eliminates the need for manual syncing, ensuring that transactional data such as invoices, receipts, and stock updates are consistently and accurately reflected across both systems.
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_280.png" alt="Image_280" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>5. Audit Log</b><br><br>
+        <b>1. Vouchers Upload Status :</b><br>
+        <li style="list-style-type: none;">This feature displays the status of vouchers uploaded by the distributor from Tally to ForumNXT. It helps in tracking whether the transaction data such as sales, purchases, payments, and receipts have been successfully communicated to the DMS.</li><br>
+        <b>2. Opening Stock Position :</b><br>
+        <li style="list-style-type: none;">Provides a data of the distributor's opening stock.</li><br>
+        <b>3. Current Stock Position :</b><br>
+        <li style="list-style-type: none;">Displays real-time information on the distributor’s current stock.</li><br>
+        <b>4. ForumNXT Products :</b><br>
+        <li style="list-style-type: none;">Lists all the products associated with ForumNXT that are available to the distributor.</li><br>
+        <b>5. ForumNXT Retailers :</b><br>
+        <li style="list-style-type: none;">Provides detailed information about retailers that are mapped in ForumNXT for the respective distributor.</li><br>
+        <b>6. ForumNXT Vendors :</b><br>
+        <li style="list-style-type: none;">Shows vendor-related information that is integrated with ForumNXT.</li><br>
+        <b>7. Sundry Debtors Upload Status :</b><br>
+        <li style="list-style-type: none;">Facilitates the distributor in uploading newly created retailers (in Tally) to the DMS.</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_281.png" alt="Image_281" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>6. Product Mapping</b><br>
+        As distributors sell both DMS and non-DMS products through Tally, it is essential to differentiate and communicate only the DMS-related products to the DMS system. To facilitate this, distributors use a <b>product mapping process.</b><br><br>
+        This process involves the distributor creating the product in Tally and then mapping it to the corresponding product in the DMS system. The <b>Product Mapping</b> functionality enables the distributor to clearly identify which items are linked (mapped) to DMS and which ones are not (unmapped).<br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_282.png" alt="Image_282" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>7. Upload Sundry Debtors</b><br>
+        <ul style="list-style-type: none;">
+            <li>In Tally, distributors also generate invoices for non-DMS customers. If a new retailer is created in Tally and the customer belongs to the DMS network, the distributor must notify DMS about this addition. This is done using the <b>"Upload Sundry Debtors"</b> option.</li><br>
+            <li>Initially, the distributor creates the retailer in Tally and uploads the details through this option to inform DMS about the new retailer. Once received, DMS allocates a unique retailer code to the respective retailer.</li><br>
+            <li>To retrieve the assigned retailer code, the distributor must perform a <b>“Sync All”</b> operation. This ensures that the retailer information is properly updated in the DMS system.</li>
+        </ul><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_283.png" alt="Image_283" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>8. Sify Live Update</b><br>
+        <li style="list-style-type: none;"><b>Sify Live Update</b> option is available in ForumNXT integration Menu which helps distributors download the latest feature updates. To get the latest features, the distributor’s configuration of SLU Registration must be Registered and SLU Application must be Available.</li><br>
+        <li style="list-style-type: none;">Also, the distributor must read through the instructions for the options available in the Menu.</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_284.png" alt="Image_284" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>New Retailer Creation Process in Tally</b><br><br>
+        <b>Step 1 : Create a New Ledger</b><br>
+        <li style="list-style-type: none;">1. Navigate to the <b>GO TO</b> page and select <b>Alter.</b></li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_285.png" alt="Image_285" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">2. Click on Ledger → Create and fill in all the required fields:</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_286.png" alt="Image_286" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_287.png" alt="Image_287" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <ul style="list-style-type: none;">
+            <li>1. <b>Name</b> (e.g., Forum-1)</li>
+            <li>2. <b>Under :</b> Sundry Debtors</li>
+            <li>3. Keep the <b>Credit Period</b> and <b>Credit Days</b> as default.</li>
+            <li>4. Enter the <b>Address</b> and <b>Pincode.</b></li>
+            <li>5. <b>PAN and GST Numbers</b> are optional and can be filled if necessary.</li>
+            <li>6. Set <b>Registration Type</b> as Regular.</li>
+        </ul><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_288.png" alt="Image_288" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 2 : Confirm Details</b><br><br>
+        <li style="list-style-type: disc;">Press <b>Enter</b> after filling in all details.</li>
+        <li style="list-style-type: disc;">If a warning message appears stating <b>"GSTIN/UIN not specified",</b> press <b>Enter</b> to accept and then press <b>Esc</b> to exit.</li><br>
+        <b>Step 3 : Upload Sundry Debtors</b><br><br>
+        <li style="list-style-type: none;">1. Navigate to <b>ForumNXT Integration Menu → Upload Sundry Debtors.</b></li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_289.png" alt="Image_289" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_290.png" alt="Image_290" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">2. The uploaded status of the retailer will be displayed.</li><br>
+        <li style="list-style-type: none;">3. Click the <b>Upload</b> button at the bottom right of the page.</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_291.png" alt="Image_291" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 4 : Check Retailer Status in Audit Log</b><br><br>
+        <li style="list-style-type: none;">1. Open the <b>Audit Log.</b></li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_292.png" alt="Image_292" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">2. Navigate to <b>Sundry Debtors Upload Status</b> to check the retailer status (initially without the Retailer Code).</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_293.png" alt="Image_293" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_294.png" alt="Image_294" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 5 : Sync Data</b><br><br>
+        <li style="list-style-type: none;">1. Go to <b>Manual Sync.</b></li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_295.png" alt="Image_295" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">2. Click on <b>Sync All</b> to update the <b>Retailer Code.</b></li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_296.png" alt="Image_296" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 6 : Verify Retailer Addition</b><br><br>
+        <ul style="list-style-type: none;">
+            <li>1. Navigate to <b>ForumNXT Integration → Audit Log.</b></li>
+            <li>2. Open <b>ForumNXT Retailers.</b></li>
+            <li>3. The retailer will now be successfully added with the <b>Retailer Code.</b></li>
+        </ul><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_297.png" alt="Image_297" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_298.png" alt="Image_298" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Forum NXT Syncing Process</b><br><br>
+        To ensure accurate data synchronization between the <b>Tally system and the Distributor Management System (DMS),</b> users can utilize the <b>manual sync</b> and <b>upload transaction</b> features. Below is a detailed breakdown of the process:<br><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_299.png" alt="Image_299" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <li style="list-style-type: none;">1. Once-a-Day Upload</li><br>
+        <ul style="list-style-type: disc;">The system is designed to <b>sync the data once per day</b> to maintain opening stock details.</ul><br>
+        <li style="list-style-type: none;">2. Last Sync Date Tracking</li><br>
+        <li style="list-style-type: disc;">The system provides a <b>last sync date feature,</b> allowing users to check the most recent synchronization timestamp.</li><br>
+        <li style="list-style-type: disc;">This helps users verify whether the latest data has been uploaded and identify if any manual intervention is required.</li><br>
+        <li style="list-style-type: none;">3. Downloading Masters & Transactions</li><br>
+        <li style="list-style-type: disc;">Users have the option to <b>manually download the latest updates</b> related to <b>masters and transactions.</b></li><br>
+        <li style="list-style-type: disc;">This includes :</li><br>
+        <ul style="list-style-type: circle;">
+            <li><b>Master Data Updates –</b> Any modifications or new entries related to products, customers, or pricing.</li>
+            <li><b>Transactional Data –</b> Sales orders, invoices, purchase records, and other financial transactions.</li>
+        </ul>
+        <li style="list-style-type: disc;">Downloading the latest updates ensures that users are working with the most <b>accurate and up-to-date information.</b></li><br>
+        <li style="list-style-type: none;">4. Uploading Transactions</li><br>
+        <li style="list-style-type: disc;">The <b>upload transaction feature</b> allows users to manually upload important data into the DMS, including :</li><br>
+        <ul style="list-style-type: circle;">
+            <li><b>Sales –</b> Transactions involving product sales to retailers or customers.</li>
+            <li><b>Collections & Payments –</b> It involves the debit, credit note information, Collection information of retailers.</li>
+        </ul><br>
+        <li style="list-style-type: disc;">This ensures seamless <b>data integration</b> between Tally and DMS, maintaining consistency across platforms.</li><br>
+        <b>Invoice Creation in Tally</b><br><br>
+        <li style="list-style-type: none;">Step 1 : Accessing the Voucher Screen</li><br>
+        <li style="list-style-type: disc;">Open <b>Tally</b> and navigate to the <b>homepage.</b></li>
+        <li style="list-style-type: disc;">Click on <b>"Vouchers",</b> which will open the invoice creation screen.</li><br>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_300.png" alt="Image_300" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 2 : Switching to Sales Invoice Mode</b><br><br>
+        <li style="list-style-type: disc;">By default, the system opens the <b>Payments</b> window.</li>
+        <li style="list-style-type: disc;">To switch to the <b>Sales Invoice</b> window :</li>
+        <ul style="list-style-type: circle;">
+            <li>Press the <b>F8 key,</b> which will provide options for <b>Sales</b> and <b>Sales Invoice.</b></li>
+            <li>Select <b>Sales Invoice</b> to proceed with creating a new invoice.</li>
+        </ul>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_301.png" alt="Image_301" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 3 : Entering Invoice Number</b><br><br>
+        <li style="list-style-type: disc;">The <b>Sales Invoice screen</b> will now be displayed.</li>
+        <li style="list-style-type: disc;">In the designated <b>Invoice Number</b> field, enter the invoice number and press <b>Enter</b> to proceed.</li>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_302.png" alt="Image_302" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 4 : Selecting the Customer</b><br><br>
+        <li style="list-style-type: disc;">Once the <b>Invoice Number</b> is entered, select the <b>Customer Name</b> from the list.</li>
+        <li style="list-style-type: disc;">Press <b>Enter</b> to proceed through the subsequent fields.</li>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_303.png" alt="Image_303" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 5 : Adding Items for Billing</b><br><br>
+        <li style="list-style-type: disc;">After selecting the customer, enter the <b>items</b> that need to be billed.</li>
+        <li style="list-style-type: disc;">Specify the <b>quantity</b> for each item being sold.</li>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_304.png" alt="Image_304" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 6 : Applying Tax and Finalizing the Invoice</b><br><br>
+        <li style="list-style-type: disc;">After adding the items, select the appropriate <b>tax rate</b> applicable to the transaction.</li>
+        <li style="list-style-type: disc;">Continue pressing <b>Enter</b> through the remaining fields to finalize the details.</li>
+        <li style="list-style-type: disc;">Once all details are verified, select <b>accept</b> to save the invoice successfully.</li>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_305.png" alt="Image_305" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Synchronizing the Invoice with DMS</b><br><br>
+        <ul style="list-style-type: none;">After creating the invoice in Tally, it must be <b>uploaded and synchronized</b> with DMS.</ul><br>
+        <b>Step 7 : Verifying Invoice Upload Status</b><br><br>
+        <ul style="list-style-type: disc;">
+            <li>Navigate to the <b>Forum Integration Menu.</b></li>
+            <li>Open the <b>Audit Log – Voucher Upload Status.</b></li>
+            <li>The newly created invoice will appear in the <b>"Yet to Upload"</b> state.</li>
+        </ul>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_306.png" alt="Image_306" style="float: none; height: 45% ; width: 45%;"><br><br>
+        <b>Step 8 : Manually Syncing the Invoice to DMS</b><br><br>
+        <ul style="list-style-type: disc;">
+            <li>To sync the invoice with DMS, go to the <b>Manual Sync</b> section.</li>
+            <li>Click on <b>"Sync All",</b> which will initiate the synchronization process.</li>
+            <li>Once completed, the invoice will be successfully uploaded to DMS.</li>
+        </ul>
+        <li style="list-style-type: none;"><img src="./assets/Forum/Forum V2.1/ForumNXT_V2.1_307.png" alt="Image_307" style="float: none; height: 45% ; width: 45%;"><br><br>
+
+
+
+
+           <table class="ver-his">
+               <th colspan="7" class="ver-summ">Version Summary</th>
+                 <tr class="bold">
+                     <td>Author</td>
+                     <td>Reviewer</td>
+                     <td>Approver 1</td>
+                     <td>Approver 2</td>
+                     <td>Current Version</td>
+                     <td>Current Version Published On</td>
+                     <td>Maiden Version Published On</td>
+                 </tr>
+                 <tr>
+                     <td>Pavithra</td>
+                     <td>S Keerthana</td>
+                     <td>Julian Shawn Dmonte</td>
+                     <td> Raja Sekharam Uppuluri</td>
+                     <td>1.0</td>
+                     <td>28-07-2025</td>
+                     <td>28-07-2025</td>
+                 </tr>
+             </table>
+             
+    </div>
+
+
+
+
+
 
     <button class="accordion">MAPPING SALESMAN TO THE DISTRIBUTOR PROCESS IN LISTOIL</button>
     <div class="panel">
